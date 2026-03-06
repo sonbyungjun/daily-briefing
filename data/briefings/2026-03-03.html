@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-03</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; padding: 24px 16px; max-width: 720px; margin: 0 auto; line-height: 1.6; }
+h1 { font-size: 20px; color: #fff; margin-bottom: 4px; }
+.date { color: #888; font-size: 13px; margin-bottom: 28px; }
+.section { margin-bottom: 32px; }
+.section-title { font-size: 14px; font-weight: 700; color: #4fc3f7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid #222; }
+.item { margin-bottom: 16px; padding: 14px 16px; background: #1a1a1a; border-radius: 10px; border-left: 3px solid #333; }
+.item:hover { border-left-color: #4fc3f7; }
+.item-title { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+.item-title a { color: #fff; text-decoration: none; }
+.item-meta { font-size: 12px; color: #666; margin-bottom: 6px; }
+.item-desc { font-size: 13px; color: #aaa; }
+.tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 4px; margin-right: 4px; font-weight: 600; }
+.tag-ai { background: #1a237e; color: #82b1ff; }
+.tag-dev { background: #1b5e20; color: #81c784; }
+.tag-product { background: #4a148c; color: #ce93d8; }
+.tag-hw { background: #bf360c; color: #ffab91; }
+.footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #222; font-size: 11px; color: #555; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Daily Briefing</h1>
+<p class="date">2026년 3월 3일 화요일 09:00 KST</p>
+
+<div class="section">
+<div class="section-title">AI / LLM</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> 알리바바 Qwen3.5-Medium, 로컬에서 Sonnet 4.5 수준 성능</div>
+<div class="item-meta">GeekNews</div>
+<div class="item-desc">Qwen3.5 시리즈 (35B, 122B, 27B) Apache 2.0 오픈소스 공개. GPT-5-mini급 성능을 로컬에서 구동 가능. 오픈소스 LLM 경쟁 본격화.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> Anthropic 무료 온라인 강의 공개</div>
+<div class="item-meta">GeekNews · 50pts</div>
+<div class="item-desc">Claude 기본 사용법, API 활용, Claude Code 개발 워크플로, MCP 서버 구축, Agent Skills까지 개발자 대상 과정 다수 포함.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> Claude, Import Memory 기능 추가</div>
+<div class="item-meta">GeekNews</div>
+<div class="item-desc">다른 AI 서비스의 개인 설정과 맥락을 Claude로 가져올 수 있는 메모리 임포트 기능 출시.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> Context Mode — Claude Code 컨텍스트 소비 98% 절감 MCP 서버</div>
+<div class="item-meta">GeekNews · 16pts</div>
+<div class="item-desc">외부 도구 호출 시 발생하는 대량의 원시 데이터가 컨텍스트 윈도우를 소모하는 문제 해결. 클로드 코드와 도구 출력 사이에 위치하는 경량 프록시.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> Meta 스마트 안경 작업자들 "모든 것이 보인다"</div>
+<div class="item-meta">Hacker News · 274pts</div>
+<div class="item-desc">Meta의 AI 스마트 안경 데이터를 처리하는 작업자들이 사용자의 모든 시각 데이터에 접근 가능하다는 프라이버시 우려 제기.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> M4 Apple Neural Engine 리버스 엔지니어링</div>
+<div class="item-meta">Hacker News · 247pts</div>
+<div class="item-desc">Apple M4 칩의 Neural Engine 내부 구조를 리버스 엔지니어링으로 분석한 심층 기술 시리즈.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-ai">AI</span> 500ms 미만 지연시간 음성 에이전트 구축기</div>
+<div class="item-meta">Hacker News · 88pts · Show HN</div>
+<div class="item-desc">처음부터 직접 구축한 초저지연 음성 에이전트. 실시간 대화형 AI의 실용적 구현 사례.</div>
+</div>
+
+</div>
+
+<div class="section">
+<div class="section-title">개발 / 도구</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> 에이전틱 엔지니어링 시대의 생존 스킬 9가지</div>
+<div class="item-meta">GeekNews · 42pts</div>
+<div class="item-desc">Karpathy가 주말 프로젝트를 에이전트에게 맡기고 30분 뒤 전부 완성. 바이브 코딩 시대에 개발자가 갖춰야 할 핵심 역량 정리.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> 테스트 코드가 새로운 해자(Moat)가 되는 시대</div>
+<div class="item-meta">GeekNews · 58pts</div>
+<div class="item-desc">프로젝트가 성장할수록 하위 호환성이 짐이 되지만, 충실한 테스트 코드가 경쟁자 대비 가장 강력한 방어벽이 된다는 주장.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> Portless — 포트 번호를 .localhost URL로 대체</div>
+<div class="item-meta">GeekNews · 18pts · Vercel Labs</div>
+<div class="item-desc">로컬 개발 시 포트 충돌 문제 해결. 각 서버에 고유한 앱.localhost 도메인 할당.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> 병렬 코딩 에이전트 with tmux + Markdown 스펙</div>
+<div class="item-meta">Hacker News · 102pts</div>
+<div class="item-desc">tmux와 Markdown 명세를 활용해 여러 코딩 에이전트를 병렬로 돌리는 워크플로 소개.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> Mikado Method로 복잡한 코드베이스 안전하게 변경하기</div>
+<div class="item-meta">Hacker News · 145pts</div>
+<div class="item-desc">레거시 코드에서 안전한 리팩터링을 위한 체계적 접근법.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> 인지 부채: 속도가 이해를 앞지를 때</div>
+<div class="item-meta">GeekNews · 12pts</div>
+<div class="item-desc">AI 보조 개발이 코드 생산 속도를 인간의 이해 속도보다 빠르게 만들며 발생하는 'cognitive debt' 경고.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-dev">DEV</span> Oxfmt 베타 — Prettier 대비 30배 빠른 포매터</div>
+<div class="item-meta">GeekNews · 39pts</div>
+<div class="item-desc">Rust 기반. Prettier JS/TS 테스트 100% 통과하며 동일 결과 보장. Biome 대비 3배 빠름.</div>
+</div>
+
+</div>
+
+<div class="section">
+<div class="section-title">제품 / 하드웨어</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-hw">HW</span> Motorola x GrapheneOS 파트너십 발표</div>
+<div class="item-meta">Hacker News · 2016pts</div>
+<div class="item-desc">보안 중심 Android OS인 GrapheneOS와 Motorola의 공식 B2B 파트너십. HN 역대급 관심. 프라이버시 중심 스마트폰 시장 변화 신호.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-hw">HW</span> iPad Air (M4) / iPhone 17e 발표</div>
+<div class="item-meta">Hacker News · 292pts / 171pts</div>
+<div class="item-desc">Apple, M4 탑재 새 iPad Air와 iPhone 17e 공식 발표.</div>
+</div>
+
+<div class="item">
+<div class="item-title"><span class="tag tag-product">PRODUCT</span> 프로덕트 디자인이 변하고 있다</div>
+<div class="item-meta">GeekNews · 13pts</div>
+<div class="item-desc">AI 도구가 디자인 시스템을 직접 활용해 UI 생성. 디자이너 역할이 시각 설계에서 전략과 조율 중심으로 이동.</div>
+</div>
+
+</div>
+
+<div class="footer">
+Sources: GeekNews (news.hada.io) · Hacker News (news.ycombinator.com)<br>
+Generated by 상혁봇
+</div>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Briefing - 2026년 2월 12일</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f; color: #e0e0e0; line-height: 1.6; padding: 20px;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #333; }
+        h1 { font-size: 1.8em; color: #fff; margin-bottom: 5px; }
+        .date { color: #888; font-size: 0.95em; }
+        .section { margin-bottom: 35px; }
+        .section-title { 
+            font-size: 1.2em; color: #4a9eff; margin-bottom: 15px; 
+            padding-bottom: 8px; border-bottom: 2px solid #4a9eff;
+        }
+        .news-item { 
+            background: #1a1a1a; border-radius: 8px; padding: 15px; 
+            margin-bottom: 12px; border-left: 3px solid #333;
+        }
+        .news-item:hover { border-left-color: #4a9eff; }
+        .news-item.hot { border-left-color: #ff6b6b; }
+        .news-title { font-weight: 600; color: #fff; margin-bottom: 6px; }
+        .news-title a { color: #fff; text-decoration: none; }
+        .news-title a:hover { color: #4a9eff; }
+        .news-desc { color: #aaa; font-size: 0.9em; }
+        .news-meta { color: #666; font-size: 0.8em; margin-top: 8px; }
+        .tag { 
+            display: inline-block; background: #2a2a2a; color: #888; 
+            padding: 2px 8px; border-radius: 4px; font-size: 0.75em; margin-right: 5px;
+        }
+        .tag.ai { background: #1a3a2a; color: #4ade80; }
+        .tag.dev { background: #1a2a3a; color: #60a5fa; }
+        .tag.security { background: #3a1a1a; color: #f87171; }
+        footer { text-align: center; color: #555; font-size: 0.85em; margin-top: 40px; padding-top: 20px; border-top: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Tech Briefing</h1>
+            <p class="date">2026년 2월 12일 목요일</p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">AI / LLM 트렌드</h2>
+            
+            <div class="news-item hot">
+                <div class="news-title"><a href="https://symmetrybreak.ing/blog/claude-code-is-being-dumbed-down/" target="_blank">Claude Code is being dumbed down?</a></div>
+                <div class="news-desc">Claude Code의 성능 저하 논란. HN에서 668포인트로 핫한 토론 진행 중</div>
+                <div class="news-meta"><span class="tag ai">AI</span> Hacker News · 455 comments</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://z.ai/blog/glm-5" target="_blank">GLM-5: 복잡한 시스템 엔지니어링과 장기 에이전트 작업 타겟</a></div>
+                <div class="news-desc">z.ai에서 공개한 GLM-5 모델. 복잡한 시스템 설계와 장시간 에이전트 태스크에 특화</div>
+                <div class="news-meta"><span class="tag ai">AI</span> Hacker News · 379 comments</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://developer.chrome.com/blog/webmcp-epp?hl=ko" target="_blank">WebMCP (Web Model Context Protocol) 공개</a></div>
+                <div class="news-desc">웹사이트가 브라우저 내 AI 에이전트에게 구조화된 도구를 직접 노출하는 표준 제안. 화면 스크래핑/DOM 추론 방식을 대체</div>
+                <div class="news-meta"><span class="tag ai">AI</span><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://drive.google.com/file/d/1x2x1T4lzTISnHGN8nd4KtMhL8iwi6QgU/view" target="_blank">Claude Code 완전 가이드: 해커톤 우승자의 70가지 파워 팁 [54p PDF]</a></div>
+                <div class="news-desc">Anthropic 해커톤 우승자 ykdojo의 Claude Code 활용 팁 모음</div>
+                <div class="news-meta"><span class="tag ai">AI</span> GeekNews · 117 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it" target="_blank">AI가 일을 줄여준다는 약속, 실제로는 번아웃만 키웠다</a></div>
+                <div class="news-desc">UC Berkeley 연구: 기술 기업 200명 8개월 관찰 결과, AI 도입 후 업무가 줄지 않고 오히려 강화·증가</div>
+                <div class="news-meta"><span class="tag ai">AI</span> GeekNews · HBR</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://entire.io/blog/hello-entire-world/" target="_blank">Entire - AI 에이전트를 위한 새로운 개발자 플랫폼</a></div>
+                <div class="news-desc">전 GitHub CEO Thomas Dohmke가 설립. 인간과 에이전트가 협업·학습·배포하는 차세대 개발자 플랫폼</div>
+                <div class="news-meta"><span class="tag ai">AI</span><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://every.to/guides/compound-engineering" target="_blank">Compound Engineering: AI 네이티브 엔지니어링 철학</a></div>
+                <div class="news-desc">모든 엔지니어링 작업이 이후 작업을 더 쉽게 만드는 복리형 개발 방법론. AI 에이전트 협업을 체계화한 4단계 루프</div>
+                <div class="news-meta"><span class="tag ai">AI</span><span class="tag dev">Dev</span> GeekNews · 41 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://github.com/zai-org/GLM-OCR" target="_blank">GLM-OCR: 정확 × 빠름 × 포괄적</a></div>
+                <div class="news-desc">z.ai에서 공개한 고성능 OCR 모델</div>
+                <div class="news-meta"><span class="tag ai">AI</span> Hacker News · 211 points</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">개발 도구 / 오픈소스</h2>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://help.obsidian.md/cli" target="_blank">Obsidian CLI 공개</a></div>
+                <div class="news-desc">터미널에서 Obsidian 제어. 노트 생성·검색·태그·플러그인·동기화 스크립팅 가능</div>
+                <div class="news-meta"><span class="tag dev">Dev</span> GeekNews · 35 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://fluorite.game/" target="_blank">Fluorite - Flutter 완전 통합 콘솔급 게임 엔진</a></div>
+                <div class="news-desc">Flutter와 완전히 통합된 고성능 게임 엔진</div>
+                <div class="news-meta"><span class="tag dev">Dev</span> Hacker News · 361 points · 218 comments</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://github.com/lucasgelfond/zerobrew" target="_blank">zerobrew - Homebrew보다 5~20배 빠른 패키지 관리자</a></div>
+                <div class="news-desc">Homebrew 명령어 호환성 유지하면서 brew를 zb로 교체만 하면 됨</div>
+                <div class="news-meta"><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://developers.googleblog.com/introducing-the-developer-knowledge-api-and-mcp-server/" target="_blank">구글, 개발자 지식 API와 MCP 서버 공개</a></div>
+                <div class="news-desc">AI 기반 개발 도구를 위한 최신 개발 문서 접근 API</div>
+                <div class="news-meta"><span class="tag ai">AI</span><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://www.chainlift.io/liftkit" target="_blank">LiftKit - 완벽주의자를 위한 UI 프레임워크</a></div>
+                <div class="news-desc">모든 요소가 황금비에서 파생되는 오픈소스 UI 프레임워크</div>
+                <div class="news-meta"><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://blog.lemonbase.team/완벽한-린터를-기다리지-않기로-했다-eslint-v9-마이그레이션-그리고-biome-하이브리드-도입기-0a51bd5792f6" target="_blank">ESLint V9 마이그레이션 + Biome 하이브리드 도입기</a></div>
+                <div class="news-desc">레몬베이스 프론트엔드 팀의 ESLint V9 전환과 Biome 병행 사용 경험</div>
+                <div class="news-meta"><span class="tag dev">Dev</span> GeekNews</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">보안 / 개인정보</h2>
+
+            <div class="news-item hot">
+                <div class="news-title"><a href="https://scitechdaily.com/researchers-warn-wifi-could-become-an-invisible-mass-surveillance-system/" target="_blank">WiFi가 대규모 감시 시스템이 될 수 있다</a></div>
+                <div class="news-desc">연구진 경고: WiFi 신호를 활용한 보이지 않는 대중 감시 가능성</div>
+                <div class="news-meta"><span class="tag security">Security</span> Hacker News · 280 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://www.theverge.com/tech/876866/ring-search-party-super-bowl-ad-online-backlash" target="_blank">Amazon Ring 슈퍼볼 광고, 감시 우려로 반발</a></div>
+                <div class="news-desc">잃어버린 개 찾기 광고가 대규모 감시 시스템 우려를 촉발</div>
+                <div class="news-meta"><span class="tag security">Security</span> Hacker News · 353 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://www.macrumors.com/2026/02/11/ios-26-3-security-vulnerabilities/" target="_blank">iOS 26.3 / macOS 26.3 수십 개 취약점 수정 (제로데이 포함)</a></div>
+                <div class="news-desc">Apple 긴급 보안 업데이트 배포</div>
+                <div class="news-meta"><span class="tag security">Security</span> Hacker News</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://1password.com/blog/from-magic-to-malware-how-openclaws-agent-skills-become-an-attack-surface" target="_blank">OpenClaw의 Agent 기능이 공격 표면이 되는 방법</a></div>
+                <div class="news-desc">AI 에이전트 스킬 시스템의 보안 취약점 분석</div>
+                <div class="news-meta"><span class="tag security">Security</span><span class="tag ai">AI</span> GeekNews · 1password</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">읽을거리</h2>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://www.jamesdrandall.com/posts/the_thing_i_loved_has_changed/" target="_blank">7살에 프로그래밍 시작해 50세가 된 지금, 내가 사랑했던 것이 변했어요</a></div>
+                <div class="news-desc">42년간 프로그래밍해온 개발자가 AI 시대 도래로 느끼는 복잡한 심경</div>
+                <div class="news-meta">GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://localghost.dev/blog/stop-generating-start-thinking/" target="_blank">생성을 멈추고, 생각을 시작하세요</a></div>
+                <div class="news-desc">LLM 코드 생성 도구 열광에 대한 비평. 소프트웨어 개발에서 사고의 중요성</div>
+                <div class="news-meta">GeekNews · 28 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://simonwillison.net/2026/Feb/7/software-factory/" target="_blank">어떻게 코드를 보지 않고도 뛰어난 소프트웨어를 개발하는가?</a></div>
+                <div class="news-desc">Simon Willison의 StrongDM AI팀 리뷰. 사양과 시나리오 기반 에이전트 중심 접근</div>
+                <div class="news-meta">GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://campedersen.com/singularity" target="_blank">특이점은 화요일에 일어날 것이다</a></div>
+                <div class="news-desc">5가지 실제 지표로 분석한 결과: 2034년 7월 18일 화요일</div>
+                <div class="news-meta"><span class="tag ai">AI</span> GeekNews</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title"><a href="https://netnewswire.blog/2026/02/11/netnewswire-turns.html" target="_blank">NetNewsWire 23주년</a></div>
+                <div class="news-desc">Mac RSS 리더의 역사와 회고</div>
+                <div class="news-meta">Hacker News · 173 points</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>GeekNews + Hacker News 기반 자동 생성</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI/개발 트렌드 브리핑 - 2026년 2월 6일</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e4e4e7;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+    .date { color: #94a3b8; font-size: 0.9rem; }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #60a5fa;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 1.2rem;
+      background: linear-gradient(180deg, #60a5fa, #a78bfa);
+      border-radius: 2px;
+    }
+    .news-item {
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.2s ease;
+    }
+    .news-item:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(96,165,250,0.3);
+    }
+    .news-title {
+      font-weight: 600;
+      color: #f4f4f5;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .news-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .news-title a:hover { color: #60a5fa; }
+    .news-desc {
+      color: #a1a1aa;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+    .news-meta {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #71717a;
+    }
+    .source {
+      background: rgba(96,165,250,0.15);
+      color: #60a5fa;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+    }
+    .points {
+      color: #fbbf24;
+    }
+    .highlight {
+      background: linear-gradient(135deg, rgba(96,165,250,0.1) 0%, rgba(167,139,250,0.1) 100%);
+      border: 1px solid rgba(96,165,250,0.2);
+    }
+    footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #71717a;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI/개발 트렌드 브리핑</h1>
+      <p class="date">2026년 2월 6일 금요일</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">주요 AI 모델 출시</h2>
+      
+      <div class="news-item highlight">
+        <h3 class="news-title"><a href="https://www.anthropic.com/news/claude-opus-4-6" target="_blank">Claude Opus 4.6 출시</a></h3>
+        <p class="news-desc">Anthropic의 최신 플래그십 모델. 에이전트 팀 오케스트레이션, 향상된 추론 능력, 500개 오픈소스 제로데이 취약점 발견 등 주목할 기능 다수.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">1389 points</span>
+        </div>
+      </div>
+
+      <div class="news-item highlight">
+        <h3 class="news-title"><a href="https://openai.com/index/introducing-gpt-5-3-codex/" target="_blank">GPT-5.3-Codex 발표</a></h3>
+        <p class="news-desc">OpenAI의 새로운 코딩 특화 모델. 개발자 생산성 향상에 초점.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">930 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://mistral.ai/news/voxtral-transcribe-2" target="_blank">Voxtral Transcribe 2 공개</a></h3>
+        <p class="news-desc">Mistral AI의 차세대 음성-텍스트 변환 모델. 초저지연 실시간 인식과 고정밀 화자 분리 기능.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">AI 에이전트 & 도구</h2>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://code.claude.com/docs/en/agent-teams" target="_blank">Claude Code 에이전트 팀 오케스트레이션</a></h3>
+        <p class="news-desc">여러 Claude Code 세션을 팀으로 조율하여 복잡한 작업 수행. C 컴파일러 전체를 에이전트 팀으로 구현한 사례 공개.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">289 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://github.com/google/mcp" target="_blank">Google 공식 MCP 서버 모음</a></h3>
+        <p class="news-desc">Google Maps, BigQuery, GKE, Compute Engine 등 주요 Google 서비스를 위한 원격 MCP 서버 공식 지원.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://claude.com/blog/complete-guide-to-building-skills-for-claude" target="_blank">Claude Skills 구축 완벽 가이드</a></h3>
+        <p class="news-desc">반복 작업 흐름을 재사용 가능한 워크플로 지식 패키지로 정의. Anthropic 공식 33페이지 가이드.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+          <span class="points">80 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://x.com/trq212/status/2019173731042750509" target="_blank">Claude Code /insights 기능 추가</a></h3>
+        <p class="news-desc">한 달간의 메시지 기록 분석, 사용 패턴 리포트 자동 생성.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">개발 트렌드 & 인사이트</h2>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://blog.comma.ai/datacenter/" target="_blank">클라우드 임대 대신 소유하라</a></h3>
+        <p class="news-desc">comma.ai의 자체 데이터센터 구축기. 클라우드 비용 절감과 통제권 확보.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">1061 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://www.tigerdata.com/blog/its-2026-just-use-postgres" target="_blank">2026년, 그냥 Postgres를 쓰자</a></h3>
+        <p class="news-desc">AI 에이전트 시대, 데이터베이스 과다 사용의 관리 지옥에서 벗어나 Postgres 단일화 권장.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews + HN</span>
+          <span class="points">213 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://addyo.substack.com/p/the-80-problem-in-agentic-coding" target="_blank">에이전트 코딩 80% 시대, '이해 부채' 문제</a></h3>
+        <p class="news-desc">수동 코딩 80%에서 AI 코딩 80%로 급변. Claude Code 팀은 하루 20+ PR 전부 AI 작성. 코드 이해 없이 생산만 하는 부채 경고.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+          <span class="points">33 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://mitchellh.com/writing/my-ai-adoption-journey" target="_blank">Mitchell Hashimoto의 AI 도입 여정</a></h3>
+        <p class="news-desc">HashiCorp 창업자의 AI 도구 활용 경험담.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">240 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://www.jernesto.com/articles/thinking_hard" target="_blank">깊이 생각하던 시절이 그리워요</a></h3>
+        <p class="news-desc">AI 코딩 도구로 깊이 사고하는 경험 감소. 엔지니어 성장 정체 우려.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://blog.42futures.com/p/company-as-code" target="_blank">Company as Code</a></h3>
+        <p class="news-desc">회사 운영을 코드처럼 정의하고 관리하는 접근법.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">209 points</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">보안 & 인프라</h2>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://www.axios.com/2026/02/05/anthropic-claude-opus-46-software-hunting" target="_blank">Opus 4.6, 오픈소스 500개 제로데이 취약점 발견</a></h3>
+        <p class="news-desc">Anthropic의 새 모델이 자동화된 보안 취약점 탐지로 성과.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">176 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://rachelbythebay.com/w/2026/02/03/badnas/" target="_blank">내부 호스트명이 클라우드로 유출될 때</a></h3>
+        <p class="news-desc">클라우드 서비스 사용 시 내부 인프라 정보 노출 위험성.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">425 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://blog.senko.net/sandboxing-ai-agents-in-linux" target="_blank">리눅스에서 AI 에이전트 샌드박싱</a></h3>
+        <p class="news-desc">AI 개발 도구의 시스템 안전성과 편의성을 위한 샌드박스 환경 구축.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://github.com/mdp/linkedin-extension-fingerprinting" target="_blank">LinkedIn, 2953개 브라우저 확장 프로그램 검사</a></h3>
+        <p class="news-desc">LinkedIn이 사용자 브라우저 확장 프로그램을 대량으로 탐지하는 것이 발견됨.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">229 points</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">기타 주목할 만한 소식</h2>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://ardour.org/whatsnew.html" target="_blank">Ardour 9.0 출시</a></h3>
+        <p class="news-desc">오픈소스 디지털 오디오 워크스테이션 메이저 업데이트.</p>
+        <div class="news-meta">
+          <span class="source">Hacker News</span>
+          <span class="points">206 points</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://blog.logrocket.com/css-in-2026/" target="_blank">2026년 CSS: 프런트엔드 재편하는 새 기능들</a></h3>
+        <p class="news-desc">복잡한 애니메이션과 상호작용도 JavaScript 없이 CSS만으로 구현 가능한 수준.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+
+      <div class="news-item">
+        <h3 class="news-title"><a href="https://github.com/alibaba/AliSQL" target="_blank">AliSQL - Alibaba의 MySQL 포크</a></h3>
+        <p class="news-desc">벡터 및 DuckDB 엔진 통합. OLTP와 OLAP 기능 통합 데이터베이스.</p>
+        <div class="news-meta">
+          <span class="source">GeekNews</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>GeekNews + Hacker News 기반 자동 생성 브리핑</p>
+    </footer>
+  </div>
+</body>
+</html>

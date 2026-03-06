@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Briefing - 2026년 2월 14일</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e8e8e8;
+            line-height: 1.6;
+            padding: 24px;
+            min-height: 100vh;
+        }
+        .container { max-width: 800px; margin: 0 auto; }
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .date { 
+            font-size: 14px; 
+            color: #94a3b8; 
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        h1 { 
+            font-size: 28px; 
+            font-weight: 700;
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section {
+            margin-bottom: 28px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(180deg, #60a5fa, #a78bfa);
+            border-radius: 2px;
+        }
+        .news-item {
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .news-item:last-child { border-bottom: none; }
+        .news-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: #f1f5f9;
+            margin-bottom: 6px;
+        }
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .news-title a:hover {
+            color: #60a5fa;
+        }
+        .news-meta {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .news-desc {
+            font-size: 13px;
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+        .highlight {
+            background: linear-gradient(90deg, rgba(96,165,250,0.15), rgba(167,139,250,0.15));
+            border-left: 3px solid #60a5fa;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 8px 0;
+        }
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            background: rgba(96,165,250,0.2);
+            color: #60a5fa;
+            border-radius: 4px;
+            margin-right: 6px;
+        }
+        .hot { background: rgba(239,68,68,0.2); color: #f87171; }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">SATURDAY, FEBRUARY 14, 2026</div>
+            <h1>Daily Tech Briefing</h1>
+        </header>
+
+        <div class="section">
+            <div class="section-title">AI/LLM 트렌드</div>
+            
+            <div class="news-item">
+                <div class="news-title">
+                    <span class="tag hot">HOT</span>
+                    <a href="https://openai.com/index/new-result-theoretical-physics/" target="_blank">GPT-5.2가 이론물리학에서 새로운 결과 도출</a>
+                </div>
+                <div class="news-meta">openai.com · 321 points</div>
+                <div class="news-desc">OpenAI의 GPT-5.2가 이론물리학 분야에서 새로운 연구 결과를 도출. AI의 과학적 발견 능력이 실질적 성과로 이어지고 있음.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <span class="tag hot">HOT</span>
+                    <a href="https://theconversation.com/openai-has-deleted-the-word-safely-from-its-mission-and-its-new-structure-is-a-test-for-whether-ai-serves-society-or-shareholders-274467" target="_blank">OpenAI, 미션에서 'safely' 단어 삭제</a>
+                </div>
+                <div class="news-meta">theconversation.com · 225 points</div>
+                <div class="news-desc">OpenAI가 미션 문구에서 '안전하게'라는 단어를 제거. 영리 전환과 함께 안전 우선 가치관의 변화에 대한 우려 확산.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/" target="_blank">Gemini 3 Deep Think 공개</a>
+                </div>
+                <div class="news-meta">blog.google</div>
+                <div class="news-desc">Google의 과학·연구·공학 문제 해결을 목표로 한 Gemini 3 Deep Think 대규모 업그레이드.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://www.dwarkesh.com/p/dario-amodei-2" target="_blank">Dario Amodei: "지수적 성장의 끝에 가까워졌다"</a>
+                </div>
+                <div class="news-meta">dwarkesh.com · 67 points</div>
+                <div class="news-desc">Anthropic CEO Dario Amodei가 AI 성장의 한계와 향후 방향에 대해 논의.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://seed.bytedance.com/en/seedance2_0" target="_blank">Seedance 2.0 정식 출시</a>
+                </div>
+                <div class="news-meta">seed.bytedance.com</div>
+                <div class="news-desc">ByteDance의 차세대 멀티모달 영상 생성 모델. 텍스트·이미지·오디오·비디오 입력 통합 지원.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Claude Code / AI 코딩</div>
+            
+            <div class="highlight">
+                <strong>이번 주 Claude Code 관련 소식이 매우 활발합니다.</strong><br>
+                CLAUDE.md 파일 하나로 AI 코딩 성능을 크게 개선할 수 있다는 내용이 화제.
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <span class="tag">TRENDING</span>
+                    <a href="https://tildeweb.nl/~michiel/65-lines-of-markdown-a-claude-code-sensation.html" target="_blank">65줄 텍스트가 AI 코딩을 바꿨다</a>
+                </div>
+                <div class="news-meta">tildeweb.nl · 50 points</div>
+                <div class="news-desc">Andrej Karpathy가 지적한 LLM 코딩 문제점을 해결하려는 65줄짜리 CLAUDE.md 파일이 하루 400 스타 폭발적 인기.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://x.com/bcherny/status/2021699851499798911" target="_blank">Claude Code 창시자의 커스터마이징 팁 12가지</a>
+                </div>
+                <div class="news-meta">x.com/bcherny · 41 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://drive.google.com/file/d/1x2x1T4lzTISnHGN8nd4KtMhL8iwi6QgU/view" target="_blank">Claude Code 완전 가이드: 70가지 파워 팁 [PDF]</a>
+                </div>
+                <div class="news-meta">Anthropic 해커톤 우승자 ykdojo · 127 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://cloudrouter.dev/" target="_blank">Show HN: Claude Code/Codex가 VM과 GPU를 스핀업하는 Skill</a>
+                </div>
+                <div class="news-meta">cloudrouter.dev · 76 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="http://blog.can.ac/2026/02/12/the-harness-problem/" target="_blank">15개 LLM 코딩 성능, 하니스만 바꿔도 향상</a>
+                </div>
+                <div class="news-meta">blog.can.ac · 22 points</div>
+                <div class="news-desc">동일 조건 테스트 결과, 코드 수정 도구(하니스)만 바꿔도 성능이 크게 향상됨을 확인.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">개발 도구 & 인프라</div>
+            
+            <div class="news-item">
+                <div class="news-title">
+                    <span class="tag hot">675 pts</span>
+                    <a href="https://monosketch.io/" target="_blank">Monosketch - ASCII 아트 드로잉 도구</a>
+                </div>
+                <div class="news-meta">monosketch.io</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://github.com/zed-industries/zed/pull/46758" target="_blank">Zed 에디터, blade에서 wgpu로 그래픽 라이브러리 전환</a>
+                </div>
+                <div class="news-meta">github.com/zed-industries · 277 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://help.obsidian.md/cli" target="_blank">Obsidian CLI 공개</a>
+                </div>
+                <div class="news-meta">help.obsidian.md · 48 points</div>
+                <div class="news-desc">터미널에서 Obsidian 제어. 스크립팅·자동화·외부 도구 통합 가능.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://hatchet.run/blog/tuis-are-easy-now" target="_blank">Building a TUI is easy now</a>
+                </div>
+                <div class="news-meta">hatchet.run · 72 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://developer.chrome.com/blog/webmcp-epp?hl=ko" target="_blank">WebMCP (Web Model Context Protocol) 공개</a>
+                </div>
+                <div class="news-meta">developer.chrome.com · 37 points</div>
+                <div class="news-desc">웹사이트가 브라우저 내 AI 에이전트에게 구조화된 도구를 직접 노출하는 표준 제안.</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">주목할 만한 소식</div>
+            
+            <div class="news-item">
+                <div class="news-title">
+                    <span class="tag hot">1251 pts</span>
+                    <a href="https://ios-countdown.win/" target="_blank">iOS 키보드 고쳐라, 아니면 Android로 돌아간다</a>
+                </div>
+                <div class="news-meta">ios-countdown.win · 629 comments</div>
+                <div class="news-desc">iOS 키보드 문제에 대한 유저들의 불만이 폭발. 카운트다운 사이트까지 등장.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://www.politico.eu/article/tiktok-meta-facebook-instagram-brussels-kill-infinite-scrolling/" target="_blank">EU, 무한 스크롤 금지 추진</a>
+                </div>
+                <div class="news-meta">politico.eu · 204 points</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://hbr.org/2026/02/ai-doesnt-reduce-work-it-intensifies-it" target="_blank">AI가 일을 줄여준다는 약속, 실제로는 번아웃만 키웠다</a>
+                </div>
+                <div class="news-meta">hbr.org (UC Berkeley 연구) · 28 points</div>
+                <div class="news-desc">8개월간 기술 기업 200명 관찰 결과, AI 도입 후 업무가 줄지 않고 오히려 강화·증가.</div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">
+                    <a href="https://blog.cloudflare.com/markdown-for-agents/" target="_blank">Cloudflare, 에이전트를 위한 Markdown 변환 기능 도입</a>
+                </div>
+                <div class="news-meta">blog.cloudflare.com</div>
+            </div>
+        </div>
+
+        <footer>
+            Generated by 상혁봇 · Sources: GeekNews, Hacker News
+        </footer>
+    </div>
+</body>
+</html>
