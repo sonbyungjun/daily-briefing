@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getAllDates, getBriefing } from "@/lib/briefings";
 import { BriefingSection } from "@/lib/briefings";
 
-function BadgeColor({ type }: { type: string }) {
+function getBadgeColor(type: string): string {
   const colors: Record<string, string> = {
     hot: "bg-badge-hot",
     ai: "bg-badge-ai",
@@ -22,19 +22,19 @@ function SectionPreview({ section }: { section: BriefingSection }) {
 
   return (
     <div
-      className={`border-l-2 ${borderColors[section.type] || "border-l-gray-600"} pl-4 mb-4`}
+      className={`border-l-2 ${borderColors[section.type] || "border-l-gray-600"} pl-3 mb-3`}
     >
-      <h3 className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+      <h3 className="text-[11px] font-semibold uppercase tracking-wider text-text-muted mb-1">
         {section.title}
       </h3>
-      <ul className="space-y-1.5">
+      <ul className="space-y-1">
         {section.items.slice(0, 3).map((item, i) => (
-          <li key={i} className="text-sm">
-            <span className="inline-flex gap-1 mr-1.5">
+          <li key={i} className="text-[13px] leading-snug">
+            <span className="inline-flex gap-0.5 mr-1">
               {item.badges.map((b, j) => (
                 <span
                   key={j}
-                  className={`${BadgeColor({ type: b.type })} text-white text-[10px] font-semibold px-1.5 py-0.5 rounded`}
+                  className={`${getBadgeColor(b.type)} text-white text-[9px] font-semibold px-1 py-0.5 rounded`}
                 >
                   {b.label}
                 </span>
@@ -44,7 +44,7 @@ function SectionPreview({ section }: { section: BriefingSection }) {
           </li>
         ))}
         {section.items.length > 3 && (
-          <li className="text-xs text-text-dim">
+          <li className="text-[11px] text-text-dim">
             +{section.items.length - 3}건 더보기
           </li>
         )}
@@ -59,20 +59,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        <header className="text-center mb-10 pb-6 border-b border-border">
-          <h1 className="text-2xl font-bold text-text-primary tracking-tight">
+      <div className="max-w-2xl mx-auto px-4 py-5">
+        <header className="text-center mb-6 pb-4 border-b border-border">
+          <h1 className="text-xl font-bold text-text-primary tracking-tight">
             Daily Tech Briefing
           </h1>
-          <p className="text-sm text-text-muted mt-2">
+          <p className="text-xs text-text-muted mt-1">
             AI / Dev / Security trends, daily
           </p>
         </header>
 
         {latestBriefing && (
-          <section className="mb-12">
-            <div className="flex items-baseline justify-between mb-5">
-              <h2 className="text-lg font-semibold text-text-primary">
+          <section className="mb-8">
+            <div className="flex items-baseline justify-between mb-3">
+              <h2 className="text-base font-semibold text-text-primary">
                 Latest
               </h2>
               <Link
@@ -82,7 +82,7 @@ export default function Home() {
                 {latestBriefing.displayDate}
               </Link>
             </div>
-            <div className="bg-bg-card rounded-lg p-5 border border-border">
+            <div className="bg-bg-card rounded-lg p-4 border border-border">
               {latestBriefing.sections.map((section, i) => (
                 <SectionPreview key={i} section={section} />
               ))}
@@ -97,17 +97,17 @@ export default function Home() {
         )}
 
         <section>
-          <h2 className="text-lg font-semibold text-text-primary mb-4">
+          <h2 className="text-base font-semibold text-text-primary mb-3">
             Archive
           </h2>
-          <div className="grid gap-2">
+          <div className="grid gap-1.5">
             {dates.map((date) => {
               const param = date.replace(/-/g, "");
               return (
                 <Link
                   key={date}
                   href={`/${param}`}
-                  className="flex items-center justify-between px-4 py-3 rounded-lg bg-bg-card border border-border hover:bg-bg-hover transition-colors"
+                  className="flex items-center justify-between px-3 py-2 rounded-lg bg-bg-card border border-border hover:bg-bg-hover transition-colors"
                 >
                   <span className="text-sm text-text-primary">{date}</span>
                   <span className="text-xs text-text-dim">→</span>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="text-center mt-12 pt-6 border-t border-border text-xs text-text-dim">
+        <footer className="text-center mt-8 pt-4 border-t border-border text-[11px] text-text-dim">
           Sources: Hacker News, GeekNews (news.hada.io)
         </footer>
       </div>

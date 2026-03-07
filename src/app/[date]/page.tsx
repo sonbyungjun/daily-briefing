@@ -32,8 +32,8 @@ function BadgeSpan({ badge }: { badge: { label: string; type: string } }) {
 
 function Item({ item }: { item: BriefingItem }) {
   return (
-    <div className="py-3.5 border-b border-[#1a1a1a] last:border-b-0">
-      <div className="text-[15px] font-semibold text-text-primary">
+    <div className="py-2 border-b border-[#1a1a1a] last:border-b-0">
+      <div className="text-sm font-medium text-text-primary leading-snug">
         {item.badges.map((b, i) => (
           <BadgeSpan key={i} badge={b} />
         ))}
@@ -41,16 +41,16 @@ function Item({ item }: { item: BriefingItem }) {
           href={item.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-badge-hot transition-colors"
+          className="hover:text-badge-hot hover:underline transition-colors"
         >
           {item.title}
         </a>
       </div>
       {item.meta && (
-        <div className="text-xs text-text-dim mt-1">{item.meta}</div>
+        <div className="text-[11px] text-text-dim mt-0.5">{item.meta}</div>
       )}
       {item.description && (
-        <div className="text-[13px] text-text-muted mt-1.5">
+        <div className="text-xs text-text-muted mt-0.5 leading-relaxed">
           {item.description}
         </div>
       )}
@@ -67,9 +67,9 @@ function Section({ section }: { section: BriefingSection }) {
   };
 
   return (
-    <div className="mb-7">
+    <div className="mb-4">
       <h2
-        className={`text-sm font-semibold uppercase tracking-widest ${titleColors[section.type] || "text-badge-hot"} mb-3.5 pb-2 border-b border-[#1e1e1e]`}
+        className={`text-xs font-semibold uppercase tracking-widest ${titleColors[section.type] || "text-badge-hot"} mb-2 pb-1.5 border-b border-[#1e1e1e]`}
       >
         {section.title}
       </h2>
@@ -95,19 +95,21 @@ export default async function BriefingPage({
 
   return (
     <div className="min-h-screen">
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        <header className="text-center mb-8 pb-5 border-b border-border">
+      <div className="max-w-2xl mx-auto px-4 py-5">
+        <header className="flex items-center justify-between mb-5 pb-3 border-b border-border">
           <Link
             href="/"
             className="text-sm text-text-muted hover:text-text-primary transition-colors"
           >
             ← Home
           </Link>
-          <h1 className="text-[22px] font-bold text-text-primary tracking-tight mt-3">
-            Daily Tech Briefing
-          </h1>
-          <div className="text-[13px] text-text-muted mt-1.5">
-            {briefing.displayDate}
+          <div className="text-right">
+            <h1 className="text-base font-bold text-text-primary tracking-tight">
+              Daily Tech Briefing
+            </h1>
+            <div className="text-xs text-text-muted">
+              {briefing.displayDate}
+            </div>
           </div>
         </header>
 
@@ -115,7 +117,7 @@ export default async function BriefingPage({
           <Section key={i} section={section} />
         ))}
 
-        <nav className="flex items-center justify-between mt-10 pt-5 border-t border-border">
+        <nav className="flex items-center justify-between mt-6 pt-4 border-t border-border">
           {prevParam ? (
             <Link
               href={`/${prevParam}`}
@@ -138,7 +140,7 @@ export default async function BriefingPage({
           )}
         </nav>
 
-        <footer className="text-center mt-8 pt-4 border-t border-border text-[11px] text-text-dim">
+        <footer className="text-center mt-6 pt-3 border-t border-border text-[11px] text-text-dim">
           Sources: Hacker News, GeekNews (news.hada.io)
         </footer>
       </div>
