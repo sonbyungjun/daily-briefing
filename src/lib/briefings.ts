@@ -37,69 +37,110 @@ function extractText(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
 }
 
+function parseItemsOld(sectionContent: string): BriefingItem[] {
+  const items: BriefingItem[] = [];
+  const itemRegex =
+    /<div class="item">([\s\S]*?)(?=<div class="item">|<\/div>\s*<\/div>)/g;
+
+  let itemMatch;
+  while ((itemMatch = itemRegex.exec(sectionContent)) !== null) {
+    const itemHtml = itemMatch[1];
+
+    const badges: BriefingItem["badges"] = [];
+    const badgeRegex = /<span class="badge badge-(\w+)">(.*?)<\/span>/g;
+    let badgeMatch;
+    while ((badgeMatch = badgeRegex.exec(itemHtml)) !== null) {
+      badges.push({ type: badgeMatch[1], label: badgeMatch[2] });
+    }
+
+    const linkMatch = itemHtml.match(/<a href="(.*?)"[^>]*>([\s\S]*?)<\/a>/);
+    const title = linkMatch ? extractText(linkMatch[2]) : "";
+    const link = linkMatch ? linkMatch[1] : "";
+
+    const metaMatch = itemHtml.match(/<div class="item-meta">([\s\S]*?)<\/div>/);
+    const meta = metaMatch ? extractText(metaMatch[1]) : "";
+
+    const descMatch = itemHtml.match(/<div class="item-desc">([\s\S]*?)<\/div>/);
+    const description = descMatch ? extractText(descMatch[1]) : "";
+
+    if (title) {
+      items.push({ title, link, badges, meta, description });
+    }
+  }
+  return items;
+}
+
+function parseItemsCard(sectionContent: string): BriefingItem[] {
+  const items: BriefingItem[] = [];
+  const cardRegex = /<div class="card">([\s\S]*?)<\/div>\s*<\/div>/g;
+
+  let cardMatch;
+  while ((cardMatch = cardRegex.exec(sectionContent)) !== null) {
+    const cardHtml = cardMatch[1];
+
+    const badges: BriefingItem["badges"] = [];
+    const tagRegex = /<span class="tag tag-(\w+)">(.*?)<\/span>/g;
+    let tagMatch;
+    while ((tagMatch = tagRegex.exec(cardHtml)) !== null) {
+      badges.push({ type: tagMatch[1], label: tagMatch[2] });
+    }
+
+    const linkMatch = cardHtml.match(/<a href="(.*?)"[^>]*>([\s\S]*?)<\/a>/);
+    const title = linkMatch ? extractText(linkMatch[2]) : "";
+    const link = linkMatch ? linkMatch[1] : "";
+
+    const metaMatch = cardHtml.match(/<div class="meta">([\s\S]*?)<\/div>/);
+    const meta = metaMatch ? extractText(metaMatch[1]) : "";
+
+    const descMatch = cardHtml.match(/<div class="desc">([\s\S]*?)<\/div>/);
+    const description = descMatch ? extractText(descMatch[1]) : "";
+
+    if (title) {
+      items.push({ title, link, badges, meta, description });
+    }
+  }
+  return items;
+}
+
 function parseBriefingHtml(html: string, date: string): Briefing {
   const dateParam = date.replace(/-/g, "");
 
-  // Extract display date from header
-  const dateMatch = html.match(
-    /<div class="date">([\s\S]*?)<\/div>/
-  );
+  // Extract display date from header (both formats)
+  const dateMatch =
+    html.match(/<div class="date">([\s\S]*?)<\/div>/) ||
+    html.match(/<header>[\s\S]*?<div class="date">([\s\S]*?)<\/div>/);
   const displayDate = dateMatch ? extractText(dateMatch[1]) : date;
 
-  // Parse sections
   const sections: BriefingSection[] = [];
-  const sectionRegex =
+
+  // Format 1: <div class="section"><div class="section-title">
+  const oldSectionRegex =
     /<div class="section">\s*<div class="section-title">(.*?)<\/div>([\s\S]*?)(?=<div class="section">|<div class="footer">|<\/div>\s*<\/body>)/g;
 
   let sectionMatch;
-  while ((sectionMatch = sectionRegex.exec(html)) !== null) {
+  while ((sectionMatch = oldSectionRegex.exec(html)) !== null) {
     const sectionTitle = extractText(sectionMatch[1]);
     const sectionContent = sectionMatch[2];
     const type = classifySectionType(sectionTitle);
-
-    const items: BriefingItem[] = [];
-    const itemRegex =
-      /<div class="item">([\s\S]*?)(?=<div class="item">|<\/div>\s*<\/div>)/g;
-
-    let itemMatch;
-    while ((itemMatch = itemRegex.exec(sectionContent)) !== null) {
-      const itemHtml = itemMatch[1];
-
-      // Extract badges
-      const badges: BriefingItem["badges"] = [];
-      const badgeRegex =
-        /<span class="badge badge-(\w+)">(.*?)<\/span>/g;
-      let badgeMatch;
-      while ((badgeMatch = badgeRegex.exec(itemHtml)) !== null) {
-        badges.push({ type: badgeMatch[1], label: badgeMatch[2] });
-      }
-
-      // Extract link and title
-      const linkMatch = itemHtml.match(
-        /<a href="(.*?)"[^>]*>([\s\S]*?)<\/a>/
-      );
-      const title = linkMatch ? extractText(linkMatch[2]) : "";
-      const link = linkMatch ? linkMatch[1] : "";
-
-      // Extract meta
-      const metaMatch = itemHtml.match(
-        /<div class="item-meta">([\s\S]*?)<\/div>/
-      );
-      const meta = metaMatch ? extractText(metaMatch[1]) : "";
-
-      // Extract description
-      const descMatch = itemHtml.match(
-        /<div class="item-desc">([\s\S]*?)<\/div>/
-      );
-      const description = descMatch ? extractText(descMatch[1]) : "";
-
-      if (title) {
-        items.push({ title, link, badges, meta, description });
-      }
-    }
-
+    const items = parseItemsOld(sectionContent);
     if (items.length > 0) {
       sections.push({ title: sectionTitle, type, items });
+    }
+  }
+
+  // Format 2: <div class="section"><h2>
+  if (sections.length === 0) {
+    const newSectionRegex =
+      /<div class="section">\s*<h2>([\s\S]*?)<\/h2>([\s\S]*?)(?=<div class="section">|<div class="summary-box">|<footer>|<\/div>\s*<\/body>)/g;
+
+    while ((sectionMatch = newSectionRegex.exec(html)) !== null) {
+      const sectionTitle = extractText(sectionMatch[1]);
+      const sectionContent = sectionMatch[2];
+      const type = classifySectionType(sectionTitle);
+      const items = parseItemsCard(sectionContent);
+      if (items.length > 0) {
+        sections.push({ title: sectionTitle, type, items });
+      }
     }
   }
 
