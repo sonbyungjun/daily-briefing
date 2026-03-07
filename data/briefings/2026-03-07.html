@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-07</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 7일 토요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>OpenAI GPT-5.4 공개 — 네이티브 컴퓨터 사용, 코딩·에이전트 통합</li>
+    <li>Anthropic Red Team이 Firefox 보안 강화에 참여 (HN 444pts)</li>
+    <li>TypeScript 6.0 RC 발표</li>
+    <li>Tech 고용 시장 2008·2020 불황보다 악화 (HN 656pts)</li>
+    <li>에이전틱 엔지니어링 패턴 — AI 에이전트 협업 개발 방식 정리</li>
+    <li>Donald Knuth, Claude Opus 4.6이 미해결 조합론 문제 해결 논문 공개</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/introducing-gpt-5-4/" target="_blank">GPT-5.4 공개</a></div>
+    <div class="meta">OpenAI · GeekNews 9pts</div>
+    <div class="desc">ChatGPT, API, Codex 전반에 적용되는 최신 프런티어 모델. 네이티브 컴퓨터 사용(computer-use), 추론·코딩·에이전트 워크플로우 성능 통합.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf" target="_blank">Donald Knuth — Claude Opus 4.6이 미해결 조합론 문제 해결</a></div>
+    <div class="meta">Stanford · GeekNews 34pts</div>
+    <div class="desc">TAOCP 저자 도널드 커누스가 Claude Opus 4.6이 미해결 조합론 문제를 해결한 과정을 논문으로 공개.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://unsloth.ai/docs/models/qwen3.5/fine-tune" target="_blank">Qwen3.5 파인튜닝 가이드</a></div>
+    <div class="meta">Unsloth · GeekNews 12pts</div>
+    <div class="desc">Qwen3.5 모델군(0.8B~122B)을 Unsloth로 텍스트·비전 기반 파인튜닝하는 가이드.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://acko.net/blog/the-l-in-llm-stands-for-lying/" target="_blank">LLM의 L은 "거짓말(Lying)"을 의미한다</a></div>
+    <div class="meta">acko.net · GeekNews 9pts</div>
+    <div class="desc">LLM 코딩 도구의 과대 광고에도 불구하고 실제 품질은 개선되지 않았으며, 위조(forgery)에 가까운 결과물 양산 문제 지적.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/elder-plinius/OBLITERATUS" target="_blank">OBLITERATUS — 오픈 웨이트 LLM 검열 제거 도구</a></div>
+    <div class="meta">GitHub · HN 98pts</div>
+    <div class="desc">오픈 웨이트 LLM에서 검열을 제거하는 도구. 모델 자유도 논쟁 촉발.</div>
+  </div>
+</div>
+
+<!-- Agent & Tools -->
+<div class="section">
+  <h2>Agent &amp; Developer Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://simonwillison.net/guides/agentic-engineering-patterns/" target="_blank">에이전틱 엔지니어링 패턴</a></div>
+    <div class="meta">Simon Willison · GeekNews 57pts</div>
+    <div class="desc">Claude Code·Codex 같은 코딩 에이전트 시대의 개발 방식 정리. 에이전트와 협업하는 새로운 엔지니어링 패턴 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://paperclip.ing/" target="_blank">Paperclip — AI 에이전트 자율 회사 운영 도구</a></div>
+    <div class="meta">paperclip.ing · GeekNews 30pts</div>
+    <div class="desc">AI 에이전트 팀이 자율적으로 회사를 운영하도록 설계된 오픈소스 오케스트레이션 도구.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/openai/symphony" target="_blank">OpenAI Symphony — 에이전트 기반 프로젝트 관리 자동화</a></div>
+    <div class="meta">OpenAI · GeekNews 32pts</div>
+    <div class="desc">개발팀이 코드 작성 대신 작업 단위 관리에 집중할 수 있도록 지원. 작업을 격리된 자율 실행(run) 형태로 전환.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://justin.poehnelt.com/posts/rewrite-your-cli-for-ai-agents/" target="_blank">AI 에이전트를 위한 CLI 재작성</a></div>
+    <div class="meta">justin.poehnelt.com · GeekNews 20pts</div>
+    <div class="desc">사람 중심 CLI와 AI 에이전트 중심 CLI는 설계 목표가 근본적으로 다르며, 기존 CLI를 에이전트용으로 개조하는 것은 비효율적.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://agent-browser.dev/" target="_blank">Vercel agent-browser — --native 기능 도입</a></div>
+    <div class="meta">Vercel · GeekNews 16pts</div>
+    <div class="desc">AI 에이전트를 위한 헤드리스 브라우저 자동화 CLI. Rust 바이너리가 CDP를 직접 호출하는 구조로 변경.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/es617/claude-replay" target="_blank">Claude-replay — Claude Code 세션 비디오 플레이어</a></div>
+    <div class="meta">GitHub · HN 54pts</div>
+    <div class="desc">Claude Code 세션을 비디오처럼 재생할 수 있는 플레이어.</div>
+  </div>
+</div>
+
+<!-- Dev & Industry -->
+<div class="section">
+  <h2>Development &amp; Industry</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-rc/" target="_blank">TypeScript 6.0 RC</a></div>
+    <div class="meta">Microsoft · HN 72pts</div>
+    <div class="desc">TypeScript 6.0 Release Candidate 발표.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.anthropic.com/news/mozilla-firefox-security" target="_blank">Anthropic Red Team으로 Firefox 보안 강화</a></div>
+    <div class="meta">Anthropic · HN 444pts</div>
+    <div class="desc">Anthropic의 레드팀이 Mozilla Firefox의 보안 취약점을 탐지·개선하는 프로젝트.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://twitter.com/JosephPolitano/status/2029916364664611242" target="_blank">Tech 고용 시장, 2008·2020 불황보다 악화</a></div>
+    <div class="meta">Joseph Politano · HN 656pts</div>
+    <div class="desc">현재 Tech 고용 상황이 2008년 금융위기와 2020년 팬데믹 때보다 더 심각하다는 분석. HN 439개 댓글로 큰 반향.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://news.cornell.edu/stories/2026/03/workers-who-love-synergizing-paradigms-might-be-bad-their-jobs" target="_blank">"시너지 패러다임"을 좋아하는 직원이 실제론 업무 능력 부족</a></div>
+    <div class="meta">Cornell · HN 485pts</div>
+    <div class="desc">유행어를 남발하는 직원이 실제 업무 성과가 낮다는 연구 결과.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://beabetterdev.com/2026/03/01/ai-is-making-junior-devs-useless/" target="_blank">AI가 주니어 개발자를 쓸모없게 만들고 있다</a></div>
+    <div class="meta">beabetterdev.com · GeekNews 47pts</div>
+    <div class="desc">AI 도구가 주니어 개발자에게 얕은 역량만 제공. 코드는 빠르게 출력하지만 왜 그런 접근을 택했는지 설명 못하는 상황 빈번.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.fivetran.com/blog/anthropic-please-make-a-new-slack" target="_blank">Anthropic, 새로운 Slack을 만들어달라</a></div>
+    <div class="meta">Fivetran · HN 156pts</div>
+    <div class="desc">Slack의 한계를 지적하며 Anthropic에게 AI 네이티브 업무 메신저 개발을 촉구하는 글.</div>
+  </div>
+</div>
+
+<!-- Learning -->
+<div class="section">
+  <h2>Learning &amp; Resources</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">RESOURCE</span> <a href="https://anthropic.skilljar.com/" target="_blank">Anthropic Courses — 무료 온라인 강의 공개</a></div>
+    <div class="meta">Anthropic · GeekNews 99pts</div>
+    <div class="desc">Claude 기본 사용법부터 API, Claude Code 워크플로, MCP 서버 구축, Agent Skills까지 개발자 대상 무료 강의.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">RESOURCE</span> <a href="https://wikidocs.net/book/19104" target="_blank">클로드 코드 가이드 (전자책) 공개</a></div>
+    <div class="meta">wikidocs.net · GeekNews 75pts</div>
+    <div class="desc">퀵 레퍼런스부터 Claude Code 창시자의 노하우까지 담은 한국어 가이드북.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
