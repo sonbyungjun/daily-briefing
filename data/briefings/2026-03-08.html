@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-08</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 8일 일요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Karpathy의 Autoresearch — 단일 GPU에서 자율 연구 에이전트</li>
+    <li>Ki Editor — AST 기반 코드 편집기 (HN 350pts)</li>
+    <li>Docker 컨테이너 10년의 회고 (HN 210pts)</li>
+    <li>AI 사용 개발자가 오히려 더 오래 일한다는 분석</li>
+    <li>Claude Code 최적 언어 벤치마크 — 13개 언어 비교</li>
+    <li>Caitlin Kalinowski, OpenAI 사임</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/karpathy/autoresearch" target="_blank">Karpathy의 Autoresearch — 단일 GPU 자율 연구 에이전트</a></div>
+    <div class="meta">GitHub · HN 21pts</div>
+    <div class="desc">Andrej Karpathy가 공개한 에이전트 기반 자동 연구 도구. 단일 GPU 환경에서 나노챗 훈련을 자동으로 실험하고 결과를 분석하는 자율 연구 파이프라인.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.scientificamerican.com/article/why-developers-using-ai-are-working-longer-hours/" target="_blank">AI 사용 개발자가 오히려 더 오래 일하는 이유</a></div>
+    <div class="meta">Scientific American · HN 12pts</div>
+    <div class="desc">AI 도구가 생산성을 높인다고 하지만, 실제로는 AI를 쓰는 개발자들이 더 긴 시간 일하고 있다는 역설적 분석.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://tropes.fyi/tropes-md" target="_blank">LLM Writing Tropes.md — LLM 글쓰기 상투구 모음</a></div>
+    <div class="meta">tropes.fyi · HN 48pts</div>
+    <div class="desc">LLM이 반복적으로 사용하는 글쓰기 패턴과 상투적 표현을 정리한 문서. LLM 출력물 감별에 유용.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://dev.to/mame/which-programming-language-is-best-for-claude-code-508a" target="_blank">Claude Code에 가장 적합한 프로그래밍 언어는?</a></div>
+    <div class="meta">dev.to · GeekNews 6pts</div>
+    <div class="desc">Ruby 커미터가 Claude Code로 13개 언어에서 미니 Git을 구현시키고 시간·비용·코드 줄 수를 측정한 벤치마크. 언어별 AI 코딩 효율 비교.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://snow.runbear.io/how-i-built-an-ai-marketing-team-with-claude-code-and-cowork-f3405a53ee22" target="_blank">Claude Code로 자율 AI 마케팅 팀을 만들어 1주일 운영한 이야기</a></div>
+    <div class="meta">RunBear · GeekNews 28pts</div>
+    <div class="desc">7명 규모 AI SaaS 스타트업 CEO가 Claude Code Agent Teams로 CMO, 콘텐츠 작가, 소셜미디어 담당 등 5인 마케팅 팀을 구성해 1주일간 자율 운영한 실험기.</div>
+  </div>
+</div>
+
+<!-- Dev Tools -->
+<div class="section">
+  <h2>Developer Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://ki-editor.org/" target="_blank">Ki Editor — AST 기반 코드 편집기</a></div>
+    <div class="meta">ki-editor.org · HN 350pts</div>
+    <div class="desc">텍스트가 아닌 AST(추상 구문 트리) 단위로 코드를 조작하는 새로운 에디터. 구조적 편집으로 리팩토링과 코드 변환의 정확성을 높인다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://mujs.org" target="_blank">µJS — Htmx/Turbo 대안, 5KB 제로 의존성</a></div>
+    <div class="meta">mujs.org · HN 102pts</div>
+    <div class="desc">Htmx와 Turbo를 대체하는 5KB짜리 초경량 JavaScript 라이브러리. 외부 의존성 없이 서버 사이드 렌더링 앱에 인터랙티비티 추가.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/artemxtech/status/2028330693659332615" target="_blank">Grep은 죽었다 — Claude Code 메모리 시스템 구축</a></div>
+    <div class="meta">X · GeekNews 28pts</div>
+    <div class="desc">Claude Code 세션 간 컨텍스트 유실 문제를 해결하기 위해 로컬 검색 엔진 QMD와 /recall 스킬을 결합한 영구 메모리 시스템 구축 사례.</div>
+  </div>
+</div>
+
+<!-- Dev & Industry -->
+<div class="section">
+  <h2>Development &amp; Industry</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://cacm.acm.org/research/a-decade-of-docker-containers/" target="_blank">Docker 컨테이너 10년의 회고</a></div>
+    <div class="meta">ACM · HN 210pts</div>
+    <div class="desc">Docker가 소프트웨어 배포와 인프라를 어떻게 변화시켰는지 10년간의 영향을 분석한 ACM 연구 논문.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://madalitso.me/notes/why-everyone-is-talking-about-filesystems/" target="_blank">파일은 인간과 에이전트의 인터페이스다</a></div>
+    <div class="meta">madalitso.me · HN 167pts</div>
+    <div class="desc">AI 에이전트 시대에 파일 시스템이 다시 핵심 인터페이스로 부상하고 있다는 분석. 인간과 에이전트 모두 파일을 통해 소통.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://mariozechner.at/posts/2024-07-20-macos-code-injection-fun/" target="_blank">macOS 코드 인젝션 — 재미와 보안의 경계</a></div>
+    <div class="meta">mariozechner.at · HN 55pts</div>
+    <div class="desc">macOS에서 코드 인젝션을 수행하는 방법과 보안적 시사점을 다룬 기술 글. 시스템 수준 해킹 기법 해설.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://twitter.com/kalinowski007/status/2030320074121478618" target="_blank">Caitlin Kalinowski, OpenAI 사임</a></div>
+    <div class="meta">X · HN 10pts</div>
+    <div class="desc">Meta에서 하드웨어를 담당하다 OpenAI에 합류했던 Caitlin Kalinowski가 사임을 발표. OpenAI 하드웨어/로보틱스 방향에 대한 관심 재점화.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
