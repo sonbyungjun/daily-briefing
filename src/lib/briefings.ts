@@ -52,18 +52,25 @@ function extractText(html: string): string {
 }
 
 /**
- * 범용 아이템 파서 — news-item, item, card, li.news-item 모두 처리
+ * 범용 아이템 파서 — 시작 위치 기반 분할로 모든 형식 처리
  */
 function parseItems(sectionContent: string): BriefingItem[] {
   const items: BriefingItem[] = [];
 
-  // 아이템 경계: div/li with class news-item, item(+subclass), card
-  const itemRegex =
-    /<(?:div|li) class="(?:news-item|item|card)(?:\s[^"]*)?(?:"[^>]*>)([\s\S]*?)(?=<(?:div|li) class="(?:news-item|item|card)(?:\s|")|<\/(?:section|ul|ol)>|<\/div>\s*(?:<(?:section|div class="section)|<footer|$))/g;
+  // 아이템 시작 위치 수집
+  const startRegex =
+    /<(?:div|li) class="(?:news-item|item|card)(?:\s[^"]*)?"/g;
+  const starts: number[] = [];
+  let sm;
+  while ((sm = startRegex.exec(sectionContent)) !== null) {
+    starts.push(sm.index);
+  }
 
-  let match;
-  while ((match = itemRegex.exec(sectionContent)) !== null) {
-    const block = match[1];
+  for (let i = 0; i < starts.length; i++) {
+    const block = sectionContent.slice(
+      starts[i],
+      i + 1 < starts.length ? starts[i + 1] : undefined
+    );
 
     // 배지 추출
     const badges: BriefingItem["badges"] = [];
@@ -75,7 +82,7 @@ function parseItems(sectionContent: string): BriefingItem[] {
       badges.push({ type, label: extractText(bm[2]) });
     }
 
-    // 링크 + 제목 (링크가 없는 경우 item-title/title div에서 텍스트 추출)
+    // 링크 + 제목
     const linkMatch = block.match(/<a href="(.*?)"[^>]*>([\s\S]*?)<\/a>/);
     let title = linkMatch ? extractText(linkMatch[2]) : "";
     const link = linkMatch ? linkMatch[1] : "";
