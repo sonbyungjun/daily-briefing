@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-12</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 12일 목요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>McKinsey AI 플랫폼 해킹 — 내부 데이터 유출 경로 공개</li>
+    <li>Temporal API, 9년 만에 JavaScript 시간 처리 표준화 완료</li>
+    <li>BitNet: Microsoft의 100B 파라미터 1비트 모델, CPU에서 실행</li>
+    <li>Google, Wiz 인수 최종 완료 — 클라우드 보안 역대 최대 딜</li>
+    <li>SWE-bench 통과 PR 대다수가 실제 머지 불가능하다는 METR 분석</li>
+    <li>Gemini Embedding 2: 최초의 네이티브 멀티모달 임베딩 모델</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/microsoft/BitNet" target="_blank">BitNet: Microsoft의 100B 파라미터 1비트 모델, 로컬 CPU에서 실행</a></div>
+    <div class="meta">github.com/microsoft · HN 288pts</div>
+    <div class="desc">Microsoft가 100B 파라미터 규모의 1비트 양자화 모델 BitNet을 공개. GPU 없이 일반 CPU에서도 실행 가능하며, 메모리 사용량과 에너지 소비를 극적으로 줄이면서도 경쟁력 있는 성능 유지.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/" target="_blank">SWE-bench 통과 PR, 실제로는 대부분 머지 불가 — METR 분석</a></div>
+    <div class="meta">metr.org · HN 92pts</div>
+    <div class="desc">AI 코딩 벤치마크 SWE-bench를 통과한 PR 중 상당수가 실제 코드 리뷰 기준에서는 머지 불가능하다는 METR의 분석. 벤치마크 점수와 실무 품질 사이의 간극을 정량적으로 드러냄.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-embedding-2/" target="_blank">Gemini Embedding 2: 최초의 네이티브 멀티모달 임베딩 모델</a></div>
+    <div class="meta">blog.google · GeekNews 9pts</div>
+    <div class="desc">텍스트, 이미지, 비디오, 오디오, 문서를 하나의 임베딩 공간에 매핑하는 최초의 완전 멀티모달 임베딩 모델이 퍼블릭 프리뷰로 공개. 크로스모달 검색과 RAG에 활용 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/karpathy/status/2031135152349524125" target="_blank">Karpathy, Autoresearch로 GPT-2 학습 시간 11% 단축</a></div>
+    <div class="meta">x.com/karpathy · GeekNews 13pts</div>
+    <div class="desc">Karpathy의 Autoresearch 에이전트가 nanochat 프로젝트에서 2일간 자율적으로 약 700개 변경을 실험해 GPT-2 학습 시간을 11% 단축. AI가 AI 학습을 최적화하는 자기 개선 루프의 실증 사례.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.perplexity.ai/personal-computer-waitlist" target="_blank">Perplexity, Personal Computer 발표</a></div>
+    <div class="meta">perplexity.ai · HN 94pts</div>
+    <div class="desc">Perplexity가 AI 네이티브 퍼스널 컴퓨터를 발표하고 대기자 명단을 오픈. 검색 기반 AI 회사가 하드웨어 영역으로 확장하는 움직임.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://bloomberg.github.io/js-blog/post/temporal/" target="_blank">Temporal API — JavaScript 시간 처리 9년 만에 표준화 완료</a></div>
+    <div class="meta">bloomberg.github.io · HN 471pts</div>
+    <div class="desc">JavaScript의 Date 객체를 대체하는 Temporal API가 9년간의 TC39 표준화 과정을 마치고 확정. 타임존, 캘린더, 기간 계산을 네이티브로 처리하며, moment.js/date-fns 같은 라이브러리의 필요성을 근본적으로 제거.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://hacks.mozilla.org/2026/02/making-webassembly-a-first-class-language-on-the-web/" target="_blank">WebAssembly를 웹의 퍼스트 클래스 언어로</a></div>
+    <div class="meta">hacks.mozilla.org · HN 363pts</div>
+    <div class="desc">Mozilla가 WebAssembly를 JavaScript와 동등한 웹 퍼스트 클래스 언어로 격상시키기 위한 로드맵을 공개. DOM 직접 접근, GC 통합 등 브라우저 네이티브 수준의 통합을 목표.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://alibaba.github.io/page-agent/" target="_blank">page-agent — 코드 1줄로 웹페이지에 AI 에이전트 추가</a></div>
+    <div class="meta">alibaba.github.io · GeekNews 44pts</div>
+    <div class="desc">Alibaba가 공개한 page-agent는 script 태그 한 줄만 추가하면 웹사이트를 AI 네이티브 앱으로 변환. 브라우저 확장이나 별도 서버 없이 페이지 컨텍스트를 이해하는 AI 에이전트를 즉시 내장.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://codewall.ai/blog/how-we-hacked-mckinseys-ai-platform" target="_blank">McKinsey AI 플랫폼 해킹 — 내부 데이터 유출 경로 공개</a></div>
+    <div class="meta">codewall.ai · HN 377pts</div>
+    <div class="desc">보안 연구팀이 McKinsey의 AI 플랫폼에서 발견한 취약점 체인을 공개. 프롬프트 인젝션과 API 권한 설정 미비를 결합해 내부 데이터에 접근할 수 있었던 과정을 상세히 기술.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz" target="_blank">Google, Wiz 인수 최종 완료 — 클라우드 보안 역대 최대 딜</a></div>
+    <div class="meta">wiz.io · HN 209pts</div>
+    <div class="desc">Google이 클라우드 보안 기업 Wiz 인수를 최종 완료. 한때 거절했던 $23B 인수 제안 이후 재협상을 거쳐 성사된 역대 최대 규모의 사이버 보안 인수.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.theregister.com/2026/03/11/swiss_evote_usb_snafu/" target="_blank">스위스 전자투표, 암호 해독 실패로 2,048표 소실</a></div>
+    <div class="meta">theregister.com · HN 141pts</div>
+    <div class="desc">스위스 전자투표 시범 운영에서 암호 해독 과정 오류로 2,048장의 투표가 집계 불가 상태에 빠짐. 전자투표 시스템의 신뢰성과 암호 인프라의 취약성을 보여주는 사례.</div>
+  </div>
+</div>
+
+<!-- Trend -->
+<div class="section">
+  <h2>Trend</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://daringfireball.net/2026/03/the_macbook_neo" target="_blank">MacBook Neo — Apple의 새로운 폼팩터</a></div>
+    <div class="meta">daringfireball.net · HN 349pts</div>
+    <div class="desc">Gruber가 Apple의 새로운 MacBook Neo 라인업을 분석. 기존 Air/Pro 이분법에서 벗어나 새로운 사용자 경험을 정의하려는 Apple의 전략적 움직임.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
