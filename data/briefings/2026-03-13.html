@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-13</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 13일 금요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Malus — Clean Room as a Service로 보안 격리 환경 제공, HN 982pts 폭발</li>
+    <li>Amazon, AI 코드 변경에 시니어 엔지니어 승인 의무화</li>
+    <li>AI 얼굴인식 오류로 무고한 여성 수개월 투옥 — 노스다코타</li>
+    <li>DuckDB, 최저가 MacBook에서 빅데이터 분석 시연</li>
+    <li>RAG 시스템의 문서 포이즈닝 공격 기법 공개</li>
+    <li>Sequoia vs BTV — "서비스가 새 소프트웨어다" 대 "서비스는 소프트웨어 안 된다" 논쟁</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arstechnica.com/ai/2026/03/after-outages-amazon-to-make-senior-engineers-sign-off-on-ai-assisted-changes/" target="_blank">Amazon, 잇따른 장애 후 AI 코드 변경에 시니어 엔지니어 승인 의무화</a></div>
+    <div class="meta">arstechnica.com · GeekNews 19pts</div>
+    <div class="desc">AI 코딩 도구 사용과 관련된 서비스 장애가 잇따르자, Amazon이 모든 AI 지원 코드 변경에 시니어 엔지니어의 사전 승인 절차를 도입. AI 자동화의 속도와 품질 사이 균형을 잡으려는 업계 움직임의 신호탄.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.grandforksherald.com/news/north-dakota/ai-error-jails-innocent-grandmother-for-months-in-north-dakota-fraud-case" target="_blank">AI 얼굴인식 오류로 무고한 여성 수개월 투옥</a></div>
+    <div class="meta">grandforksherald.com · HN 285pts</div>
+    <div class="desc">노스다코타에서 AI 얼굴인식 시스템이 무고한 할머니를 사기범으로 오인하여 수개월간 투옥. AI 기반 법집행 시스템의 정확성과 인권 문제에 대한 심각한 경고.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://entropicthoughts.com/no-swe-bench-improvement" target="_blank">LLM 코드 머지율, 개선 정체 — SWE-bench 점수와 괴리</a></div>
+    <div class="meta">entropicthoughts.com · HN 108pts</div>
+    <div class="desc">벤치마크 점수는 올라가지만 실제 코드 머지율은 개선되지 않는다는 분석. 어제 다룬 METR의 "SWE-bench PR 머지 불가" 연구와 맥락을 같이하며, AI 코딩의 실질적 한계를 재확인.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.lmorchard.com/2026/03/11/grief-and-the-ai-split/" target="_blank">AI 코딩 분열 — 코드 장인 vs 결과 추구자</a></div>
+    <div class="meta">blog.lmorchard.com · HN 68pts</div>
+    <div class="desc">AI 코딩 도구가 개발 커뮤니티를 양분하고 있다는 분석. 코드 작성 자체에 가치를 두는 장인파와 결과물만 중시하는 실용파의 대립, 그리고 그 사이의 감정적 갈등을 조명.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://claude.com/blog/code-review" target="_blank">Claude Code, 멀티 에이전트 코드 리뷰 기능 공개</a></div>
+    <div class="meta">claude.com · GeekNews 33pts</div>
+    <div class="desc">Anthropic이 PR마다 멀티 에이전트 팀을 투입해 사람이 놓치기 쉬운 버그를 심층적으로 잡아내는 Code Review 기능을 리서치 프리뷰로 출시. AI 코딩 도구가 작성에서 검증 영역으로 확장.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://duckdb.org/2026/03/11/big-data-on-the-cheapest-macbook" target="_blank">DuckDB — 최저가 MacBook에서 빅데이터 분석</a></div>
+    <div class="meta">duckdb.org · HN 292pts</div>
+    <div class="desc">DuckDB가 가장 저렴한 MacBook에서도 대규모 데이터셋을 효율적으로 분석할 수 있음을 시연. 임베디드 OLAP 데이터베이스의 가능성과 로컬 퍼스트 데이터 분석 트렌드를 보여주는 사례.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://gist.github.com/bretonium/291f4388e2de89a43b25c135b44e41f0" target="_blank">"Shall I implement it? No" — 구현 여부 판단 가이드</a></div>
+    <div class="meta">gist.github.com · HN 583pts</div>
+    <div class="desc">기능 구현 전 "정말 만들어야 하나?"를 판단하는 의사결정 프레임워크. 불필요한 구현을 줄이는 엔지니어링 지혜가 HN에서 폭발적 반응.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/flamestro/deff" target="_blank">deff — 인터랙티브 git diff TUI 뷰어</a></div>
+    <div class="meta">github.com/flamestro · GeekNews 10pts</div>
+    <div class="desc">Rust 기반 TUI 도구로 Side-By-Side diff 비교 뷰를 제공. 파일 단위 이동, 문법 하이라이팅, 수평·수직 스크롤을 지원하며 터미널에서 직관적인 코드 리뷰 가능.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://malus.sh" target="_blank">Malus — Clean Room as a Service</a></div>
+    <div class="meta">malus.sh · HN 982pts</div>
+    <div class="desc">보안 격리 환경을 서비스로 제공하는 Malus가 HN 역대급 반응을 기록. 민감한 작업을 위한 격리된 클린룸 환경을 온디맨드로 제공하며, 보안 연구·감사·포렌식 분야에서 활용 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://aminrj.com/posts/rag-document-poisoning/" target="_blank">RAG 시스템 문서 포이즈닝 — AI 소스 오염 공격</a></div>
+    <div class="meta">aminrj.com · HN 45pts</div>
+    <div class="desc">RAG 시스템에서 공격자가 문서를 조작해 AI의 응답을 왜곡하는 문서 포이즈닝 공격 기법을 상세히 분석. 기업 RAG 도입 시 반드시 고려해야 할 보안 위협.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.therantydev.com/javascript-drms-are-stupid" target="_blank">JavaScript DRM의 허상 — HotAudio 보호 3라운드 만에 무력화</a></div>
+    <div class="meta">therantydev.com · GeekNews 10pts</div>
+    <div class="desc">브라우저 JavaScript 기반 DRM은 복호화된 데이터가 JS 접근 가능 영역을 반드시 통과하므로 근본적으로 우회 가능. 3라운드 만에 HotAudio 복사 보호를 무력화한 과정을 공개.</div>
+  </div>
+</div>
+
+<!-- Trend -->
+<div class="section">
+  <h2>Trend</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://sequoiacap.com/article/services-the-new-software/" target="_blank">Sequoia "서비스가 새로운 소프트웨어다" vs 반론 "서비스는 소프트웨어 안 된다"</a></div>
+    <div class="meta">sequoiacap.com / better-tomorrow-ventures · GeekNews</div>
+    <div class="desc">Sequoia는 AI 모델 성능 향상으로 결과물(서비스)을 직접 파는 기업이 차세대 거대 기업이 될 것이라 주장. 반면 Better Tomorrow Ventures는 서비스 기업이 더 나은 서비스 기업이 될 뿐 소프트웨어 기업으로 전환되진 않는다고 반박. AI 비즈니스 모델의 핵심 논쟁.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://geohot.github.io//blog/jekyll/update/2026/03/11/running-69-agents.html" target="_blank">geohot — "가치를 창출하고, 보상은 걱정하지 마세요"</a></div>
+    <div class="meta">geohot.github.io · GeekNews 43pts</div>
+    <div class="desc">AI를 쓰지 않으면 뒤처진다는 공포 마케팅이 소셜 미디어에 만연하지만 이는 허구라는 주장. 진정한 가치 창출에 집중하라는 메시지.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
