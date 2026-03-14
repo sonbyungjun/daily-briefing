@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-14</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 14일 토요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>CanIRun.ai — 내 PC에서 어떤 AI 모델을 돌릴 수 있는지 즉시 확인, HN 849pts</li>
+    <li>TUI Studio — Figma 스타일 터미널 UI 비주얼 에디터, HN 531pts</li>
+    <li>Qatar 헬륨 생산 중단, 반도체 공급망에 2주 시한폭탄</li>
+    <li>AWS S3 Bucketsquatting 10년 만에 종결 — 계정 네임스페이스 도입</li>
+    <li>스웨덴 전자정부 소스코드 전량 유출 — CGI Sverige 인프라 침해</li>
+    <li>OpenAI, Codex만으로 코드 한 줄 안 쓰고 소프트웨어 제품 출시</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.canirun.ai/" target="_blank">CanIRun.ai — 내 PC에서 로컬 AI 모델 실행 가능 여부 확인</a></div>
+    <div class="meta">canirun.ai · HN 849pts</div>
+    <div class="desc">하드웨어 스펙을 입력하면 Llama, Qwen, DeepSeek 등 주요 오픈 모델 중 어떤 것을 로컬에서 돌릴 수 있는지 즉시 확인해주는 도구. VRAM/RAM 기반 호환성 체크로 로컬 AI 입문 장벽을 크게 낮춤.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/ko-KR/index/harness-engineering/" target="_blank">하네스 엔지니어링 — Codex만으로 코드 한 줄 안 쓰고 제품 출시</a></div>
+    <div class="meta">openai.com · GeekNews 36pts</div>
+    <div class="desc">OpenAI 내부 팀이 5개월간 수동 코드 작성 없이 Codex 에이전트만으로 소프트웨어 제품의 내부 베타를 구축·출시한 실험 사례. 에이전트 우선 개발 워크플로의 실제 적용 결과를 공개.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.percepta.ai/blog/can-llms-be-computers" target="_blank">Transformer 내부에서 프로그램 실행 — 지수적으로 빠른 추론</a></div>
+    <div class="meta">percepta.ai · HN 291pts</div>
+    <div class="desc">Transformer 아키텍처 내부에서 범용 프로그램을 직접 실행할 수 있다는 연구. 기존 추론 대비 지수적으로 빠른 속도를 달성하며, LLM이 단순 텍스트 생성기가 아닌 범용 컴퓨터로 진화할 가능성을 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/microsoft/BitNet" target="_blank">BitNet — Microsoft의 1비트 LLM 추론 프레임워크</a></div>
+    <div class="meta">github.com/microsoft · GeekNews 10pts</div>
+    <div class="desc">1비트 대형언어모델의 공식 추론 프레임워크. ARM CPU에서 손실 없는 빠른 추론을 지원하며, GPU 없이도 대규모 모델 실행이 가능한 경량화 기술의 최전선.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://tui.studio/" target="_blank">TUI Studio — Figma 스타일 터미널 UI 비주얼 에디터</a></div>
+    <div class="meta">tui.studio · HN 531pts</div>
+    <div class="desc">드래그 앤 드롭으로 터미널 UI를 설계하고 Ink, BubbleTea, Textual 등 6개 프레임워크로 코드를 내보내는 비주얼 에디터. 21개 기본 컴포넌트와 Flexbox/Grid 레이아웃, 8가지 컬러 테마를 지원.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://x.com/rebane2001/status/2031037389347406054" target="_blank">SSH에 비밀 메뉴가 있다는 거 아세요?</a></div>
+    <div class="meta">x.com · GeekNews 29pts</div>
+    <div class="desc">SSH 세션이 멈췄을 때 프로세스 강제 종료 없이 내장 이스케이프 시퀀스 메뉴로 세션을 제어할 수 있는 숨겨진 기능. Enter → ~. 조합으로 끊긴 세션 탈출, 포트 포워딩 추가 등 다양한 제어 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.macrumors.com/2026/03/13/macbook-neo-runs-windows-11-vm/" target="_blank">Parallels, MacBook Neo에서 Windows VM 실행 확인</a></div>
+    <div class="meta">macrumors.com · HN 167pts</div>
+    <div class="desc">Parallels가 새로운 MacBook Neo에서 Windows 11 가상 머신을 완전히 실행할 수 있음을 공식 확인. Apple의 새 아키텍처에서도 가상화 호환성이 유지됨을 보여줌.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://onecloudplease.com/blog/bucketsquatting-is-finally-dead" target="_blank">AWS S3 Bucketsquatting, 10년 만에 종결</a></div>
+    <div class="meta">onecloudplease.com · HN 299pts</div>
+    <div class="desc">S3 버킷 이름의 글로벌 유일성을 악용한 Bucketsquatting 공격이 10년 만에 해결. AWS가 계정 ID 기반 네임스페이스를 도입하여 삭제된 버킷명을 타인이 선점하는 공격 벡터를 원천 차단.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://darkwebinformer.com/full-source-code-of-swedens-e-government-platform-leaked-from-compromised-cgi-sverige-infrastructure/" target="_blank">스웨덴 전자정부 소스코드 전량 유출</a></div>
+    <div class="meta">darkwebinformer.com · HN 192pts</div>
+    <div class="desc">CGI Sverige 인프라가 침해되어 스웨덴 전자정부 플랫폼의 전체 소스코드가 다크웹에 유출. 국가 단위 디지털 인프라의 공급망 보안 취약성을 적나라하게 드러낸 사건.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.techdirt.com/2026/03/12/the-wyden-siren-goes-off-again-well-be-stunned-by-what-the-nsa-is-doing-under-section-702/" target="_blank">NSA Section 702 감시 — "충격적인 실태" 경고</a></div>
+    <div class="meta">techdirt.com · HN 335pts</div>
+    <div class="desc">와이든 상원의원이 NSA의 Section 702 감시 권한 남용에 대해 "충격적" 수준이라고 재차 경고. 미국 내 외국정보감시법 하의 대규모 감청 실태에 대한 의회 차원의 우려 표명.</div>
+  </div>
+</div>
+
+<!-- Trend -->
+<div class="section">
+  <h2>Trend</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock" target="_blank">Qatar 헬륨 생산 중단 — 반도체 공급망 2주 시한</a></div>
+    <div class="meta">tomshardware.com · HN 363pts</div>
+    <div class="desc">세계 최대 헬륨 공급원인 Qatar가 생산을 중단하면서 반도체 제조에 필수적인 헬륨 공급에 2주짜리 시한폭탄이 걸림. 칩 팹 공정에서 냉각·퍼지 가스로 사용되는 헬륨 부족 시 생산 라인 중단 가능성.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.ft.com/content/e5fbc6c2-d5a6-4b97-a105-6a96ea849de5" target="_blank">Elon Musk, xAI 공동창업자 추가 퇴출 — AI 코딩 프로젝트 난항</a></div>
+    <div class="meta">ft.com · HN 266pts</div>
+    <div class="desc">xAI에서 더 많은 공동창업자가 퇴출되고 있으며, AI 코딩 관련 핵심 프로젝트가 난항을 겪고 있다는 FT 보도. 창업 멤버 이탈이 이어지며 xAI 내부 혼란 심화.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
