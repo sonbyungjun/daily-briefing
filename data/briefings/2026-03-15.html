@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-15</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 15일 일요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>CodeSpeak — 코틀린 창시자가 만든 새 언어, LLM에게 코드 대신 명세로 지시</li>
+    <li>Anthropic, Claude Partner Network에 1억 달러 투자</li>
+    <li>Claude Code, Opus 4.6에서 1M Context 정식 지원</li>
+    <li>Python 최적화 래더 — 단계별 성능 개선 가이드, HN 256pts</li>
+    <li>Vite 8.0 출시 — Rolldown 기반 단일 번들러로 최대 30배 빌드 속도</li>
+    <li>Montana, 미국 최초 '컴퓨팅 권리법' 통과</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://codespeak.dev/" target="_blank">CodeSpeak — 코틀린 창시자의 새 언어, 명세(spec)로 LLM과 대화</a></div>
+    <div class="meta">codespeak.dev · GeekNews 22pts</div>
+    <div class="desc">LLM 기반 차세대 프로그래밍 언어. 개발자는 코드 대신 간결한 명세(spec)를 작성하고, LLM이 이를 해석해 실행. 코드베이스를 5~10배 축소할 수 있다고 주장. 영어가 아닌 구조화된 명세로 LLM 지시의 정확도를 높이는 접근.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/news/claude-partner-network" target="_blank">Anthropic, Claude Partner Network에 1억 달러 투자</a></div>
+    <div class="meta">anthropic.com · HN 50pts</div>
+    <div class="desc">Anthropic이 Claude 생태계 확장을 위해 파트너 네트워크에 1억 달러를 투자. 기업 고객 대상 통합 솔루션 구축을 위한 파트너십 강화 전략.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://claude.com/blog/1m-context-ga" target="_blank">Claude Code, Opus 4.6에서 1M Context 정식 지원</a></div>
+    <div class="meta">claude.com · GeekNews 4pts</div>
+    <div class="desc">Max, Team, Enterprise 사용자 대상으로 Opus 4.6에서 1M 토큰 컨텍스트가 자동 활성화. 추가 요금 없이 900K 토큰 요청도 9K와 동일하게 처리. 대규모 코드베이스 전체를 한번에 분석 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://alibaba.github.io/page-agent/" target="_blank">page-agent — 코드 1줄로 웹페이지에 AI 에이전트 추가</a></div>
+    <div class="meta">alibaba.github.io · GeekNews 66pts</div>
+    <div class="desc">Alibaba가 공개한 오픈소스 도구. script 태그 한 줄만 삽입하면 웹사이트가 AI 네이티브 앱으로 변환. 브라우저 확장, Python, 헤드리스 브라우저 등 다양한 방식으로 웹페이지를 에이전트가 조작 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://aifrontier.kr/ko/episodes/ep86/" target="_blank">Agentic Workflow — 40일간 130억 토큰으로 100만 줄 코드 생성</a></div>
+    <div class="meta">aifrontier.kr · GeekNews 1pt</div>
+    <div class="desc">Lablup 신정규 대표가 Backend.AI:GO를 40일간 개발하며 약 100만 줄의 코드를 130억 토큰으로 생성한 실전 경험 공유. 에이전트 워크플로를 실무에 적용한 대규모 사례.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://vite.dev/blog/announcing-vite8" target="_blank">Vite 8.0 출시 — Rolldown 기반 단일 번들러, 최대 30배 빌드 속도</a></div>
+    <div class="meta">vite.dev · GeekNews 7pts</div>
+    <div class="desc">기존 esbuild + Rollup 이중 구조를 Rust 기반 번들러 Rolldown으로 단일화하여 최대 10~30배 빠른 빌드 성능 달성. 새로운 플러그인 레지스트리와 개선된 HMR을 포함한 메이저 업데이트.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://cemrehancavdar.com/2026/03/10/optimization-ladder/" target="_blank">Python: The Optimization Ladder — 단계별 성능 최적화 가이드</a></div>
+    <div class="meta">cemrehancavdar.com · HN 256pts</div>
+    <div class="desc">Python 코드의 성능을 단계적으로 개선하는 체계적 가이드. 프로파일링부터 알고리즘 최적화, C 확장까지 각 단계별 트레이드오프와 실전 적용법을 정리.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/xodn348/han" target="_blank">Han — Rust로 만든 한국어 프로그래밍 언어</a></div>
+    <div class="meta">github.com/xodn348 · HN 69pts</div>
+    <div class="desc">한국어 키워드를 사용하는 프로그래밍 언어를 Rust로 구현한 프로젝트. Show HN에서 주목받으며 비영어권 프로그래밍 언어에 대한 논의를 촉발.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://www.gitagent.sh/" target="_blank">GitAgent — Git 레포를 AI 에이전트로 변환하는 오픈 표준</a></div>
+    <div class="meta">gitagent.sh · HN 87pts</div>
+    <div class="desc">모든 Git 레포지토리를 AI 에이전트로 전환할 수 있는 오픈 표준. 코드베이스 자체가 에이전트의 지식과 행동을 정의하는 새로운 패러다임 제안.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/klawsh/klaw.sh" target="_blank">klaw.sh — AI 에이전트를 위한 kubectl</a></div>
+    <div class="meta">github.com/klawsh · GeekNews 14pts</div>
+    <div class="desc">Kubernetes 운영 방식을 AI 워크로드 관리에 적용한 CLI 도구. klaw get agents, klaw logs 등 익숙한 명령어로 AI 에이전트를 오케스트레이션.</div>
+  </div>
+</div>
+
+<!-- Trend -->
+<div class="section">
+  <h2>Trend</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.westernmt.news/2025/04/21/montana-leads-the-nation-with-groundbreaking-right-to-compute-act/" target="_blank">Montana, 미국 최초 '컴퓨팅 권리법(Right to Compute Act)' 통과</a></div>
+    <div class="meta">westernmt.news · HN 233pts</div>
+    <div class="desc">Montana 주가 미국 최초로 개인의 컴퓨팅 자유를 보장하는 법안을 통과. 자신의 하드웨어에서 원하는 소프트웨어를 실행할 권리를 법적으로 보호하는 획기적 입법.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://unplannedobsolescence.com/blog/xml-cheap-dsl/" target="_blank">XML is a Cheap DSL — XML 재평가론</a></div>
+    <div class="meta">unplannedobsolescence.com · HN 231pts</div>
+    <div class="desc">JSON/YAML 시대에 XML이 저렴한 DSL로서 여전히 강력한 선택지라는 주장. 스키마 검증, 네임스페이스, 변환(XSLT) 등 XML 고유 기능의 실용적 가치를 재조명. HN에서 238개 댓글로 뜨거운 논쟁 중.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
