@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-16</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 16일 월요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Chrome DevTools MCP — 브라우저 디버깅 세션에 MCP 프로토콜 통합</li>
+    <li>Glassworm 유니코드 공격 재등장, GitHub·npm·VS Code 저장소 타겟</li>
+    <li>LLM Architecture Gallery — 주요 LLM 아키텍처 시각화 모음</li>
+    <li>OpenAI 내부 팀, 5개월간 수동 코드 없이 Codex만으로 제품 구축</li>
+    <li>Ask HN: AI 코딩 도구 실무 적용 현황, 348개 댓글 대규모 논의</li>
+    <li>캐나다 C-22 법안, 전 국민 대상 메타데이터 감시 의무화 논란</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developer.chrome.com/blog/chrome-devtools-mcp-debug-your-browser-session" target="_blank">Chrome DevTools MCP — 브라우저 디버깅에 MCP 프로토콜 통합</a></div>
+    <div class="meta">chrome.com · HN 268pts · 127 comments</div>
+    <div class="desc">Chrome DevTools에 Model Context Protocol(MCP) 지원이 추가. AI 에이전트가 브라우저 디버깅 세션에 직접 연결하여 DOM 검사, 네트워크 분석, 콘솔 로그 확인 등을 자동화할 수 있게 됨. AI 기반 웹 개발 워크플로의 새로운 가능성.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://sebastianraschka.com/llm-architecture-gallery/" target="_blank">LLM Architecture Gallery — 주요 LLM 아키텍처 시각적 비교</a></div>
+    <div class="meta">sebastianraschka.com · HN 190pts · 11 comments</div>
+    <div class="desc">Sebastian Raschka가 정리한 주요 LLM 아키텍처들의 시각화 갤러리. GPT, LLaMA, Mistral 등 다양한 모델의 구조적 차이를 한눈에 비교할 수 있는 교육 자료.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/ko-KR/index/harness-engineering/" target="_blank">하네스 엔지니어링 — Codex만으로 5개월간 제품 구축한 OpenAI 내부 실험</a></div>
+    <div class="meta">openai.com · GeekNews 60pts</div>
+    <div class="desc">OpenAI 내부 팀이 5개월간 수동 코드 작성 없이 Codex 에이전트만으로 소프트웨어 제품의 내부 베타를 구축·출시한 실험 사례. 에이전트 우선(agent-first) 개발 방법론의 가능성과 한계를 실전으로 검증.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.percepta.ai/blog/can-llms-be-computers" target="_blank">LLM을 컴퓨터로 만들 수 있을까 — 트랜스포머 내부에서 프로그램 실행</a></div>
+    <div class="meta">percepta.ai · GeekNews 12pts</div>
+    <div class="desc">LLM이 수학 올림피아드 문제는 풀면서 단순 덧셈은 못하는 한계를 극복하기 위해, 트랜스포머 내부에서 직접 프로그램을 실행하는 방법을 연구. LLM의 계산 능력 확장에 대한 새로운 접근.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://robenglander.com/writing/ai-did-not-simplify/" target="_blank">AI는 소프트웨어 엔지니어링을 단순화하지 않았다</a></div>
+    <div class="meta">robenglander.com · GeekNews 8pts</div>
+    <div class="desc">LLM이 코드 작성 속도를 높였지만 소프트웨어 엔지니어링의 본질적 복잡성은 줄이지 못했다는 분석. 오히려 나쁜 엔지니어링을 더 쉽게 만들었을 뿐이라는 비판적 시각.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://news.ycombinator.com/item?id=47388646" target="_blank">Ask HN: AI 코딩 도구, 실무에서 어떻게 쓰고 있나?</a></div>
+    <div class="meta">news.ycombinator.com · HN 207pts · 348 comments</div>
+    <div class="desc">AI 코딩 도구의 실무 적용 현황에 대한 대규모 Ask HN 스레드. 348개 댓글에서 Copilot, Cursor, Claude Code 등의 실제 생산성 효과와 한계에 대한 개발자들의 솔직한 경험담이 쏟아짐.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://tui.studio/" target="_blank">TUI Studio — 터미널 UI를 Figma처럼 디자인</a></div>
+    <div class="meta">tui.studio · GeekNews 25pts</div>
+    <div class="desc">터미널 기반 애플리케이션 UI를 시각적으로 설계할 수 있는 Figma 유사 편집기. 드래그 앤 드롭으로 TUI 레이아웃을 만들고 코드로 내보내기 가능. 20개 이상의 위젯 지원.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://x.com/rebane2001/status/2031037389347406054" target="_blank">SSH에 비밀 메뉴가 있다는 거 아세요?</a></div>
+    <div class="meta">x.com · GeekNews 41pts</div>
+    <div class="desc">SSH 세션이 멈췄을 때 프로세스 강제 종료 대신 내장 이스케이프 시퀀스 메뉴로 제어 가능. Enter + ~ + ? 로 포트 포워딩, 세션 종료, 키 재교환 등 숨겨진 기능에 접근.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://thatshubham.com/blog/news-audit" target="_blank">49MB 웹 페이지 — 뉴스 사이트의 비대화 분석</a></div>
+    <div class="meta">thatshubham.com · HN 227pts · 141 comments</div>
+    <div class="desc">단일 뉴스 페이지가 49MB에 달하는 현실을 분석한 웹 성능 감사. 광고, 트래커, 불필요한 스크립트가 페이지를 얼마나 비대하게 만드는지 데이터로 보여줌.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.aikido.dev/blog/glassworm-returns-unicode-attack-github-npm-vscode" target="_blank">Glassworm 재등장 — 유니코드 기반 보이지 않는 공격이 저장소를 노린다</a></div>
+    <div class="meta">aikido.dev · HN 202pts · 118 comments</div>
+    <div class="desc">보이지 않는 유니코드 문자를 이용한 Glassworm 공격이 GitHub, npm, VS Code 확장 저장소에서 새로운 형태로 재등장. 코드 리뷰에서 눈에 보이지 않는 악성 코드를 삽입하는 정교한 공급망 공격 기법.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.michaelgeist.ca/2026/03/a-tale-of-two-bills-lawful-access-returns-with-changes-to-warrantless-access-but-dangerous-backdoor-surveillance-risks-remains/" target="_blank">캐나다 C-22 법안 — 전 국민 메타데이터 대규모 감시 의무화</a></div>
+    <div class="meta">michaelgeist.ca · HN 144pts · 35 comments</div>
+    <div class="desc">캐나다 법안 C-22가 통신사에 전 국민의 메타데이터를 의무적으로 보관·제공하도록 요구. 영장 없는 접근 조항 일부 수정에도 불구하고 백도어 감시 위험이 여전하다는 비판.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.neocode24.com/blog/nanoclaw-architecture/" target="_blank">안전한 AI 에이전트 아키텍처 — NanoClaw 컨테이너 격리</a></div>
+    <div class="meta">blog.neocode24.com · GeekNews 2pts</div>
+    <div class="desc">AI 에이전트에게 Bash 접근권을 주면서도 안전성을 확보하는 방법. Claude Agent SDK를 Docker 컨테이너에 격리하여 실행하는 NanoClaw의 오픈소스 아키텍처 분석.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
