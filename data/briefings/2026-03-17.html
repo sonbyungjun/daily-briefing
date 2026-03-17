@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-17</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 17일 화요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Mistral, 오픈소스 Leanstral 공개 — 신뢰 가능한 바이브 코딩 기반</li>
+    <li>Nvidia Vera CPU 발표, Agentic AI 전용 프로세서</li>
+    <li>LLM 팀을 분산 시스템으로 설계하는 새로운 연구</li>
+    <li>코드 리뷰 무용론 — AI 코드 폭증으로 수동 리뷰 한계 도달</li>
+    <li>MCP 대안 논쟁 — CLI 기반 접근 vs 구조화된 프로토콜</li>
+    <li>인증기관, 오늘부터 DNSSEC 검증 의무화 적용</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://mistral.ai/news/leanstral" target="_blank">Leanstral — Mistral의 오픈소스 신뢰 가능한 바이브 코딩 기반</a></div>
+    <div class="meta">mistral.ai · HN 232pts · 40 comments</div>
+    <div class="desc">Mistral이 공개한 오픈소스 프레임워크로, AI 바이브 코딩의 신뢰성 문제를 해결하는 것이 목표. 생성된 코드의 검증과 품질 보증을 체계적으로 수행할 수 있는 기반을 제공.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://nvidianews.nvidia.com/news/nvidia-launches-vera-cpu-purpose-built-for-agentic-ai" target="_blank">Nvidia Vera CPU — Agentic AI 전용 프로세서 발표</a></div>
+    <div class="meta">nvidia.com · HN 105pts · 69 comments</div>
+    <div class="desc">Nvidia가 Agentic AI 워크로드에 최적화된 Vera CPU를 발표. AI 에이전트의 복잡한 추론과 도구 호출 패턴에 맞춘 전용 프로세서 아키텍처로, GPU와 함께 에이전트 인프라의 새 축을 형성.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2603.12229" target="_blank">LLM 팀을 분산 시스템으로 설계하기</a></div>
+    <div class="meta">arxiv.org · HN 63pts · 27 comments</div>
+    <div class="desc">여러 LLM을 분산 시스템처럼 조율하는 접근법을 다룬 논문. 합의 프로토콜, 장애 복구, 로드 밸런싱 등 분산 컴퓨팅 원리를 멀티 에이전트 시스템에 적용하는 프레임워크 제안.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.latent.space/p/reviews-dead" target="_blank">코드 리뷰를 없애는 방법 — AI 코드 폭증 시대의 리뷰 전략</a></div>
+    <div class="meta">latent.space · GeekNews 33pts · 10 comments</div>
+    <div class="desc">AI 생성 코드의 양이 기하급수적으로 증가하면서 기존 수동 코드 리뷰가 한계에 도달. 자동화된 검증, AI 리뷰어, 새로운 품질 보증 패러다임으로의 전환을 제안.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/htdt/godogen" target="_blank">Claude Code Skills로 완전한 Godot 게임 만들기</a></div>
+    <div class="meta">github.com · HN 132pts · 77 comments</div>
+    <div class="desc">Claude Code의 스킬 시스템을 활용해 Godot 엔진 기반 게임을 처음부터 끝까지 생성하는 오픈소스 프로젝트. AI 에이전트의 게임 개발 자동화 가능성을 보여주는 실험적 사례.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://htmx.org/essays/yes-and/" target="_blank">AI 시대에도 프로그래밍을 배워야 하는가</a></div>
+    <div class="meta">htmx.org · GeekNews 34pts · 24 comments</div>
+    <div class="desc">htmx 창시자 Carson Gross의 에세이. AI가 코드를 대신 작성하는 시대에도 프로그래밍을 커리어로 추구해야 하는 이유를 체계적으로 논증. 프로그래밍의 본질적 가치에 대한 깊이 있는 고찰.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://chrlschn.dev/blog/2026/03/mcp-is-dead-long-live-mcp/" target="_blank">MCP는 죽었다; MCP 만세 — CLI vs MCP 논쟁</a></div>
+    <div class="meta">chrlschn.dev · GeekNews 12pts · 5 comments</div>
+    <div class="desc">CLI가 에이전트 도구 인터페이스의 새 트렌드로 부상했지만, 맞춤형 CLI도 MCP와 동일한 컨텍스트 문제를 겪는다는 분석. 구조화된 프로토콜의 장점을 재조명.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://www.apideck.com/blog/mcp-server-eating-context-window-cli-alternative" target="_blank">Apideck CLI — MCP 서버보다 컨텍스트 소비를 줄이는 에이전트 인터페이스</a></div>
+    <div class="meta">apideck.com · HN 113pts · 103 comments</div>
+    <div class="desc">MCP 서버가 컨텍스트 윈도우를 과도하게 소비하는 문제에 대한 대안으로, CLI 기반 AI 에이전트 인터페이스를 제안. 103개 댓글에서 MCP 대안에 대한 뜨거운 논쟁.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.moment.dev/blog/lies-i-was-told-pt-2" target="_blank">협업 편집에 대한 거짓말 Part 2 — Yjs를 쓰지 않는 이유</a></div>
+    <div name="meta" class="meta">moment.dev · HN 188pts · 95 comments</div>
+    <div class="desc">실시간 협업 편집 구현 경험에서 얻은 교훈 시리즈 2편. Yjs CRDT 라이브러리의 실제 한계와 대안을 깊이 있게 분석. 이론과 실전의 괴리를 구체적 사례로 설명.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/kepano/defuddle" target="_blank">defuddle — 어떤 웹페이지든 깔끔한 Markdown으로 추출</a></div>
+    <div class="meta">github.com · GeekNews 34pts · 8 comments</div>
+    <div class="desc">웹페이지에서 댓글, 사이드바, 광고 등 불필요한 요소를 제거하고 핵심 본문만 정제해 HTML/Markdown으로 추출하는 콘텐츠 파서. 유튜브 영상 자막 추출도 지원.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://engineering.fb.com/2026/03/02/data-infrastructure/investing-in-infrastructure-metas-renewed-commitment-to-jemalloc/" target="_blank">Meta의 jemalloc 재투자 — 메모리 할당자의 귀환</a></div>
+    <div class="meta">fb.com · HN 311pts · 128 comments</div>
+    <div class="desc">Meta가 메모리 할당 라이브러리 jemalloc에 대한 투자를 재확대. 대규모 인프라에서의 메모리 관리 최적화 경험과 오픈소스 커뮤니티에 대한 커미트먼트를 공유.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.grepular.com/Cert_Authorities_Check_for_DNSSEC_From_Today" target="_blank">인증기관, 오늘부터 DNSSEC 검증 의무화</a></div>
+    <div class="meta">grepular.com · HN 80pts · 182 comments</div>
+    <div class="desc">인증기관(CA)들이 오늘부터 SSL/TLS 인증서 발급 시 DNSSEC 검증을 의무적으로 수행. DNS 스푸핑을 통한 인증서 사기 발급을 방지하기 위한 업계 차원의 보안 강화 조치.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
