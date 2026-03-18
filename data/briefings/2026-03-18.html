@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-18</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 18일 수요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>다중 에이전트 워크플로우로 수만 줄 프로젝트를 낮은 결함률로 유지하는 실전 방법론 공개</li>
+    <li>Codex, 서브에이전트 워크플로 정식 지원 — 복잡한 작업을 병렬 에이전트로 분배</li>
+    <li>Mistral AI, 기업 전용 AI 모델 훈련 플랫폼 Forge 발표</li>
+    <li>"AI는 너무 싸다" — 현재 AI 가격은 투자금 위의 거품이라는 논쟁</li>
+    <li>Python 3.15 JIT 컴파일러 개발 정상 궤도 복귀</li>
+    <li>Java 26 정식 출시</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.stavros.io/posts/how-i-write-software-with-llms/" target="_blank">내가 LLM으로 소프트웨어를 만드는 방법 — 다중 에이전트 워크플로우</a></div>
+    <div class="meta">stavros.io · GeekNews 33pts · 8 comments</div>
+    <div class="desc">아키텍트-개발자-리뷰어로 구성된 다중 에이전트 워크플로우를 통해 수만 줄 규모의 프로젝트를 낮은 결함률로 유지하는 구체적인 방법론. 서로 다른 모델을 역할별로 분리 배치하면 자기 동의 편향을 줄이고 코드 리뷰 품질이 크게 향상된다는 실전 경험 공유.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/codex/subagents" target="_blank">Codex, Subagents 지원 시작 — 병렬 에이전트 오케스트레이션</a></div>
+    <div class="meta">developers.openai.com · GeekNews 9pts · 4 comments</div>
+    <div class="desc">OpenAI Codex가 서브에이전트 워크플로를 정식 지원. 복잡한 작업을 여러 전문 에이전트에 병렬 분배하고 결과를 통합. TOML 파일로 커스텀 에이전트를 정의해 모델, 샌드박스, MCP 서버를 에이전트별로 독립 설정 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://mistral.ai/news/forge" target="_blank">Mistral AI Forge — 기업 전용 AI 모델 훈련 플랫폼</a></div>
+    <div class="meta">mistral.ai · HN 54pts · 2 comments</div>
+    <div class="desc">기업이 내부 데이터로 자체 AI 모델을 훈련할 수 있는 플랫폼. 사전 학습, 후처리, 강화학습까지 지원하며 ASML, ESA, Ericsson 등과 이미 파트너십. 범용 AI와 기업 특화 AI 사이의 격차를 메우는 것이 목표.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.reddit.com/r/webdev/comments/1rvacl9/software_developers_dont_need_to_outlast_vibe/" target="_blank">"지금 AI는 너무 싸다" — 가격 거품과 개발자 생존 전망</a></div>
+    <div class="meta">reddit.com · GeekNews 13pts · 2 comments</div>
+    <div class="desc">현재 AI 코딩 도구의 저가격은 투자금과 시장점유율 경쟁 위에 형성된 것이라는 문제 제기. 저가 정책 종료 후에도 살아남을 적응력이 핵심이라는 주장과, 기술 발전으로 비용은 계속 하락한다는 반론이 양분.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/CopilotKit/OpenGenerativeUI" target="_blank">OpenGenerativeUI — AI 기반 생성형 UI 프레임워크 오픈소스</a></div>
+    <div class="meta">github.com · GeekNews 26pts · 3 comments</div>
+    <div class="desc">Claude의 인터랙티브 시각 자료 생성 기능을 재구현한 오픈소스. 차트, 3D 애니메이션, 다이어그램 등을 자동 생성하며, CopilotKit과 LangGraph 기반으로 실시간 대화형 시각 콘텐츠를 렌더링.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/nullclaw/nullclaw" target="_blank">nullclaw — Zig로 구현한 678KB 초경량 AI 어시스턴트</a></div>
+    <div class="meta">github.com · GeekNews 20pts · 4 comments</div>
+    <div class="desc">정적 바이너리 678KB, 메모리 1MB 미만, 부팅 2ms 미만의 초경량 AI 어시스턴트. 50개 이상 AI 프로바이더, 19개 채널, SQLite 하이브리드 메모리 내장. $5 하드웨어에서도 실행 가능한 의존성 제로 설계.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://fidget-spinner.github.io/posts/jit-on-track.html" target="_blank">Python 3.15 JIT 컴파일러, 정상 궤도 복귀</a></div>
+    <div class="meta">fidget-spinner.github.io · HN 224pts · 81 comments</div>
+    <div class="desc">한동안 진행이 불투명했던 Python 3.15의 JIT 컴파일러 개발이 정상 궤도에 복귀. 성능 개선과 안정성 확보가 동시에 진행 중이며, Python 생태계의 실행 속도 향상에 대한 기대감 재점화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://hanno.codes/2026/03/17/java-26-is-here/" target="_blank">Java 26 정식 출시</a></div>
+    <div class="meta">hanno.codes · HN 144pts · 113 comments</div>
+    <div class="desc">Java 26이 정식 출시. 6개월 릴리스 주기를 유지하며 새로운 언어 기능과 성능 개선을 포함. HN에서 113개 댓글로 활발한 토론 진행 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://wasmer.io/posts/edgejs-safe-nodejs-using-wasm-sandbox" target="_blank">Edge.js — WebAssembly 샌드박스에서 Node.js 앱 실행</a></div>
+    <div class="meta">wasmer.io · HN 82pts · 22 comments</div>
+    <div class="desc">Node.js 앱을 WebAssembly 샌드박스 안에서 안전하게 실행하는 Edge.js. 신뢰할 수 없는 코드의 격리 실행이나 엣지 환경 배포에 유용한 새로운 접근법.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/choam2426/mcp-optimizer" target="_blank">mcp-optimizer — Claude Code의 MCP 토큰 낭비 방지 플러그인</a></div>
+    <div class="meta">github.com · GeekNews 7pts · 1 comment</div>
+    <div class="desc">Claude Code에 MCP 서버를 연결하면 사용하지 않는 도구 스키마까지 매 대화에 로드되어 서버 3개만으로도 대화당 6,500+ 토큰이 낭비됨. 이를 감지하고 최적화하는 플러그인.</div>
+  </div>
+</div>
+
+<!-- Science & Industry -->
+<div class="section">
+  <h2>Science &amp; Industry</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://phys.org/news/2026-03-ryugu-asteroid-samples-dna-rna.html" target="_blank">류구 소행성 샘플에서 DNA·RNA 구성요소 전부 발견</a></div>
+    <div class="meta">phys.org · HN 168pts · 94 comments</div>
+    <div class="desc">일본의 하야부사2가 가져온 류구 소행성 샘플에서 DNA와 RNA의 모든 구성 요소가 확인됨. 생명의 기본 재료가 우주에서 유래했을 가능성을 뒷받침하는 중요한 과학적 발견.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://kagi.com/smallweb/" target="_blank">Kagi Small Web — 개인 블로그와 소규모 웹사이트 발굴</a></div>
+    <div class="meta">kagi.com · HN 679pts · 191 comments</div>
+    <div class="desc">검색엔진 Kagi가 대형 플랫폼에 묻힌 개인 블로그와 소규모 웹사이트를 발굴하는 Small Web 프로젝트를 공개. HN 679포인트로 오늘 가장 뜨거운 반응을 얻으며 인디 웹 부활에 대한 열망을 반영.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
