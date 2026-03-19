@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-19</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 19일 목요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Open SWE 공개 — Stripe, Ramp, Coinbase의 사내 코딩 에이전트 패턴을 오픈소스로 구현</li>
+    <li>코드 리뷰 시대의 종말? AI 코드 폭증으로 의도(Intent) 리뷰로의 전환 논의 확산</li>
+    <li>Snowflake AI가 샌드박스를 탈출해 맬웨어를 실행하는 심각한 보안 취약점 발견</li>
+    <li>Stripe, 기계 간 결제를 위한 Machine Payments Protocol(MPP) 발표</li>
+    <li>Nvidia NemoClaw 오픈소스 공개 — 에이전트 평가 및 가드레일 프레임워크</li>
+    <li>Unsloth Studio — 로컬에서 AI 모델을 노코드로 훈련하고 실행하는 오픈소스 UI</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/LangChain/status/2033959303766512006" target="_blank">Open SWE — 사내 코딩 에이전트를 위한 오픈소스 프레임워크</a></div>
+    <div class="meta">LangChain · GeekNews 24pts · 2 comments</div>
+    <div class="desc">Stripe, Ramp, Coinbase 등이 독립적으로 구축한 사내 코딩 에이전트들이 유사한 아키텍처로 수렴. 격리된 클라우드 샌드박스, 큐레이션된 툴셋, 서브에이전트 오케스트레이션, Slack 우선 호출 등 공통 패턴을 Deep Agents + LangGraph 기반으로 오픈소스화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/NVIDIA/NemoClaw" target="_blank">Nvidia NemoClaw — 에이전트 평가 및 가드레일 프레임워크</a></div>
+    <div class="meta">github.com/nvidia · HN 219pts · 170 comments</div>
+    <div class="desc">Nvidia가 AI 에이전트의 평가, 안전성 검증, 가드레일을 위한 NemoClaw 프레임워크를 오픈소스로 공개. HN에서 170개 댓글로 뜨거운 반응을 얻으며 에이전트 신뢰성 확보의 핵심 도구로 주목.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/HKUDS/ClawTeam" target="_blank">ClawTeam — AI 에이전트를 "팀"으로 만드는 오픈소스</a></div>
+    <div class="meta">github.com/HKUDS · GeekNews 7pts</div>
+    <div class="desc">단일 에이전트가 아닌 리더-워커 구조의 에이전트 스웜(Swarm)으로 복잡한 작업을 자동 분배. git worktree + tmux 기반의 가벼운 CLI 오케스트레이션으로 Redis 같은 복잡한 인프라 없이 멀티 에이전트 협업을 구현.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/measuring-agi-cognitive-framework/" target="_blank">Google DeepMind — AGI 측정을 위한 인지 프레임워크 발표</a></div>
+    <div class="meta">blog.google · HN 96pts · 150 comments</div>
+    <div class="desc">Google DeepMind이 AGI를 향한 진전을 측정하기 위한 인지 기반 프레임워크를 공개. 150개 댓글로 AGI 정의와 측정 방법론에 대한 활발한 논쟁이 진행 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://unsloth.ai/docs/new/studio" target="_blank">Unsloth Studio — 로컬 AI 모델 훈련/실행 노코드 웹 UI</a></div>
+    <div class="meta">unsloth.ai · GeekNews 21pts · 1 comment</div>
+    <div class="desc">텍스트, 오디오, 비전 등 500개 이상 AI 모델을 로컬에서 훈련·실행하는 오픈소스 노코드 UI. 기존 대비 2배 빠른 학습, 70% 적은 VRAM. PDF/CSV를 자동으로 데이터셋으로 변환하는 Data Recipes 기능과 모델 비교 Arena 내장.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.latent.space/p/reviews-dead" target="_blank">코드 리뷰를 없애는 방법 — 의도(Intent) 리뷰로의 전환</a></div>
+    <div class="meta">latent.space · GeekNews 49pts · 17 comments</div>
+    <div class="desc">AI 코드 폭증으로 PR 리뷰 시간이 91% 증가하며 기존 코드 리뷰가 한계에 도달. 코드 대신 스펙과 수용 기준을 리뷰하는 상류 검증, 다중 에이전트 경쟁, 스위스 치즈 모델 기반 다층 신뢰 구조로의 패러다임 전환을 제안.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/manaflow-ai/cmux" target="_blank">cmux — AI 코딩 에이전트를 위한 Ghostty 기반 macOS 터미널</a></div>
+    <div class="meta">github.com/manaflow-ai · GeekNews 22pts · 3 comments</div>
+    <div class="desc">Swift+AppKit 네이티브 터미널에 Ghostty 엔진 탑재. AI 에이전트가 입력 대기 시 파란색 링으로 알림, 내장 브라우저로 개발 서버 자동 상호작용, CLI/소켓 API로 완전 스크립트 제어. AGPL-3.0.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://stripe.com/blog/machine-payments-protocol" target="_blank">Stripe Machine Payments Protocol(MPP) — 기계 간 결제 표준</a></div>
+    <div class="meta">stripe.com · HN 135pts · 70 comments</div>
+    <div class="desc">Stripe이 AI 에이전트와 기계가 자율적으로 결제를 수행하는 Machine Payments Protocol을 발표. 에이전트 경제(Agentic Economy) 시대의 결제 인프라를 선점하려는 움직임으로, HN에서 70개 댓글로 활발한 토론.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://gitlab.com/IsolatedOctopi/nvidia_greenboost" target="_blank">Nvidia Greenboost — GPU VRAM을 시스템 RAM/NVMe로 투명하게 확장</a></div>
+    <div class="meta">gitlab.com · HN 92pts · 20 comments</div>
+    <div class="desc">GPU VRAM이 부족할 때 시스템 RAM이나 NVMe를 투명하게 VRAM처럼 활용하는 오픈소스 도구. 대형 모델 로딩이나 추론 시 VRAM 제약을 우회할 수 있는 실용적 솔루션.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.promptarmor.com/resources/snowflake-ai-escapes-sandbox-and-executes-malware" target="_blank">Snowflake AI가 샌드박스를 탈출해 맬웨어 실행</a></div>
+    <div class="meta">promptarmor.com · HN 224pts · 68 comments</div>
+    <div class="desc">Snowflake의 AI 기능이 샌드박스 격리를 우회하고 실제 맬웨어를 실행하는 심각한 취약점 발견. AI 에이전트의 샌드박스 보안이 얼마나 취약할 수 있는지 보여주는 사례로, 에이전트 보안 설계의 경각심을 높임.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.qualys.com/vulnerabilities-threat-research/2026/03/17/cve-2026-3888-important-snap-flaw-enables-local-privilege-escalation-to-root" target="_blank">CVE-2026-3888: Snap 패키지 매니저 로컬 권한 상승 취약점</a></div>
+    <div class="meta">qualys.com · HN 84pts · 45 comments</div>
+    <div class="desc">Ubuntu의 Snap 패키지 매니저에서 로컬 사용자가 root 권한을 획득할 수 있는 중요 취약점 발견. 즉시 패치 적용 권고.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.tomshardware.com/video-games/console-gaming/microsofts-unhackable-xbox-one-has-been-hacked-by-bliss-the-2013-console-finally-fell-to-voltage-glitching-allowing-the-loading-of-unsigned-code-at-every-level" target="_blank">Xbox One, 13년 만에 완전 해킹 — 전압 글리치 공격</a></div>
+    <div class="meta">tomshardware.com · GeekNews 9pts · 3 comments</div>
+    <div class="desc">2013년 출시 이후 "해킹 불가능"으로 여겨졌던 Xbox One이 'Bliss'라는 전압 글리치(Voltage Glitch) 공격으로 완전히 뚫림. 비서명 코드를 모든 레벨에서 로드 가능.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
