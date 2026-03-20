@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-20</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 20일 금요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Astral(ruff, uv 개발사)이 OpenAI에 합류 — Python 생태계 파장 예상</li>
+    <li>Claude Code Skills 실전 운용법 공개 — Anthropic 내부에서 수백 개 스킬 활용 중</li>
+    <li>Google Stitch — 자연어를 고품질 UI 디자인으로 변환하는 AI 네이티브 플랫폼</li>
+    <li>KittenTTS — 25MB 미만의 초경량 TTS 모델 3종 공개</li>
+    <li>macOS 26이 커스텀 DNS 설정을 깨뜨리는 버그 발견, .internal 도메인 영향</li>
+    <li>AI 에이전트 프로토콜 6종(MCP, A2A, UCP 등) 통합 가이드 by Google</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://astral.sh/blog/openai" target="_blank">Astral(ruff, uv)이 OpenAI에 합류</a></div>
+    <div class="meta">astral.sh · HN 1178pts · 726 comments</div>
+    <div class="desc">Python 린터 ruff와 패키지 매니저 uv를 만든 Astral이 OpenAI에 합류. ruff/uv는 오픈소스로 유지되지만, Python 생태계의 핵심 도구가 빅테크에 흡수되는 것에 대해 HN에서 726개 댓글로 뜨거운 논쟁 중. 독립 오픈소스의 지속가능성 문제 재점화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/trq212/status/2033949937936085378" target="_blank">Claude Code Skills 실전 운용법 — Anthropic이 공개한 확장 포인트 활용기</a></div>
+    <div class="meta">x.com · GeekNews 44pts · 1 comment</div>
+    <div class="desc">Claude Code에서 Skills는 가장 많이 사용되는 확장 포인트. Anthropic 내부에서 수백 개 스킬을 운용하며 축적한 실전 노하우를 공개. 에이전트 기반 개발의 커스터마이징 패턴으로 주목.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://academy.openai.com/public/videos/codex-for-software-engineers-2026-03-13" target="_blank">소프트웨어 엔지니어를 위한 Codex — OpenAI 공식 강의</a></div>
+    <div class="meta">academy.openai.com · GeekNews 40pts · 2 comments</div>
+    <div class="desc">OpenAI가 개발자를 위한 Codex 활용 웨비나(58분)를 공개. 코드 완성과 페어 프로그래밍을 넘어 대규모 작업 자동화까지 다루는 실전 가이드.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/" target="_blank">AI 에이전트 프로토콜 개발자 가이드 — MCP, A2A, UCP 등 6종 비교</a></div>
+    <div class="meta">developers.googleblog.com · GeekNews 16pts · 1 comment</div>
+    <div class="desc">Google이 MCP, A2A, UCP, AP2, A2UI, AG-UI 등 6가지 AI 에이전트 프로토콜을 하나의 레스토랑 공급망 시나리오로 묶어 각 프로토콜의 역할과 차이점을 정리. 에이전트 간 통신 표준 이해에 유용한 가이드.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.skypilot.co/scaling-autoresearch/" target="_blank">Scaling Karpathy's Autoresearch — GPU 클러스터에서의 자동 연구</a></div>
+    <div class="meta">skypilot.co · HN 112pts · 55 comments</div>
+    <div class="desc">Karpathy의 Autoresearch 에이전트를 GPU 클러스터로 확장한 실험. AI가 자율적으로 연구 아이디어를 생성하고 실험하는 파이프라인의 스케일링 결과와 한계를 분석.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://qlabs.sh/10x" target="_blank">NanoGPT Slowrun — 무한 컴퓨트로 10배 데이터 효율성 달성</a></div>
+    <div class="meta">qlabs.sh · HN 88pts · 14 comments</div>
+    <div class="desc">NanoGPT 학습에서 데이터 양 대신 컴퓨트를 극대화하는 접근법으로 10배의 데이터 효율성을 달성. 데이터가 제한적일 때의 학습 전략에 새로운 시사점을 제공.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://stitch.withgoogle.com/" target="_blank">Google Stitch — AI 네이티브 "바이브 디자인" 플랫폼</a></div>
+    <div class="meta">stitch.withgoogle.com · GeekNews 19pts · 1 comment</div>
+    <div class="desc">Google Labs가 자연어를 고품질 UI 디자인으로 변환하는 AI 네이티브 캔버스. 와이어프레임 없이 텍스트 프롬프트만으로 반응형 UI를 생성하고, Material Design 3와 완전 통합.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/KittenML/KittenTTS" target="_blank">KittenTTS — 25MB 미만의 초경량 TTS 모델 3종</a></div>
+    <div class="meta">github.com/kittenml · HN 294pts · 97 comments</div>
+    <div class="desc">가장 작은 모델이 25MB 미만인 초경량 TTS 모델 3종 공개. 온디바이스 음성 합성을 가능하게 하며 HN에서 294포인트를 기록하며 큰 관심을 모음. 임베디드/모바일 환경에 특히 유용.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/BoltzmannEntropy/MimikaStudio" target="_blank">MimikaStudio — 맥용 음성 복제 및 TTS 오픈소스</a></div>
+    <div class="meta">github.com · GeekNews 26pts · 2 comments</div>
+    <div class="desc">음성 복제, TTS, 문서 낭독, 오디오북 제작을 통합 제공하는 macOS 네이티브 앱. MLX 기반 Metal 가속으로 로컬에서 빠른 추론 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://visacli.sh/" target="_blank">Visa CLI — AI 에이전트가 직접 결제하는 커맨드라인 도구</a></div>
+    <div class="meta">visacli.sh · GeekNews</div>
+    <div class="desc">Visa와 CryptoLabs가 만든 CLI 도구로, AI 코딩 에이전트에게 결제 능력을 부여. API 키 없이 프로그래매틱 카드 결제가 가능하며, 어제 Stripe MPP에 이어 에이전트 결제 인프라 경쟁이 본격화.</div>
+  </div>
+</div>
+
+<!-- Platform & Infrastructure -->
+<div class="section">
+  <h2>Platform &amp; Infrastructure</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://gist.github.com/adamamyl/81b78eced40feae50eae7c4f3bec1f5a" target="_blank">macOS 26, 커스텀 DNS 설정 깨뜨리는 버그 — .internal 도메인 영향</a></div>
+    <div class="meta">gist.github.com · HN 307pts · 157 comments</div>
+    <div class="desc">macOS 26에서 커스텀 DNS 설정이 작동하지 않는 심각한 버그 발견. .internal 도메인을 포함한 사설 DNS 구성에 영향. 홈랩이나 사내 인프라를 운용하는 개발자에게 즉각적인 영향.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://arstechnica.com/gadgets/2026/03/google-details-new-24-hour-process-to-sideload-unverified-android-apps/" target="_blank">Google, 안드로이드 앱 사이드로드에 24시간 대기 프로세스 도입</a></div>
+    <div class="meta">arstechnica.com · HN 423pts · 503 comments</div>
+    <div class="desc">Google이 미검증 앱 사이드로드 시 24시간 대기 기간을 의무화하는 새 정책을 발표. 보안 강화 목적이나 안드로이드의 개방성을 훼손한다는 비판이 503개 댓글로 폭발. 개발자 자유 vs 사용자 보호 논쟁 재점화.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
