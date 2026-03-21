@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-21</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 21일 토요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>OpenCode 오픈소스 AI 코딩 에이전트 공개 — Anthropic이 법적 조치로 자사 코드 삭제 요청</li>
+    <li>Cursor, 코딩 특화 AI 모델 Composer 2 출시 — 프런티어급 성능에 저렴한 가격</li>
+    <li>Super Micro 공동창업자, $2.5B AI 칩 밀수 혐의로 기소 — 주가 25% 폭락</li>
+    <li>프랑스 항공모함, 피트니스 앱(Strava)을 통해 실시간 위치 추적 당해</li>
+    <li>Delve — 가짜 컴플라이언스 서비스의 실태 폭로, HN 511포인트</li>
+    <li>FSF, Anthropic 저작권 소송 합의에 대한 공식 입장 발표</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://opencode.ai/" target="_blank">OpenCode — 오픈소스 AI 코딩 에이전트 공개</a></div>
+    <div class="meta">opencode.ai · HN 300pts · 140 comments</div>
+    <div class="desc">오픈소스 AI 코딩 에이전트 OpenCode가 공개되어 HN에서 빠르게 300포인트를 돌파. 한편 Anthropic은 OpenCode 저장소에 법적 요청을 보내 자사 시스템 프롬프트와 인증 관련 코드의 삭제를 요구. 오픈소스 AI 도구와 기업 IP 보호 간의 긴장이 표면화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://cursor.com/ko/blog/composer-2" target="_blank">Cursor, 코딩 특화 AI 모델 Composer 2 출시</a></div>
+    <div class="meta">cursor.com · GeekNews</div>
+    <div class="desc">Cursor가 프런티어급 성능에 저렴한 가격의 코딩 특화 AI 모델 Composer 2를 공개. 모든 주요 벤치마크에서 전작 대비 크게 향상된 성능을 보이며, 코딩 에이전트 경쟁이 더욱 치열해지는 국면.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://code.claude.com/docs/en/channels" target="_blank">Claude Code Channels — Telegram/Discord로 작업 지시 가능</a></div>
+    <div name="meta" class="meta">code.claude.com · GeekNews 17pts</div>
+    <div class="desc">MCP 서버를 통해 외부 메시지와 웹훅을 실행 중인 Claude Code 세션에 푸시 가능. 스마트폰에서 Telegram이나 Discord로 Claude Code에 직접 작업을 지시할 수 있는 채널 기능이 공개.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/MoonshotAI/Attention-Residuals" target="_blank">Attention Residuals — MoonshotAI의 새로운 어텐션 메커니즘</a></div>
+    <div class="meta">github.com/moonshotai · HN 106pts · 18 comments</div>
+    <div class="desc">MoonshotAI가 트랜스포머 어텐션 메커니즘에 잔차(residual) 연결을 추가한 새로운 기법을 공개. 기존 어텐션 대비 학습 안정성과 성능 향상을 보여주며, LLM 아키텍처 개선 연구에 기여.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.fsf.org/blogs/licensing/2026-anthropic-settlement" target="_blank">FSF, Anthropic 저작권 침해 소송 합의에 대한 공식 입장 발표</a></div>
+    <div class="meta">fsf.org · HN 255pts · 125 comments</div>
+    <div class="desc">Bartz v. Anthropic 저작권 소송 합의에 대해 FSF가 공식 입장을 발표. AI 학습 데이터의 저작권 문제와 오픈소스 라이선스 해석에 대한 중요한 선례가 될 수 있는 사안으로, 125개 댓글이 달리며 활발한 논의 중.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://haskellforall.com/2026/03/a-sufficiently-detailed-spec-is-code" target="_blank">"충분히 상세한 명세는 코드다" — 에이전틱 코딩의 한계</a></div>
+    <div class="meta">haskellforall.com · GeekNews 30pts · 5 comments</div>
+    <div class="desc">에이전틱 코딩이면 "명세 문서로 코드를 대체할 수 있다"는 주장에 대해, 명세가 충분히 정밀해지면 결국 코드와 동일한 형태로 수렴한다는 반론. 소프트웨어 공학의 근본적 복잡성에 대한 고찰.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://wikidocs.net/blog/@jaehong/9481/" target="_blank">하네스 엔지니어링이란? — AI 에이전트 성능의 숨은 변수</a></div>
+    <div class="meta">wikidocs.net · GeekNews 18pts · 4 comments</div>
+    <div class="desc">AI 에이전트 성능 = 모델 + 하네스. 모델 자체보다 하네스(프롬프트, 도구, 워크플로우 구성)가 에이전트 성능에 미치는 영향이 커지고 있으며, 이를 체계적으로 엔지니어링하는 방법론을 정리.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/open-pencil/open-pencil" target="_blank">open-pencil — Figma 대체용 AI 기반 오픈소스 디자인 편집기</a></div>
+    <div class="meta">github.com/open-pencil · GeekNews 16pts · 2 comments</div>
+    <div class="desc">AI 중심 설계 철학의 차세대 오픈소스 디자인 도구. .fig 파일을 직접 읽고 쓸 수 있어 Figma 프로젝트를 그대로 열고 수정 가능. Figma 대안을 찾는 팀에게 주목할 만한 프로젝트.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.openui.com/blog/rust-wasm-parser" target="_blank">Rust WASM 파서를 TypeScript로 재작성했더니 3배 빨라졌다</a></div>
+    <div class="meta">openui.com · HN 62pts · 30 comments</div>
+    <div class="desc">Rust로 작성한 WASM 파서를 TypeScript로 재작성했더니 오히려 3배 빨라진 사례. WASM의 JS 인터옵 오버헤드가 순수 JS의 JIT 최적화보다 느릴 수 있다는 것을 보여주는 흥미로운 벤치마크 결과.</div>
+  </div>
+</div>
+
+<!-- Security & Industry -->
+<div class="section">
+  <h2>Security &amp; Industry</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.lemonde.fr/en/international/article/2026/03/20/stravaleaks-france-s-aircraft-carrier-located-in-real-time-by-le-monde-through-fitness-app_6751640_4.html" target="_blank">프랑스 항공모함, Strava 피트니스 앱으로 실시간 위치 추적</a></div>
+    <div class="meta">lemonde.fr · HN 444pts · 376 comments</div>
+    <div class="desc">프랑스 Le Monde가 피트니스 앱 Strava의 데이터를 이용해 프랑스 해군 항공모함의 실시간 위치를 추적하는 데 성공. 군사 보안에서 민간 앱의 위치 데이터가 초래하는 심각한 OPSEC 위협을 다시 한번 입증.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.forbes.com/sites/tylerroush/2026/03/20/super-micro-shares-plunge-25-after-co-founder-charged-in-25-billion-ai-chip-smuggling-plot/" target="_blank">Super Micro 공동창업자, $2.5B AI 칩 밀수 혐의로 기소</a></div>
+    <div class="meta">forbes.com · HN 307pts · 134 comments</div>
+    <div class="desc">Super Micro Computer 공동창업자가 25억 달러 규모의 AI 칩 밀수 혐의로 기소되며 주가가 25% 폭락. AI 하드웨어 공급망의 지정학적 리스크와 수출 통제 우회 시도의 심각성을 보여주는 사건.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://deepdelver.substack.com/p/delve-fake-compliance-as-a-service" target="_blank">Delve — "가짜 컴플라이언스" 서비스의 실태 폭로</a></div>
+    <div class="meta">deepdelver.substack.com · HN 511pts · 180 comments</div>
+    <div class="desc">규정 준수(compliance)를 형식적으로만 충족시키는 "가짜 컴플라이언스" 서비스 산업의 실태를 폭로한 글이 HN에서 511포인트를 기록하며 큰 반향. 보안 감사와 인증의 실질적 가치에 대한 근본적 의문 제기.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
