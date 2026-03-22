@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-22</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 22일 일요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>OpenAI, GPT-5.4 프론트엔드 개발 가이드와 frontend-skill 프롬프트 패키지 오픈소스 공개</li>
+    <li>Karpathy: 직접 코딩 비중 80%→거의 0%, 병렬 에이전트 운영이 새 패러다임</li>
+    <li>Mamba-3 공개 — 추론 효율에 초점 맞춘 차세대 SSM, Llama-3.2-1B보다 빠른 레이턴시</li>
+    <li>Meta, 1,600개 언어 번역 모델 Omnilingual MT 발표</li>
+    <li>Bing에서 "카카오톡" 검색 시 상위 3개 결과가 모두 중국발 피싱 사이트</li>
+    <li>Ubuntu 26.04, 46년 만에 sudo 비밀번호 입력 시 별표(*) 표시로 전환</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4" target="_blank">OpenAI, GPT-5.4 프론트엔드 디자인 실전 가이드 공개</a></div>
+    <div class="meta">developers.openai.com · GeekNews 18pts</div>
+    <div class="desc">OpenAI가 GPT-5.4의 프론트엔드 개발 역량을 극대화하는 프롬프팅 기법과 디자인 가이드를 공개. 이미지 이해력 강화, Computer Use 기반 자체 검증, 디자인 시스템 사전 정의 등 4가지 핵심 팁을 제시하며, 별도의 frontend-skill 프롬프트 패키지를 오픈소스로 공개해 코딩 에이전트에서 즉시 활용 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.youtube.com/watch?v=kwSVtQ7dziU" target="_blank">Karpathy: 코드 에이전트, AutoResearch, 그리고 AI의 루피(Loopy) 시대</a></div>
+    <div class="meta">youtube.com · GeekNews 8pts</div>
+    <div class="desc">Karpathy가 2024년 12월 이후 직접 코딩 비중이 80%에서 거의 0%로 급감한 체감적 전환을 공유. 병렬 에이전트를 동시에 운영하며 기능 단위로 작업을 배분하는 것이 새 패러다임이며, 핵심 병목은 모델 능력이 아닌 사용자 숙련도라고 강조. AutoResearch 프레임워크로 연구자 없이 자율 실험 반복도 시연.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.together.ai/blog/mamba-3" target="_blank">Mamba-3 — 추론 효율에 초점 맞춘 차세대 SSM 공개</a></div>
+    <div class="meta">together.ai · HN 272pts · 50 comments</div>
+    <div class="desc">Together AI·CMU·Princeton 공동 연구진이 Mamba-3를 공개. 학습 속도 최적화에 집중했던 Mamba-2와 달리, 추론 효율을 최우선으로 설계. 복소수 상태 추적과 MIMO 변형으로 1.5B 스케일에서 Mamba-2, Gated DeltaNet, Llama-3.2-1B보다 빠른 레이턴시를 달성. 커널도 오픈소스 공개.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://ai.meta.com/research/publications/omnilingual-mt-machine-translation-for-1600-languages/" target="_blank">Meta, 1,600개 언어 번역 모델 Omnilingual MT 발표</a></div>
+    <div class="meta">meta.com · HN 112pts · 31 comments</div>
+    <div class="desc">Meta가 1,600개 언어를 지원하는 기계번역 모델 Omnilingual MT를 발표. 저자원 언어까지 포괄하는 대규모 다국어 번역 연구로, 기존 모델들이 커버하지 못한 언어 범위를 획기적으로 확장.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://tinygrad.org/#tinybox" target="_blank">Tinybox — 120B 파라미터 지원 오프라인 AI 디바이스</a></div>
+    <div class="meta">tinygrad.org · HN 243pts · 136 comments</div>
+    <div class="desc">tinygrad가 120B 파라미터 모델을 로컬에서 구동할 수 있는 오프라인 AI 디바이스 Tinybox를 공개. 클라우드 의존 없이 대형 모델을 자체 하드웨어에서 실행하려는 수요에 대응하며, HN에서 243포인트와 136개 댓글로 활발한 논의 중.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://app-place-tech.com/post/c8616c79-9e66-46bd-b010-3a4a30d6f158" target="_blank">AI 시대 개발 방법론: SDD+TDD</a></div>
+    <div class="meta">app-place-tech.com · GeekNews 21pts</div>
+    <div class="desc">AI가 코드를 생성하는 속도가 인간의 이해 속도를 앞지르면서, 개발자의 역할이 '코드를 쓰는 사람'에서 '의도를 정의하고 검증하는 설계자'로 변화. 스펙 주도 개발(SDD)과 테스트 주도 개발(TDD)을 결합한 AI 시대의 실전 방법론을 제안.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://gieseanw.wordpress.com/2026/03/20/pull-requests-are-dead-long-live-pull-requests/" target="_blank">PR은 죽었다, PR 만세 — AI 시대의 코드 리뷰</a></div>
+    <div class="meta">gieseanw.wordpress.com · GeekNews 4pts · 5 comments</div>
+    <div class="desc">AI가 코드를 작성하는 시대에 풀 리퀘스트 리뷰 방식이 근본적으로 바뀌어야 한다는 주장. 현재의 라인 바이 라인 리뷰 프로세스는 AI 코딩 워크플로우에 맞지 않으며, 의도와 행동 검증 중심으로 전환이 필요.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://grafeo.dev/" target="_blank">Grafeo — Rust로 만든 경량 임베더블 그래프 DB</a></div>
+    <div class="meta">grafeo.dev · HN 175pts · 57 comments</div>
+    <div class="desc">Rust로 구축된 빠르고 가벼운 임베더블 그래프 데이터베이스. 별도 서버 없이 애플리케이션에 내장할 수 있어, SQLite의 그래프 DB 버전을 지향. HN에서 175포인트로 주목받는 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://tooscut.app/" target="_blank">Tooscut — WebGPU+WASM 기반 브라우저 전문 비디오 편집기</a></div>
+    <div class="meta">tooscut.app · HN 87pts · 23 comments</div>
+    <div class="desc">WebGPU와 WASM을 활용해 브라우저에서 전문급 비디오 편집을 구현한 웹 앱. 별도 설치 없이 브라우저만으로 비디오 편집이 가능하며, WebGPU의 실전 활용 사례로 주목.</div>
+  </div>
+</div>
+
+<!-- Security & Industry -->
+<div class="section">
+  <h2>Security &amp; Industry</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://lidar.blog/bing-kakaotalk-phishing-analysis/" target="_blank">Bing 검색 "카카오톡" 상위 3개 결과가 전부 중국발 피싱</a></div>
+    <div class="meta">lidar.blog · GeekNews</div>
+    <div class="desc">Bing에서 "카카오톡"을 검색하면 상위 3개 결과(apps-kakaocorp.com 등)가 모두 중국발 피싱 사이트인 것으로 확인. 대형 검색 엔진의 피싱 사이트 필터링 부재와 한국 사용자를 겨냥한 정교한 피싱 공격의 실태를 폭로.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://news.dyne.org/child-protection-is-not-access-control/" target="_blank">아동 보호를 인터넷 접근 통제로 바꾸지 말라</a></div>
+    <div class="meta">dyne.org · HN 364pts · 149 comments</div>
+    <div class="desc">아동 보호 명목의 법안들이 실질적으로 전체 인터넷 사용자의 접근 통제와 감시 인프라 구축으로 변질되고 있다는 비판. 연령 인증 의무화가 프라이버시 침해와 검열 확대로 이어질 수 있다는 경고로, HN에서 364포인트 기록.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://pbxscience.com/ubuntu-26-04-ends-46-years-of-silent-sudo-passwords/" target="_blank">Ubuntu 26.04, 46년 만에 sudo 비밀번호 입력 시 별표 표시</a></div>
+    <div class="meta">pbxscience.com · HN 303pts · 305 comments</div>
+    <div class="desc">Ubuntu 26.04가 sudo 비밀번호 입력 시 46년간 유지되어 온 '무반응' 방식 대신 별표(*)를 표시하는 변경을 도입. 보안 vs 사용성 논쟁이 HN에서 305개 댓글로 뜨거운 토론 중. 전통적으로 입력 길이 노출을 우려했으나 UX 관점에서의 전환.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
