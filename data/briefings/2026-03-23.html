@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-23</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 23일 월요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Flash-MoE: 397B 파라미터 모델을 일반 노트북에서 구동하는 기술 공개</li>
+    <li>Bram Cohen(BitTorrent 창시자), 버전 관리의 미래에 대한 심층 분석 발표</li>
+    <li>Anthropic 내부 Claude Code Skills 운용 노하우 공개 — 수백 개 스킬 실전 경험</li>
+    <li>Cloudflare, archive.today를 C&C/봇넷으로 분류하여 차단 논란</li>
+    <li>OpenClaw 보안 취약점 분석 보고서 HN에서 275포인트 — 에이전트 보안 경각심 고조</li>
+    <li>Qwen3-TTS 추론 속도 5배 향상 Triton 커널 퓨전 오픈소스 공개</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/danveloper/flash-moe" target="_blank">Flash-MoE — 397B 파라미터 모델을 노트북에서 실행</a></div>
+    <div class="meta">github.com · HN 289pts · 101 comments</div>
+    <div class="desc">Mixture-of-Experts 아키텍처를 활용해 397B 파라미터 모델을 일반 노트북에서 구동할 수 있는 Flash-MoE 프로젝트 공개. 전체 파라미터를 로드하지 않고 필요한 전문가만 활성화하는 방식으로 메모리와 연산을 극적으로 절감. 로컬 AI 구동의 새로운 가능성을 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/trq212/status/2033949937936085378" target="_blank">Anthropic 내부 Claude Code Skills 운용 노하우 공개</a></div>
+    <div class="meta">x.com · GeekNews 79pts</div>
+    <div class="desc">Anthropic 내부에서 수백 개의 Claude Code Skills를 실제 운용하며 축적한 실전 노하우를 공개. Skills는 Claude Code의 가장 많이 사용되는 확장 포인트 중 하나로, 반복 작업 자동화와 도메인 특화 지식 주입에 핵심적 역할. 효과적인 스킬 설계 패턴과 안티패턴도 함께 소개.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646" target="_blank">AI는 도구가 아니라 '세 번째 사고 시스템' — 와튼스쿨 연구</a></div>
+    <div class="meta">papers.ssrn.com · GeekNews 14pts</div>
+    <div class="desc">펜실베이니아대 와튼스쿨 연구진이 카너먼의 '빠른 사고, 느린 사고'에 이어 AI를 '세 번째 사고 시스템'으로 정의한 논문 발표. AI가 단순 도구를 넘어 인간의 인지 프로세스 자체를 재구성하고 있다는 분석으로, AI 시대의 의사결정 프레임워크를 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/newgrit1004" target="_blank">Qwen3-TTS 추론 속도 5배 향상 Triton 커널 퓨전 오픈소스</a></div>
+    <div class="meta">github.com · GeekNews</div>
+    <div class="desc">Qwen3-TTS 1.7B 모델의 추론 병목을 해결해 약 5배의 속도 향상을 달성한 Triton 커널 퓨전 라이브러리 공개. GPU 커널 레벨에서 연산을 합쳐 오버헤드를 최소화하는 접근으로, TTS 모델의 실시간 활용 가능성을 크게 높임.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://christophermeiklejohn.com/ai/zabriskie/development/android/ios/2026/03/22/teaching-claude-to-qa-a-mobile-app.html" target="_blank">Claude에게 모바일 앱 QA를 가르치다</a></div>
+    <div class="meta">christophermeiklejohn.com · HN 56pts</div>
+    <div class="desc">Claude를 활용해 모바일 앱의 QA 테스트를 자동화한 실전 사례. Android와 iOS 앱의 UI 테스트를 AI가 수행하도록 구성하는 과정과 그 결과를 상세히 공유. AI 기반 테스트 자동화의 현실적 가능성과 한계를 동시에 보여줌.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://bramcohen.com/p/manyana" target="_blank">Bram Cohen이 말하는 버전 관리의 미래</a></div>
+    <div class="meta">bramcohen.com · HN 367pts · 215 comments</div>
+    <div class="desc">BitTorrent 창시자 Bram Cohen이 현재 버전 관리 시스템의 한계와 미래 방향을 심층 분석. Git의 구조적 문제점을 지적하며, 차세대 버전 관리가 갖춰야 할 요건을 제시. HN에서 367포인트와 215개 댓글로 가장 활발한 논의를 이끌어냄.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://stevekrouse.com/precision" target="_blank">"코드의 죽음은 크게 과장됐다" — 정밀성이 여전히 중요한 이유</a></div>
+    <div class="meta">stevekrouse.com · HN 207pts · 193 comments</div>
+    <div class="desc">AI가 코드를 대체한다는 주장에 반론을 제기하는 글. 명세가 충분히 정밀해지면 결국 코드와 동일한 형태로 수렴하며, 프로그래밍의 본질은 정밀한 의도 표현이라는 점은 변하지 않는다고 주장. GeekNews의 "충분히 상세한 명세는 코드다"와 같은 맥락의 논의.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://domenic.me/windows-native-dev/" target="_blank">Windows 네이티브 앱 개발은 엉망이다</a></div>
+    <div class="meta">domenic.me · HN 308pts · 327 comments</div>
+    <div class="desc">Windows 네이티브 앱 개발 환경의 파편화와 혼란을 날카롭게 비판. Win32, UWP, WinUI, MAUI 등 겹치는 프레임워크들의 난맥상을 정리하며, 개발자 경험이 macOS/Linux 대비 크게 뒤처져 있다고 지적. 327개 댓글로 뜨거운 공감대 형성.</div>
+  </div>
+</div>
+
+<!-- Security & Privacy -->
+<div class="section">
+  <h2>Security &amp; Privacy</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://composio.dev/content/openclaw-security-and-vulnerabilities" target="_blank">OpenClaw 보안 취약점 분석 — "보안 악몽"이라는 평가</a></div>
+    <div class="meta">composio.dev · HN 275pts · 191 comments</div>
+    <div class="desc">AI 에이전트 프레임워크 OpenClaw의 보안 취약점을 심층 분석한 보고서가 HN에서 275포인트를 기록하며 큰 반향. 에이전트에게 시스템 접근 권한을 부여하는 구조에서 발생하는 보안 위험을 체계적으로 정리. AI 에이전트 시대의 보안 설계에 대한 경각심을 높이는 계기.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://radar.cloudflare.com/domains/domain/archive.today" target="_blank">Cloudflare, archive.today를 C&C/봇넷으로 분류 — 1.1.1.2에서 차단</a></div>
+    <div class="meta">cloudflare.com · HN 363pts · 261 comments</div>
+    <div class="desc">Cloudflare가 웹 아카이브 서비스 archive.today를 "C&C/Botnet"으로 분류하여 가족 보호용 DNS(1.1.1.2)에서 접근을 차단. 정당한 아카이브 서비스에 대한 과도한 분류라는 비판과 함께, 대형 인프라 기업의 판단이 인터넷 접근성에 미치는 영향에 대한 논쟁이 261개 댓글로 확산.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.eff.org/deeplinks/2026/03/blocking-internet-archive-wont-stop-ai-it-will-erase-webs-historical-record" target="_blank">인터넷 아카이브 차단은 AI를 못 막고, 웹의 역사만 지운다</a></div>
+    <div class="meta">eff.org · GeekNews</div>
+    <div class="desc">EFF가 인터넷 아카이브 차단 움직임에 대해 경고. AI 학습을 막겠다는 명목으로 Wayback Machine 접근을 제한하면 1조 개 이상의 웹페이지 보존 기록이 위협받으며, 실제로 AI 기업의 크롤링은 다른 경로로 우회할 수 있어 실효성도 없다고 지적.</div>
+  </div>
+</div>
+
+<!-- Trends & Community -->
+<div class="section">
+  <h2>Trends &amp; Community</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.projectnomad.us" target="_blank">Project Nomad — 오프라인에서도 사라지지 않는 지식</a></div>
+    <div class="meta">projectnomad.us · HN 344pts · 97 comments</div>
+    <div class="desc">인터넷 연결 없이도 접근 가능한 지식 저장소 프로젝트. 오프라인 환경에서의 지식 접근성을 보장하는 것을 목표로 하며, 디지털 주권과 정보 접근권 관점에서 344포인트의 높은 관심을 받음.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://grapheneos.social/@GrapheneOS/116261301913660830" target="_blank">GrapheneOS, 개인정보 없이 사용 가능한 상태 유지 선언</a></div>
+    <div class="meta">grapheneos.social · HN 153pts · 33 comments</div>
+    <div class="desc">프라이버시 중심 Android OS인 GrapheneOS가 개인 정보 제출 없이도 계속 사용할 수 있도록 하겠다고 공식 선언. 연령 인증이나 신원 확인 의무화 흐름에 대한 명확한 반대 입장으로, 디지털 프라이버시 진영의 입장을 대변.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
