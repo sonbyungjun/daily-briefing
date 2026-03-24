@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-24</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 24일 화요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>iPhone 17 Pro에서 400B LLM 구동 시연 — 온디바이스 AI 새 시대</li>
+    <li>Walmart, ChatGPT 체크아웃 전환율 3배 낮다고 발표 — AI 커머스 회의론</li>
+    <li>Anthropic "81k Interviews" — 81,000명이 말한 AI의 실제 쓰임새</li>
+    <li>Trivy GitHub Actions 태그 대규모 탈취 — 시크릿 유출 위험</li>
+    <li>FCC, 외국산 소비자 라우터를 커버드 리스트에 추가</li>
+    <li>YC CEO Garry Tan의 gstack — Claude Code로 1인 20인팀 구현</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://twitter.com/anemll/status/2035901335984611412" target="_blank">iPhone 17 Pro에서 400B 파라미터 LLM 구동 시연</a></div>
+    <div class="meta">twitter.com · HN 449pts · 232 comments</div>
+    <div class="desc">iPhone 17 Pro에서 400B 파라미터 규모의 LLM을 실행하는 데모 영상 공개. 온디바이스 AI의 한계를 극적으로 확장하는 성과로, 모바일 환경에서의 대규모 모델 추론이 현실화되고 있음을 보여줌. HN에서 449포인트와 232개 댓글로 뜨거운 반응.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/81k-interviews" target="_blank">Anthropic "81k Interviews" — 81,000명이 말한 AI의 진짜 쓰임새</a></div>
+    <div class="meta">anthropic.com · GeekNews 10pts</div>
+    <div class="desc">Anthropic이 81,000명을 인터뷰해 AI의 실제 활용 사례를 정리한 프로젝트 공개. AGI나 추상적 논의가 아닌, 현장에서 사람들이 AI를 어떻게 쓰고 있는지에 초점. AI 논의에서 빠져 있던 '실사용자 목소리'를 대규모로 수집한 의미 있는 시도.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/garrytan/gstack" target="_blank">gstack — Claude Code로 만드는 가상 엔지니어링 팀</a></div>
+    <div class="meta">github.com · GeekNews 43pts</div>
+    <div class="desc">YC CEO Garry Tan이 직접 만들어 사용하는 AI 소프트웨어 팩토리. Claude Code 기반으로 한 명이 20명 규모의 엔지니어링 팀처럼 일할 수 있도록 구성한 오픈소스 프로젝트. Think → Plan → Build 워크플로우로 AI 에이전트를 체계적으로 조율.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://searchengineland.com/walmart-chatgpt-checkout-converted-worse-472071" target="_blank">Walmart: ChatGPT 체크아웃 전환율, 웹사이트보다 3배 낮아</a></div>
+    <div class="meta">searchengineland.com · HN 401pts · 261 comments</div>
+    <div class="desc">Walmart이 ChatGPT를 통한 체크아웃 전환율이 자사 웹사이트 대비 3배 낮다고 발표. AI 기반 커머스의 현실적 한계를 보여주는 데이터로, 대화형 인터페이스가 구매 결정에는 오히려 마찰을 증가시킬 수 있다는 시사점. 401포인트로 큰 관심.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.mozilla.ai/cq-stack-overflow-for-agents/" target="_blank">Cq — AI 코딩 에이전트를 위한 Stack Overflow (Mozilla)</a></div>
+    <div class="meta">blog.mozilla.ai · HN 24pts</div>
+    <div class="desc">Mozilla AI가 AI 코딩 에이전트 전용 Q&A 플랫폼 Cq를 공개. 에이전트가 코딩 중 겪는 문제를 커뮤니티 지식으로 해결하는 구조로, 기존 Stack Overflow가 인간 개발자를 위한 것이라면 Cq는 AI 에이전트의 문제 해결을 돕는 새로운 패러다임.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/blog/designing-delightful-frontends-with-gpt-5-4" target="_blank">GPT-5.4로 세련된 프론트엔드 디자인하기</a></div>
+    <div class="meta">developers.openai.com · GeekNews 41pts</div>
+    <div class="desc">OpenAI가 GPT-5.4의 프론트엔드 개발 역량 극대화를 위한 실전 프롬프팅 기법과 디자인 가이드를 공개. 이미지 이해력과 기능 완성도를 활용해 고품질 UI를 생성하는 방법론을 상세히 소개. AI 기반 프론트엔드 개발의 실용적 가이드.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://socket.dev/blog/trivy-under-attack-again-github-actions-compromise" target="_blank">Trivy GitHub Actions 태그 대규모 탈취 — 시크릿 유출 위험</a></div>
+    <div class="meta">socket.dev · HN 142pts · 52 comments</div>
+    <div class="desc">보안 스캐너 Trivy의 GitHub Actions 태그가 다시 한번 대규모 탈취 공격을 받아 CI/CD 파이프라인의 시크릿 유출 위험이 발생. 태그 기반 Actions 참조의 구조적 취약점을 악용한 공급망 공격으로, SHA 기반 고정의 중요성을 재확인.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.fcc.gov/document/fcc-updates-covered-list-include-foreign-made-consumer-routers" target="_blank">FCC, 외국산 소비자 라우터를 커버드 리스트에 추가</a></div>
+    <div class="meta">fcc.gov · HN 101pts · 51 comments</div>
+    <div class="desc">FCC가 국가 안보 위험이 있는 장비 목록(Covered List)에 외국산 소비자 라우터를 공식 추가. 중국산 라우터의 백도어 우려에 대한 규제 강화 조치로, 가정용 네트워크 장비의 보안이 국가 안보 차원으로 격상.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://bfmtimes.com/hacker-mints-80-million-worth-of-fake-stablecoins-and-swaps-them-for-eth/" target="_blank">해커, $8,000만 상당 USR 스테이블코인 위조 발행</a></div>
+    <div class="meta">bfmtimes.com · HN 48pts · 45 comments</div>
+    <div class="desc">해커가 USR 스테이블코인 $8,000만 상당을 위조 발행한 뒤 ETH로 스왑하는 공격 발생. 스테이블코인 프로토콜의 민팅 권한 관리 취약점을 악용한 사례로, DeFi 보안의 근본적 과제를 다시 부각.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.economist.com/united-states/2026/03/22/america-tells-private-firms-to-hack-back" target="_blank">미국, 민간 기업에 "해킹 반격" 허용 추진</a></div>
+    <div class="meta">economist.com · HN 91pts · 105 comments</div>
+    <div class="desc">미국 정부가 사이버 공격을 받은 민간 기업에게 "해킹 반격(hack back)" 권한을 부여하는 방안을 추진. 기존의 방어 중심 사이버 보안 패러다임에서 공격적 대응으로의 전환을 의미하며, 법적·윤리적 논쟁이 가열.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/localstack/localstack" target="_blank">LocalStack, GitHub 저장소 아카이브 — 계정 필수화</a></div>
+    <div class="meta">github.com · HN 136pts · 66 comments</div>
+    <div class="desc">AWS 로컬 에뮬레이터 LocalStack이 GitHub 저장소를 아카이브 처리하고 실행에 계정 등록을 필수화. 오픈소스 프로젝트의 상업화 전환 사례로, 대안으로 무료 오픈소스 AWS 에뮬레이터 Floci가 GeekNews에서도 함께 주목받는 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://iev.ee/blog/the-quadratic-problem-nobody-fixed/" target="_blank">정규식 전체 매칭은 항상 O(n²)이었다</a></div>
+    <div class="meta">iev.ee · HN 143pts · 34 comments</div>
+    <div class="desc">정규식에서 모든 매칭을 찾는 연산이 근본적으로 O(n²) 복잡도를 가진다는 분석. 대부분의 정규식 엔진에서 오래된 이 문제가 한 번도 제대로 해결된 적 없다는 점을 지적하며, 성능 병목의 숨겨진 원인을 조명.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
