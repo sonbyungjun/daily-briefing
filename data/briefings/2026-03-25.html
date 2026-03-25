@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-25</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 25일 수요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>LiteLLM PyPI 공급망 공격 — SSH 키·클라우드 자격증명 탈취 악성코드 삽입</li>
+    <li>Arm, 최초 자체 실리콘 AGI CPU 발표 — 에이전틱 AI 인프라용</li>
+    <li>Apple Business 출시 — MDM·이메일·광고 통합 올인원 비즈니스 플랫폼</li>
+    <li>OpenAI, Sora 서비스 종료 발표</li>
+    <li>GPT-5.4 Pro, 프론티어 수학 미해결 문제(Ramsey 하이퍼그래프) 최초 풀이</li>
+    <li>Wine 11, 커널 수준 재작성으로 Linux 게임 성능 대폭 향상</li>
+  </ul>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://futuresearch.ai/blog/litellm-pypi-supply-chain-attack/" target="_blank">LiteLLM PyPI 공급망 공격 — SSH 키·자격증명 대규모 탈취 시도</a></div>
+    <div class="meta">futuresearch.ai · HN 442pts · 363 comments · GeekNews</div>
+    <div class="desc">LiteLLM 1.82.7/1.82.8 버전이 PyPI에서 공급망 공격을 받아 악성 .pth 파일이 삽입됨. 설치 시 SSH 키, AWS/GCP/Azure 자격증명, .env 파일, 암호화폐 지갑 등을 수집해 외부 서버로 유출 시도. Cursor의 MCP 플러그인 의존성으로도 유입 가능. 패키지 관리자 계정 자체가 탈취된 것으로 추정되며, 해당 버전은 현재 삭제 조치됨.</div>
+  </div>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://newsroom.arm.com/blog/introducing-arm-agi-cpu" target="_blank">Arm, 최초 자체 실리콘 AGI CPU 발표 — 에이전틱 AI 클라우드 시대 대응</a></div>
+    <div class="meta">arm.com · HN 254pts · 202 comments</div>
+    <div class="desc">Arm이 35년 역사상 최초로 자체 실리콘 제품 AGI CPU를 발표. Neoverse 플랫폼 기반으로, AI 에이전트가 분산 태스크를 실시간 조율하는 에이전틱 AI 인프라에 최적화. CPU가 수천 개의 가속기 오케스트레이션, 메모리 관리, 에이전트 팬아웃을 담당하는 새로운 역할을 정의.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://twitter.com/soraofficialapp/status/2036532795984715896" target="_blank">OpenAI, Sora 서비스 종료 발표</a></div>
+    <div name="meta" class="meta">twitter.com · HN 210pts · 160 comments</div>
+    <div class="desc">OpenAI가 AI 비디오 생성 서비스 Sora의 종료를 공식 발표. 출시 이후 기대에 비해 사용량이 저조했던 것으로 알려지며, AI 비디오 생성 시장의 수익화 어려움을 보여주는 사례. HN에서 160개 댓글로 활발한 논의 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://epoch.ai/frontiermath/open-problems/ramsey-hypergraphs" target="_blank">GPT-5.4 Pro, 프론티어 수학 미해결 문제 최초 풀이 확인</a></div>
+    <div class="meta">epoch.ai · HN 398pts · 572 comments</div>
+    <div class="desc">Epoch AI가 GPT-5.4 Pro가 Ramsey 하이퍼그래프 관련 미해결 수학 문제를 최초로 풀었다고 확인. 문제 기여자가 "매우 흥미로운 풀이"라고 평가하며 논문 공동 집필 예정. 이후 Opus 4.6, Gemini 3.1 Pro도 동일 문제를 풀어, 프론티어 AI의 수학 연구 능력이 본격적으로 입증됨.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/felixrieseberg/status/2036193240509235452" target="_blank">Claude, 컴퓨터 마우스·키보드·화면 직접 제어 기능 출시</a></div>
+    <div class="meta">x.com · GeekNews 13pts</div>
+    <div class="desc">Claude Code Desktop 및 Cowork와 연동되어 실제 컴퓨터의 마우스·키보드·화면을 직접 제어하는 기능 출시. Dispatch와 함께 사용하면 어떤 앱이든 AI가 직접 조작 가능. 코딩을 넘어 범용 컴퓨터 에이전트로의 진화를 보여줌.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/t8/hypura" target="_blank">Hypura — Apple Silicon 스토리지 계층 인식 LLM 추론 스케줄러</a></div>
+    <div class="meta">github.com · HN 186pts · 74 comments</div>
+    <div class="desc">Apple Silicon의 통합 메모리 구조와 스토리지 계층을 인식해 LLM 추론을 최적화하는 스케줄러. Mac에서의 대규모 모델 추론 효율을 극대화하는 접근으로, 온디바이스 AI 추론의 실용성을 한 단계 끌어올림.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/ssrajadh/sentrysearch" target="_blank">Gemini 네이티브 비디오 임베딩 — 1초 미만 비디오 검색 구현</a></div>
+    <div class="meta">github.com · HN 226pts · 66 comments</div>
+    <div class="desc">Gemini가 비디오를 네이티브로 임베딩할 수 있게 됨에 따라, 영상 콘텐츠를 1초 미만으로 의미 검색하는 SentrySearch 프로젝트가 등장. 비디오 이해의 패러다임을 바꿀 수 있는 기술적 돌파구.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.xda-developers.com/wine-11-rewrites-linux-runs-windows-games-speed-gains/" target="_blank">Wine 11, 커널 수준 재작성으로 Linux 게임 성능 대폭 향상</a></div>
+    <div class="meta">xda-developers.com · HN 600pts · 206 comments</div>
+    <div class="desc">Wine 11이 Linux에서 Windows 게임을 실행하는 핵심 로직을 커널 수준으로 재작성해 대규모 성능 향상을 달성. HN 600포인트로 오늘 최다 관심을 받으며, Linux 게이밍 생태계의 중요한 이정표로 평가됨.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://videojs.org/blog/videojs-v10-beta-hello-world-again" target="_blank">Video.js v10 베타 — 16년 만에 되찾아 88% 경량화 재작성</a></div>
+    <div class="meta">videojs.org · HN 131pts · 10 comments</div>
+    <div class="desc">Video.js 원작자가 16년 만에 프로젝트를 되찾아 v10 베타를 공개. 번들 크기를 88% 줄이는 대대적인 재작성을 단행. 웹 비디오 플레이어의 레거시를 현대적으로 재탄생시킨 사례.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.githubstatus.com/incidents/kp06czybl7dw" target="_blank">GitHub 또 장애 발생</a></div>
+    <div class="meta">githubstatus.com · HN 314pts · 159 comments</div>
+    <div class="desc">GitHub이 다시 한번 대규모 장애를 겪으며 개발자 생산성에 영향. 반복되는 장애에 대해 HN 커뮤니티에서 인프라 안정성과 대안에 대한 논의가 활발.</div>
+  </div>
+</div>
+
+<!-- Industry & Trends -->
+<div class="section">
+  <h2>Industry &amp; Trends</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.apple.com/newsroom/2026/03/introducing-apple-business-a-new-all-in-one-platform-for-businesses-of-all-sizes/" target="_blank">Apple Business 출시 — 올인원 비즈니스 플랫폼</a></div>
+    <div class="meta">apple.com · HN 481pts · 304 comments</div>
+    <div class="desc">Apple이 MDM, 비즈니스 이메일·캘린더, Maps 로컬 광고를 통합한 올인원 비즈니스 플랫폼 Apple Business를 발표. 4월 14일부터 200개국 이상에서 출시 예정. 소규모부터 대규모 기업까지 커버하며, Google Workspace·Microsoft Entra ID와 연동. Apple의 B2B 시장 본격 진출.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.reuters.com/legal/litigation/epic-games-said-tuesday-that-it-will-lay-off-more-than-1000-employees-2026-03-24/" target="_blank">Epic Games, 1,000명 이상 감원 — Fortnite 사용량 감소</a></div>
+    <div class="meta">reuters.com · HN 231pts · 383 comments</div>
+    <div class="desc">Epic Games가 Fortnite 사용량 하락을 이유로 1,000명 이상의 대규모 감원을 발표. 게임 산업 전반의 구조조정 트렌드가 이어지는 가운데, 라이브 서비스 게임의 지속 가능성에 대한 의문이 제기됨.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
