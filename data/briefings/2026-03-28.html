@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-28</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 28일 토요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Anthropic 차세대 모델 "Claude Mythos" 존재 확인 — 데이터 유출로 공개, 역대 최강 성능 주장</li>
+    <li>GitHub, 4월 24일부터 코드 AI 학습 기본 허용으로 정책 변경 — 옵트아웃 필요</li>
+    <li>Telnyx PyPI 패키지 공급망 공격 — LiteLLM에 이어 연이은 Python 패키지 보안 사고</li>
+    <li>FBI 국장 개인 이메일 해킹 확인 — 미국 정부 고위 인사 보안 취약성 노출</li>
+    <li>Cursor, 실시간 강화학습으로 Composer 개선 — AI 코딩 도구 진화 가속</li>
+    <li>하드웨어를 지켜라 — HN 554포인트, 수리권과 장수 하드웨어에 대한 관심 폭발</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://fortune.com/2026/03/26/anthropic-says-testing-mythos-powerful-new-ai-model-after-data-leak-reveals-its-existence-step-change-in-capabilities" target="_blank">Anthropic "Claude Mythos" — 데이터 유출로 존재 확인</a></div>
+    <div class="meta">fortune.com · GeekNews 10pts · 14 comments</div>
+    <div class="desc">Anthropic이 개발 중인 차세대 AI 모델 "Claude Mythos"의 존재가 데이터 유출로 드러나 공식 인정. "역대 가장 강력한 모델"이라는 표현과 함께 능력의 단계적 도약(step change)을 언급. GPT-5, Gemini Ultra와의 차세대 모델 경쟁이 본격화되는 신호.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://cursor.com/blog/real-time-rl-for-composer" target="_blank">Cursor, 실시간 강화학습으로 Composer 개선</a></div>
+    <div class="meta">cursor.com · HN 23pts</div>
+    <div class="desc">Cursor가 Composer(AI 코딩 에이전트)에 실시간 강화학습을 적용해 사용자 피드백 루프를 대폭 단축. 사용자 행동 데이터를 즉시 모델에 반영하여, 코드 제안의 수용률과 정확도를 지속적으로 향상시키는 구조. AI 코딩 도구가 정적 모델에서 동적 학습 시스템으로 진화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/" target="_blank">구글 TurboQuant — 극한 양자화로 AI 효율성 재정의</a></div>
+    <div class="meta">research.google · GeekNews 17pts · 4 comments</div>
+    <div class="desc">구글이 고차원 벡터의 메모리 오버헤드를 근본적으로 해결하는 양자화 알고리듬 세트 TurboQuant를 공개. LLM 키-값 캐시 압축과 벡터 검색 모두에 적용 가능하며, 극한 압축에서도 정확도 손실을 최소화. 추론 비용 절감의 새로운 돌파구.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/understudy-ai/understudy" target="_blank">understudy — 시연으로 배우는 로컬 데스크톱 에이전트</a></div>
+    <div class="meta">github.com/understudy-ai · GeekNews 11pts</div>
+    <div class="desc">사용자가 한 번 시연하면 의도와 절차를 학습해 반복 수행하는 데스크톱 자동화 에이전트. 별도 워크플로 빌더 없이 직접 시연으로 학습하는 방식. 프로그래밍 없이 PC 작업을 자동화하는 RPA의 AI 진화 버전.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/garrytan/gstack" target="_blank">gstack — Claude Code로 만드는 가상 엔지니어링 팀</a></div>
+    <div class="meta">github.com/garrytan · GeekNews 76pts · 4 comments</div>
+    <div class="desc">YC CEO Garry Tan이 공개한 오픈소스 소프트웨어 팩토리. Think → Plan → Build → Review 단계로 AI 에이전트를 구성해, 한 명이 20명 팀처럼 일하는 구조를 실현. Claude Code 기반의 멀티 에이전트 개발 워크플로의 실전 사례.</div>
+  </div>
+</div>
+
+<!-- Security -->
+<div class="section">
+  <h2>Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://telnyx.com/resources/telnyx-python-sdk-supply-chain-security-notice-march-2026" target="_blank">Telnyx PyPI 패키지 공급망 공격</a></div>
+    <div class="meta">telnyx.com · HN 76pts · 83 comments</div>
+    <div class="desc">통신 API 업체 Telnyx의 Python SDK가 PyPI에서 공급망 공격에 노출. 어제 LiteLLM에 이어 이틀 연속 Python 패키지 공급망 공격이 발생하면서, PyPI 생태계의 보안 취약성에 대한 경각심이 고조. 의존성 검증 자동화의 필요성을 재확인.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://arstechnica.com/tech-policy/2026/03/doj-confirms-fbi-director-kash-patels-personal-email-was-hacked/" target="_blank">FBI 국장 개인 이메일 해킹 확인</a></div>
+    <div class="meta">arstechnica.com · HN 107pts · 53 comments</div>
+    <div class="desc">미 법무부가 FBI 국장 Kash Patel의 개인 이메일이 해킹당했음을 공식 확인. 정부 고위 인사의 개인 계정 보안 취약성이 또 다시 노출. 공직자의 개인 이메일 업무 사용에 대한 보안 정책 강화 논의가 재점화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.blog/changelog/2026-03-25-updates-to-our-privacy-statement-and-terms-of-service-how-we-use-your-data/#ai-model-training-what-you-need-to-know" target="_blank">GitHub, 4월 24일부터 코드 AI 학습 기본 허용</a></div>
+    <div class="meta">github.blog · GeekNews 5pts</div>
+    <div class="desc">GitHub가 개인정보 정책을 변경해 Copilot Free/Pro/Pro+ 사용자의 코드를 AI 모델 학습에 기본 활용. 별도 옵트아웃 설정이 필요. 어제 Codeberg 이주 가이드가 HN 498포인트를 기록한 직후의 정책 변경으로, 탈중앙 Git 호스팅 이주 흐름에 기름을 붓는 격.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.dailydoseofds.com/p/anatomy-of-the-claude-folder" target="_blank">.claude/ 폴더 해부 — Claude Code 내부 구조 분석</a></div>
+    <div class="meta">dailydoseofds.com · HN 347pts · 178 comments</div>
+    <div class="desc">Claude Code가 프로젝트 루트에 생성하는 .claude/ 폴더의 내부 구조를 상세 분석. CLAUDE.md, 세션 히스토리, 설정 파일의 역할과 활용법을 정리. AI 코딩 에이전트의 컨텍스트 관리 방식을 이해하는 데 유용한 레퍼런스.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/Shpigford/chops" target="_blank">Chops — AI 에이전트 스킬 통합 관리 macOS 앱</a></div>
+    <div class="meta">github.com/Shpigford · GeekNews 21pts · 2 comments</div>
+    <div class="desc">Claude Code, Cursor, Codex, Windsurf, Amp 등 여러 AI 코딩 에이전트의 스킬 파일을 하나의 macOS 앱에서 통합 관리하는 오픈소스 도구. 에이전트마다 분산된 설정 파일을 한 곳에서 탐색·편집할 수 있어 멀티 에이전트 환경의 관리 복잡성을 해소.</div>
+  </div>
+</div>
+
+<!-- Industry & Trends -->
+<div class="section">
+  <h2>Industry &amp; Trends</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://xn--gckvb8fzb.com/hold-on-to-your-hardware/" target="_blank">하드웨어를 지켜라 — 수리권과 장수 하드웨어 논쟁</a></div>
+    <div class="meta">HN 554pts · 453 comments</div>
+    <div class="desc">소프트웨어 업데이트 중단, 계획적 진부화, 수리 불가 설계에 맞서 하드웨어를 오래 쓰자는 주장이 HN에서 폭발적 반응. 환경 문제와 소비자 권리를 모두 관통하는 이슈로, 수리권(Right to Repair) 운동과 맞물려 기술 커뮤니티의 공감대를 형성.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.a16z.news/p/there-are-only-two-paths-left-for" target="_blank">소프트웨어에 남은 길은 두 가지뿐</a></div>
+    <div class="meta">a16z.news · GeekNews 19pts · 5 comments</div>
+    <div class="desc">a16z가 소프트웨어 산업의 구조적 전환을 분석. 공개 시장이 이미 SaaS 섹터를 재평가하고 있으며, AI 시대에 소프트웨어의 터미널 밸류가 근본적으로 달라졌다고 진단. 살아남는 길은 AI 네이티브 전환 또는 규모의 경제뿐이라는 냉정한 전망.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
