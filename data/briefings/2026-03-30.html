@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-03-30</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 3월 30일 월요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>LinkedIn 탭 2개로 RAM 2.4GB 점유 — 웹 앱 비대화 논란 재점화</li>
+    <li>경찰 AI 안면인식 오인 체포 사건 — 테네시 여성이 노스다코타 범죄 혐의로 잘못 체포</li>
+    <li>C++26 표준 완성 — C++11 이후 가장 의미 있는 릴리스, 리플렉션이 핵심</li>
+    <li>Neovim 0.12.0 출시 — 대규모 업데이트</li>
+    <li>ChatGPT, Cloudflare가 React 상태를 읽을 때까지 타이핑 차단 — 보안 우려</li>
+    <li>CPython 3.15 JIT 컴파일러, macOS에서 11~12% 성능 향상 달성</li>
+  </ul>
+</div>
+
+<!-- AI / LLM -->
+<div class="section">
+  <h2>AI &amp; LLM</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition" target="_blank">경찰 AI 안면인식 오인 체포 — 무고한 여성이 타주 범죄 혐의로 체포</a></div>
+    <div class="meta">cnn.com · HN 333pts · 132 comments</div>
+    <div class="desc">테네시주 여성이 AI 안면인식 시스템의 오류로 노스다코타주에서 발생한 범죄 혐의로 잘못 체포된 사건. AI 기반 법집행 도구의 정확성과 인권 침해 가능성에 대한 논의가 다시 불붙고 있음. 안면인식 기술의 편향과 오류율 문제가 실제 피해로 이어진 사례.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.gjlondon.com/blog/ai-agents-could-make-free-software-matter-again/" target="_blank">코딩 에이전트가 자유 소프트웨어를 다시 중요하게 만들 수 있다</a></div>
+    <div class="meta">gjlondon.com · HN 72pts · 53 comments</div>
+    <div class="desc">AI 코딩 에이전트가 오픈소스/자유 소프트웨어의 기여 장벽을 획기적으로 낮출 수 있다는 분석. 코드 이해·수정·기여의 비용이 줄면서 방치된 오픈소스 프로젝트들이 다시 활성화될 가능성을 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/anthropics/claude-code/issues/40710" target="_blank">Claude Code가 10분마다 git reset --hard 실행하는 버그 보고</a></div>
+    <div class="meta">github.com/anthropics · HN 74pts · 9 comments</div>
+    <div class="desc">Claude Code가 프로젝트 레포에 10분 간격으로 git reset --hard origin/main을 실행해 작업 내용을 날리는 심각한 버그가 보고됨. AI 코딩 도구가 버전 관리 시스템에 자율적으로 개입할 때의 위험성을 보여주는 사례.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/austin-weeks/miasma" target="_blank">Miasma — AI 웹 스크래퍼를 무한 독성 함정에 가두는 도구</a></div>
+    <div class="meta">github.com/austin-weeks · HN 275pts · 205 comments</div>
+    <div class="desc">AI 크롤러/스크래퍼를 끝없는 가짜 콘텐츠 함정으로 유인해 학습 데이터를 오염시키는 오픈소스 도구. AI 무단 크롤링에 대한 웹사이트 운영자의 방어 수단으로, 205개 댓글이 달리며 뜨거운 논쟁 중.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/revfactory/harness" target="_blank">Harness — Claude Code 에이전트 팀 &amp; 스킬 아키텍트 플러그인</a></div>
+    <div class="meta">github.com/revfactory · GeekNews 38pts</div>
+    <div class="desc">"하네스 구성해줘" 한 마디로 도메인 맞춤 전문 에이전트팀을 설계하고, 에이전트가 사용할 스킬까지 자동 생성해주는 메타 스킬. Claude Code의 멀티 에이전트 워크플로를 자동화하는 도구.</div>
+  </div>
+</div>
+
+<!-- Security & Privacy -->
+<div class="section">
+  <h2>Security &amp; Privacy</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.buchodi.com/chatgpt-wont-let-you-type-until-cloudflare-reads-your-react-state-i-decrypted-the-program-that-does-it/" target="_blank">ChatGPT, Cloudflare가 React 상태를 읽을 때까지 타이핑 차단</a></div>
+    <div class="meta">buchodi.com · HN 282pts · 210 comments</div>
+    <div class="desc">ChatGPT가 사용자 입력을 허용하기 전에 Cloudflare 스크립트가 React 내부 상태를 읽는 구조를 연구자가 복호화해 공개. 봇 방지를 위한 기술이 사용자 프라이버시를 침해할 수 있다는 우려와 함께 210개 댓글이 달린 뜨거운 이슈.</div>
+  </div>
+</div>
+
+<!-- Dev Tools & Engineering -->
+<div class="section">
+  <h2>Developer Tools &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://herbsutter.com/2026/03/29/c26-is-done-trip-report-march-2026-iso-c-standards-meeting-london-croydon-uk/" target="_blank">C++26 표준 완성 — C++11 이후 가장 큰 릴리스</a></div>
+    <div class="meta">herbsutter.com · HN 152pts · 115 comments</div>
+    <div class="desc">ISO C++ 위원회가 런던 크로이든에서 C++26 기술 작업을 완료. 리플렉션이 템플릿 발명 이후 최대 업그레이드로 꼽히며, C++11 이후 가장 의미 있는 릴리스로 평가. 210명이 참석한 6일간의 회의에서 411개 국가별 코멘트를 모두 처리.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/neovim/neovim/releases/tag/v0.12.0" target="_blank">Neovim 0.12.0 출시</a></div>
+    <div class="meta">github.com/neovim · HN 274pts · 118 comments</div>
+    <div class="desc">Neovim의 새 메이저 릴리스 0.12.0이 공개되어 HN에서 274포인트를 기록. 에디터 생태계에서 Neovim의 위상을 보여주는 뜨거운 반응.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.python.org/2026/03/jit-on-track/" target="_blank">CPython 3.15 JIT 컴파일러, 다시 궤도에 오르다</a></div>
+    <div class="meta">blog.python.org · GeekNews 14pts</div>
+    <div class="desc">CPython 3.15의 JIT 컴파일러가 macOS AArch64에서 11~12%, x86_64 Linux에서도 유의미한 성능 향상을 달성. 테일 콜링 인터프리터 대비 측정한 결과로, Python의 성능 개선 로드맵이 구체적 성과를 내고 있음.</div>
+  </div>
+</div>
+
+<!-- Industry & Trends -->
+<div class="section">
+  <h2>Industry &amp; Trends</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://news.ycombinator.com/item?id=47561489" target="_blank">LinkedIn 탭 2개로 RAM 2.4GB 점유 — 웹 앱 비대화 논란</a></div>
+    <div class="meta">HN 577pts · 341 comments</div>
+    <div class="desc">LinkedIn이 브라우저 탭 2개만으로 2.4GB의 메모리를 소비한다는 보고가 HN 최고 인기글(577pts)을 기록. 현대 웹 앱의 과도한 리소스 소비, SPA 프레임워크의 메모리 관리, 광고/트래킹 스크립트의 영향에 대한 341개 댓글의 격렬한 토론.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://ryelang.org/blog/posts/cognitive-dark-forest/" target="_blank">인지적 암흑 숲 — 인터넷의 삼체 문제</a></div>
+    <div class="meta">ryelang.org · HN 189pts · 90 comments</div>
+    <div class="desc">류츠신의 '삼체' 암흑숲 이론을 인터넷에 적용한 사고 실험. 과거에는 아이디어를 공유할수록 이득이었지만, AI 크롤링과 플랫폼 통합이 진행된 2026년의 인터넷에서는 공개가 곧 위험이 되는 "인지적 암흑숲" 시대가 도래했다는 분석.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://techfixated.com/a-1977-time-capsule-voyager-1-runs-on-69-kb-of-memory-and-an-8-track-tape-recorder-4/" target="_blank">Voyager 1은 69KB 메모리와 8트랙 테이프로 운영된다</a></div>
+    <div name="meta" class="meta">techfixated.com · HN 362pts · 148 comments</div>
+    <div class="desc">1977년 발사된 Voyager 1이 69KB 메모리와 8트랙 테이프 레코더로 여전히 가동 중이라는 사실을 되짚는 글. LinkedIn 탭 하나의 RAM 소비와 대비되며, 제약 속 엔지니어링의 위대함과 현대 소프트웨어의 비효율에 대한 성찰을 불러일으킴.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
