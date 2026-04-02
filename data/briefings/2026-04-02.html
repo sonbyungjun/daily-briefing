@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-02</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 2일 목요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>NASA Artemis II, 인류 50년 만에 달 유인 비행 발사 성공</li>
+    <li>Claude가 FreeBSD 원격 커널 RCE 익스플로잇을 단독 작성 — AI 보안 연구의 새 국면</li>
+    <li>Cloudflare, WordPress 대안 EmDash 발표 — 플러그인 보안 문제 근본 해결</li>
+    <li>Claude Code 소스 유출 후폭풍 — 분석서, 클린룸 재작성, 비주얼 가이드 등 커뮤니티 폭발</li>
+    <li>SpaceX, IPO 신청 — Elon Musk 최대 비상장 자산의 공개 시장 진출</li>
+    <li>StepFun 3.5 Flash, 비용 효율성 1위 모델로 등극</li>
+  </ul>
+</div>
+
+<!-- Space & Science -->
+<div class="section">
+  <h2>Space &amp; Science</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.nasa.gov/blogs/missions/2026/04/01/live-artemis-ii-launch-day-updates/" target="_blank">NASA Artemis II, 달을 향해 발사 — 50년 만의 유인 비행</a></div>
+    <div class="meta">nasa.gov · HN 540pts · 497 comments</div>
+    <div class="desc">NASA의 Artemis II 미션이 성공적으로 발사. Apollo 17(1972) 이후 53년 만에 인류가 다시 달 궤도로 향하는 역사적 순간. 4명의 우주비행사가 탑승하며, 이번 미션은 달 궤도 비행 후 귀환하는 테스트 비행으로 향후 Artemis III 달 착륙의 전초전.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.nytimes.com/2026/04/01/technology/spacex-ipo-elon-musk.html" target="_blank">SpaceX, IPO 신청 — 비상장 최대 기업의 공개 시장 진출</a></div>
+    <div class="meta">nytimes.com · HN 174pts · 229 comments</div>
+    <div class="desc">SpaceX가 공식적으로 상장 신청서를 제출. Starlink의 급성장과 발사 시장 독점적 지위를 기반으로, 기업가치 약 $350B 이상으로 추산. Elon Musk 자산 포트폴리오의 가장 큰 비상장 자산이 공개 시장에 나오면서 투자자들의 관심이 집중.</div>
+  </div>
+</div>
+
+<!-- AI & Security -->
+<div class="section">
+  <h2>AI &amp; Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-sec">SEC</span> <a href="https://github.com/califio/publications/blob/main/MADBugs/CVE-2026-4747/write-up.md" target="_blank">Claude가 FreeBSD 원격 커널 RCE 익스플로잇을 단독 작성</a></div>
+    <div class="meta">github.com/califio · HN 251pts · 97 comments</div>
+    <div class="desc">보안 연구팀이 Claude AI를 사용해 FreeBSD 커널의 원격 코드 실행(RCE) 취약점(CVE-2026-4747)을 발견하고, root 셸 획득까지 가능한 완전한 익스플로잇을 작성. AI가 커널 수준의 고난이도 보안 취약점을 독자적으로 분석·악용할 수 있음을 입증한 사례로, 공격·방어 양면에서 AI 보안 연구의 새로운 국면을 예고.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://wikidocs.net/338204" target="_blank">Claude Code 소스 유출 후폭풍 — 커뮤니티 분석과 재작성 열풍</a></div>
+    <div class="meta">GeekNews 다수 토픽 · 총 150+ points</div>
+    <div class="desc">어제 보도된 Claude Code 소스 유출의 후속. 한국에서 Python 클린룸 재작성 프로젝트(claw-code)가 시작되고, 전체 소스 구조 분석서(wikidocs), 내부 동작 해부(Mintlify), 비주얼 가이드(ccunpacked.dev) 등이 쏟아짐. 제작자 Boris Cherny는 숨겨진 15가지 기능을 직접 정리해 공개. OpenAI는 Claude Code용 Codex 플러그인까지 발표하며 생태계 경쟁 심화.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://hermes-agent.nousresearch.com/" target="_blank">Hermes Agent — 경험으로 스킬을 자동 생성하는 자기 학습형 AI 에이전트</a></div>
+    <div class="meta">hermes-agent.nousresearch.com · GeekNews</div>
+    <div class="desc">Nous Research가 자기 학습 루프를 내장한 자율 에이전트 Hermes Agent를 공개. 사용 중 스킬을 스스로 생성·개선하며, 세션 간에 사용자 모델을 점진적으로 심화. IDE 통합 및 도구 호출 기능을 갖춘 차세대 에이전트 아키텍처.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://app.uniclaw.ai/arena?tab=costEffectiveness" target="_blank">StepFun 3.5 Flash, 비용 효율성 1위 모델로 등극</a></div>
+    <div class="meta">uniclaw.ai · HN 136pts · 60 comments</div>
+    <div class="desc">OpenClaw 아레나에서 300회 배틀 기준 StepFun 3.5 Flash가 비용 효율성 1위를 차지. 에이전트 태스크에서 GPT-4o, Claude 3.5 대비 현저히 낮은 비용으로 유사한 성능을 달성하며, 중국발 경량 모델의 가성비 경쟁력을 재확인.</div>
+  </div>
+</div>
+
+<!-- Developer & Engineering -->
+<div class="section">
+  <h2>Developer &amp; Engineering</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.cloudflare.com/emdash-wordpress/" target="_blank">EmDash — Cloudflare가 만든 WordPress의 정신적 후계자</a></div>
+    <div class="meta">cloudflare.com · HN 447pts · 322 comments</div>
+    <div class="desc">Cloudflare가 WordPress의 고질적인 플러그인 보안 문제를 근본적으로 해결하는 새로운 CMS 'EmDash'를 발표. 플러그인이 샌드박스 환경에서 실행되어 전체 시스템 접근 권한을 갖지 않으며, Cloudflare 인프라 위에서 네이티브로 동작. HN에서 322개 댓글이 달리며 WordPress 대안 논의가 가열.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/hauntsaninja/git_bayesect" target="_blank">Git bayesect — 비결정적 버그를 위한 베이지안 Git bisection</a></div>
+    <div class="meta">github.com/hauntsaninja · HN 187pts · 26 comments</div>
+    <div class="desc">기존 git bisect가 재현이 불안정한 버그에 무력한 문제를 해결. 베이지안 확률 모델을 적용해 비결정적(non-deterministic) 버그도 효과적으로 이분 탐색 가능. 테스트가 간헐적으로 실패하는 플레이키 테스트 디버깅에 특히 유용.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/afshinm/zerobox" target="_blank">Zerobox — 파일·네트워크·자격증명을 세밀하게 통제하는 명령어 샌드박스</a></div>
+    <div class="meta">github.com/afshinm · HN 99pts · 82 comments</div>
+    <div class="desc">모든 셸 명령어를 파일 접근, 네트워크, 자격증명 수준에서 세밀하게 격리 실행할 수 있는 샌드박스 도구. AI 에이전트의 명령어 실행이나 신뢰할 수 없는 스크립트 실행 시 보안 레이어로 활용 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=28050" target="_blank">법망 — PostgreSQL 기반 한국 법령 전체를 JSON으로 제공하는 API</a></div>
+    <div class="meta">api.beopmang.org · GeekNews 60pts · 10 comments</div>
+    <div class="desc">국가법령정보센터의 법령 99.9%+를 사전 파싱하여 표 데이터 포함 모든 출력을 JSON으로 제공하는 API. XML, HWP, PDF를 자동 변환하며 매주 동기화. AI 에이전트의 법률 도구로 활용 가능한 인프라.</div>
+  </div>
+</div>
+
+<!-- Hardware & Infrastructure -->
+<div class="section">
+  <h2>Hardware &amp; Infrastructure</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://www.jeffgeerling.com/blog/2026/dram-pricing-is-killing-the-hobbyist-sbc-market/" target="_blank">DRAM 가격 폭등이 취미용 SBC 시장을 죽이고 있다</a></div>
+    <div class="meta">jeffgeerling.com · HN 261pts · 189 comments</div>
+    <div class="desc">Jeff Geerling의 분석에 따르면 DRAM 가격 급등으로 Raspberry Pi 등 취미용 SBC(Single Board Computer)의 가격 경쟁력이 크게 악화. AI 학습용 HBM 수요 폭증이 일반 DRAM 시장까지 영향을 미치면서 취미 개발자와 교육용 시장이 직격탄을 맞고 있음.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://support.google.com/accounts/answer/19870" target="_blank">Google, Gmail 계정 사용자명 변경 기능 공식 출시</a></div>
+    <div class="meta">support.google.com · GeekNews 6pts · 10 comments</div>
+    <div class="desc">오랫동안 불가능했던 Gmail 사용자명(@gmail.com) 변경이 공식적으로 가능해짐. 메일뿐 아니라 Google Photos, Drive 등 전체 Google 서비스에 적용. 기존 주소로 오는 메일도 일정 기간 포워딩 지원.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
