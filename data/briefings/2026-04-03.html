@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-03</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 3일 금요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Google, Gemma 4 오픈 모델 공개 — 멀티모달 지원 오픈소스 모델의 새 기준</li>
+    <li>LinkedIn, 사용자 브라우저 확장 프로그램을 무단 스캔 — 1,500+ 포인트 대형 이슈</li>
+    <li>Qwen3.6-Plus, 실세계 에이전트를 위한 새 모델 발표</li>
+    <li>AMD Lemonade, GPU+NPU 활용 로컬 LLM 서버 오픈소스 공개</li>
+    <li>Cursor 3 출시 — AI 코딩 에디터의 메이저 업데이트</li>
+    <li>Anthropic 수익성 분석: 매출 대비 비용 구조의 근본적 한계 지적</li>
+  </ul>
+</div>
+
+<!-- AI & Models -->
+<div class="section">
+  <h2>AI &amp; Models</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://deepmind.google/models/gemma/gemma-4/" target="_blank">Google, Gemma 4 오픈 모델 공개</a></div>
+    <div class="meta">deepmind.google · HN 1043pts · 326 comments</div>
+    <div class="desc">Google DeepMind가 Gemma 4 오픈 모델 시리즈를 공개. 이전 세대 대비 멀티모달 성능이 크게 향상되었으며, 텍스트·이미지·코드를 통합 처리. 오픈소스 LLM 생태계에서 Llama, Mistral과의 경쟁이 본격화되는 신호탄.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://qwen.ai/blog?id=qwen3.6" target="_blank">Qwen3.6-Plus — 실세계 에이전트를 향한 도약</a></div>
+    <div class="meta">qwen.ai · HN 406pts · 142 comments</div>
+    <div class="desc">Alibaba의 Qwen 팀이 실세계 에이전트 태스크에 최적화된 Qwen3.6-Plus를 발표. 도구 호출, 장기 컨텍스트 유지, 멀티스텝 계획 수립 능력이 대폭 강화. 에이전트 벤치마크에서 GPT-4o급 성능을 보이며 중국발 모델의 빠른 추격을 보여줌.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://lemonade-server.ai" target="_blank">AMD Lemonade — GPU+NPU 활용 로컬 LLM 서버 오픈소스</a></div>
+    <div class="meta">lemonade-server.ai · HN 420pts · 94 comments</div>
+    <div class="desc">AMD가 자사 GPU와 NPU를 동시에 활용하는 빠른 로컬 LLM 서버 Lemonade를 오픈소스로 공개. NVIDIA 독점이던 로컬 AI 추론 시장에 AMD가 본격 진입하며, Ryzen AI NPU를 활용한 효율적 추론이 가능해짐.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://velog.io/@skynet/%EC%95%A4%EC%8A%A4%EB%A1%9C%ED%94%BDAnthropic%EC%9D%98-%EC%88%98%EC%9D%B5%EC%84%B1-%EA%B9%80%EB%B0%A5%EC%B2%9C%EA%B5%AD-%EB%B3%B4%EB%8B%A4-%EC%95%88-%EC%A2%8B%EB%8B%A4" target="_blank">Anthropic의 수익성, 김밥천국보다 안 좋다</a></div>
+    <div class="meta">velog.io · GeekNews</div>
+    <div class="desc">AI 스타트업의 비용 구조를 분석한 글. IT 기업은 임계점 이후 폭발적 수익을 기대받지만, LLM 사업은 매출에 비례해 컴퓨팅 비용이 선형 증가하는 구조적 한계가 있음. Anthropic의 매출 대비 이익률이 김밥천국보다 낮다는 직관적 비교가 화제.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://dynin.ai" target="_blank">서울대 AIDAS, 디퓨전 기반 옴니모달 모델 Dynin-Omni 공개</a></div>
+    <div class="meta">dynin.ai · GeekNews</div>
+    <div class="desc">서울대학교 AIDAS 연구실이 이해와 생성을 하나로 통합한 디퓨전 기반 옴니모달 파운데이션 모델 Dynin-Omni를 공개. 텍스트, 이미지, 오디오를 단일 아키텍처로 처리하는 한국 학계의 주목할 연구 성과.</div>
+  </div>
+</div>
+
+<!-- Security & Privacy -->
+<div class="section">
+  <h2>Security &amp; Privacy</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://browsergate.eu/" target="_blank">LinkedIn, 사용자 브라우저 확장 프로그램을 무단 스캔</a></div>
+    <div class="meta">browsergate.eu · HN 1526pts · 674 comments</div>
+    <div class="desc">LinkedIn이 사용자의 브라우저 확장 프로그램 목록을 무단으로 스캔하고 있다는 사실이 밝혀져 대형 논란. HN 역대급 1,500+ 포인트를 기록하며 674개 댓글이 달림. 확장 프로그램 목록은 사용자 프로파일링에 악용될 수 있어 심각한 프라이버시 침해 우려.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://lwn.net/Articles/1065620/" target="_blank">Linux 커널, 보안 리포트 급증 — 유지보수 부담 가중</a></div>
+    <div class="meta">lwn.net · HN 272pts · 145 comments</div>
+    <div class="desc">LWN이 Linux 커널 보안 리포트가 최근 급격히 증가하고 있다고 보도. AI 도구를 활용한 자동 취약점 스캐닝의 확산이 주요 원인으로 지목되며, 커널 유지보수자들의 리뷰 부담이 가중되는 양면적 상황.</div>
+  </div>
+</div>
+
+<!-- Developer & Tools -->
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://cursor.com/blog/cursor-3" target="_blank">Cursor 3 출시 — AI 코딩 에디터 메이저 업데이트</a></div>
+    <div class="meta">cursor.com · HN 258pts · 221 comments</div>
+    <div class="desc">AI 코딩 에디터 Cursor가 버전 3을 출시. 에이전트 모드 강화, 멀티파일 편집 개선, 새로운 컨텍스트 엔진 등 대규모 업데이트. HN에서 221개 댓글로 뜨거운 반응이며, Claude Code·Windsurf와의 AI 코딩 도구 경쟁이 더욱 치열해지는 국면.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://ministack.org/" target="_blank">MiniStack — 무료 오픈소스 로컬 AWS 에뮬레이터</a></div>
+    <div class="meta">ministack.org · GeekNews</div>
+    <div class="desc">유료화된 LocalStack의 대안으로 개발된 무료 오픈소스 AWS 에뮬레이터. 34개 AWS 서비스를 단일 포트에서 에뮬레이션하며, S3·DynamoDB·Lambda·SQS 등 주요 서비스를 로컬에서 완전히 재현 가능.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://openai.com/index/openai-acquires-tbpn/" target="_blank">OpenAI, TBPN 인수 — 개발 도구 확장</a></div>
+    <div class="meta">openai.com · HN 132pts · 119 comments</div>
+    <div class="desc">OpenAI가 TBPN을 인수했다고 발표. AI 개발 도구 생태계 확장의 일환으로, Codex 플러그인에 이어 개발자 경험(DX) 강화에 본격 투자하는 행보. HN에서 119개 댓글로 인수 목적과 향후 전략에 대한 논의가 활발.</div>
+  </div>
+</div>
+
+<!-- Industry & Trends -->
+<div class="section">
+  <h2>Industry &amp; Trends</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion" target="_blank">Azure 신뢰를 무너뜨린 결정들 — 전직 Azure Core 엔지니어의 폭로</a></div>
+    <div class="meta">isolveproblems.substack.com · HN 207pts · 53 comments</div>
+    <div class="desc">전직 Azure Core 엔지니어가 Microsoft Azure의 신뢰를 훼손한 내부 의사결정들을 폭로. 기술 부채 방치, 엔지니어링 문화 붕괴, 단기 수익 추구가 장기적 플랫폼 신뢰도를 어떻게 갉아먹었는지 상세히 서술.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <a href="https://newsroom.ibm.com/2026-04-02-ibm-announces-strategic-collaboration-with-arm-to-shape-the-future-of-enterprise-computing" target="_blank">IBM-Arm 전략적 협업 발표 — 엔터프라이즈 컴퓨팅의 미래</a></div>
+    <div class="meta">ibm.com · HN 259pts · 167 comments</div>
+    <div class="desc">IBM과 Arm이 엔터프라이즈 컴퓨팅의 미래를 위한 전략적 협업을 발표. x86 독점이던 서버 시장에서 Arm 아키텍처의 엔터프라이즈 확산이 가속화되는 신호. AWS Graviton, Apple Silicon에 이은 Arm 생태계의 엔터프라이즈 영역 확장.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
