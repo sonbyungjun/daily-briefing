@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-04</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 4일 토요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Anthropic, Claude Code 구독에서 OpenClaw 사용 차단 — 서드파티 에이전트 생태계에 파장</li>
+    <li>Mintlify, RAG를 가상 파일시스템으로 대체하는 새로운 접근법 공개</li>
+    <li>apfel — macOS 내장 Apple AI를 CLI/API로 개방하는 오픈소스 도구</li>
+    <li>이란 공습으로 AWS 바레인·두바이 가용 영역 장시간 다운</li>
+    <li>Vercel, 에이전트 생성 코드의 프로덕션 안전성 프레임워크 발표</li>
+    <li>Blogosphere — 개인 블로그 전용 프론트페이지, HN 667포인트 화제</li>
+  </ul>
+</div>
+
+<!-- AI & Agents -->
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.ycombinator.com/item?id=47633396" target="_blank">Anthropic, Claude Code 구독에서 OpenClaw 사용 차단</a></div>
+    <div class="meta">Hacker News · 322pts · 322 comments</div>
+    <div class="desc">Anthropic이 Claude Code 구독자의 OpenClaw 사용을 더 이상 허용하지 않겠다고 발표. 서드파티 에이전트 프레임워크를 통한 API 접근을 제한하는 조치로, 에이전트 생태계의 플랫폼 종속성 논쟁이 재점화. HN에서 322개 댓글로 뜨거운 반응.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://www.mintlify.com/blog/how-we-built-a-virtual-filesystem-for-our-assistant" target="_blank">Mintlify, RAG를 가상 파일시스템으로 대체</a></div>
+    <div class="meta">mintlify.com · HN 232pts · 100 comments</div>
+    <div class="desc">AI 문서 어시스턴트에서 RAG 대신 가상 파일시스템을 도입한 Mintlify의 기술 블로그. 벡터 검색의 한계를 넘어 문서 구조를 파일시스템처럼 탐색하는 방식으로 정확도와 컨텍스트 유지를 동시에 개선. RAG의 대안으로 주목.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://danielmiessler.com/blog/the-most-important-ideas-in-ai" target="_blank">2026년 4월, 가장 중요한 AI 아이디어 5가지</a></div>
+    <div class="meta">danielmiessler.com · GeekNews 22pts</div>
+    <div class="desc">자율적 구성 요소 최적화, 의도 기반 엔지니어링, 투명성 전환, 스캐폴딩 인식, 전문지식 확산 — AI 시대의 핵심 변화를 관통하는 5가지 아이디어를 정리. 코딩이 아닌 '의도를 검증 가능하게 표현하는 능력'이 새로운 핵심 스킬이라는 주장이 인상적.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://hermes-agent.nousresearch.com/" target="_blank">Hermes Agent — 경험에서 스킬을 생성하는 자기 학습형 AI 에이전트</a></div>
+    <div class="meta">hermes-agent.nousresearch.com · GeekNews 41pts</div>
+    <div class="desc">Nous Research가 공개한 자기 학습 루프 내장 자율 에이전트. 사용 중 스킬을 스스로 생성·개선하며, 세션 간 사용자 모델을 점진적으로 심화. IDE 통합과 도구 호출을 지원하며, 에이전트가 경험을 통해 진화하는 새로운 패러다임 제시.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/666ghj/MiroFish" target="_blank">MiroFish — 다중에이전트 기반 예측 시뮬레이션 엔진</a></div>
+    <div class="meta">github.com · GeekNews 22pts</div>
+    <div class="desc">군집 지능으로 현실을 복제해 미래를 예측하는 AI 엔진. 뉴스·정책·금융 신호를 주입하면 수천 개 에이전트가 상호작용하며 사회적 진화를 시뮬레이션. 자연어로 예측 주제만 입력하면 결과 보고서를 생성하는 제로 리스크 정책 테스트 실험실.</div>
+  </div>
+</div>
+
+<!-- Developer & Tools -->
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://apfel.franzai.com" target="_blank">apfel — Mac 내장 Apple AI를 CLI/API로 개방</a></div>
+    <div class="meta">apfel.franzai.com · GeekNews</div>
+    <div class="desc">macOS 26의 FoundationModels.framework 기반 온디바이스 LLM을 CLI와 OpenAI 호환 HTTP 서버로 개방하는 오픈소스 도구. 비용 0원, 데이터 유출 없이 약 30억 파라미터 모델을 로컬에서 구동. 한국어 포함 9개 언어 지원.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/jonwiggins/optio" target="_blank">Optio — AI 코딩 에이전트를 위한 워크플로 오케스트레이터</a></div>
+    <div class="meta">github.com/jonwiggins · GeekNews</div>
+    <div class="desc">티켓 접수부터 PR 머지까지 소프트웨어 개발 전 과정을 에이전트가 자동 처리하는 워크플로 플랫폼. CI 실패·머지 충돌·코드 리뷰 피드백에 자동 대응하는 자율 피드백 루프 내장. Claude Code, Codex, Copilot 등 다중 에이전트 지원. MIT 라이선스.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://vercel.com/blog/agent-responsibly" target="_blank">Vercel, 에이전트 생성 코드 책임감 프레임워크 발표</a></div>
+    <div class="meta">vercel.com · GeekNews</div>
+    <div class="desc">코딩 에이전트가 생성한 코드의 프로덕션 안전성 문제를 정면으로 다룬 Vercel의 프레임워크. 'CI 통과 = 안전'이라는 착각을 경고하며, 자기 구동 배포·지속적 검증·실행 가능한 가드레일 3원칙을 제시. 코드 생성량이 아닌 판단력이 엔지니어의 핵심 역량이라는 메시지.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://text.blogosphere.app/" target="_blank">Blogosphere — 개인 블로그 프론트페이지</a></div>
+    <div class="meta">blogosphere.app · HN 667pts · 173 comments</div>
+    <div class="desc">개인 블로그를 위한 전용 프론트페이지 서비스. HN 667포인트로 금일 최다 포인트를 기록하며, 개인 블로그 생태계의 발견 가능성(discoverability) 문제에 대한 갈증을 드러냄. 알고리즘이 아닌 커뮤니티 큐레이션 기반.</div>
+  </div>
+</div>
+
+<!-- Infrastructure & Security -->
+<div class="section">
+  <h2>Infrastructure &amp; Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.bigtechnology.com/p/iran-strikes-leave-amazon-availability" target="_blank">이란 공습으로 AWS 바레인·두바이 가용 영역 다운</a></div>
+    <div class="meta">bigtechnology.com · HN 161pts · 69 comments</div>
+    <div class="desc">이란 내 군사 충돌 여파로 AWS의 바레인(me-south-1)과 두바이 가용 영역이 장시간 다운. 클라우드 인프라의 지정학적 리스크가 현실화된 사례로, 중동 리전에 의존하는 기업들의 멀티리전 전략 재검토 필요성 대두.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/ExTV/Podroid" target="_blank">Podroid — Android에서 루트 없이 Linux 컨테이너 실행</a></div>
+    <div class="meta">github.com/ExTV · HN 34pts</div>
+    <div class="desc">루트 권한 없이 Android 기기에서 Linux 컨테이너를 실행할 수 있는 오픈소스 프로젝트. 모바일 디바이스를 개발 환경이나 서버로 활용할 수 있는 가능성을 열어주며, Termux 대비 컨테이너 격리의 이점 제공.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://api.beopmang.org" target="_blank">법망 — PostgreSQL 기반 한국 법령 전체 JSON API</a></div>
+    <div class="meta">api.beopmang.org · GeekNews 87pts</div>
+    <div class="desc">한국 법령 99.9% 이상을 JSON으로 제공하는 에이전트용 API. XML·HWP·PDF를 사전 파싱해 표 데이터 포함 모든 출력을 JSON으로 변환. 매주 최신 동기화되며, AI 에이전트의 법률 정보 접근에 최적화된 한국 개발자 커뮤니티의 역작.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
