@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-05</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 5일 일요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>Karpathy의 LLM Wiki가 GeekNews와 Hacker News 동시 화제 — 개인 지식 저장소의 새 표준 가능성</li>
+    <li>goose, Components of a Coding Agent, 100+ Claude agents 사례가 겹치며 에이전트 개발 스택이 빠르게 구조화</li>
+    <li>자기 증류만으로 코드 생성 성능을 끌어올린 논문이 HN 574포인트로 주목</li>
+    <li>Claude Code가 23년 묵은 Linux 취약점을 발견하며 AI 보안 연구 활용 가능성 부각</li>
+    <li>Linux 7.0의 PostgreSQL 성능 반토막 이슈가 커널·DB 업그레이드 리스크를 재점검하게 함</li>
+    <li>Anthropic의 감정 개념 연구와 Gemma 4 멀티모달 가이드가 모델 내부 이해 경쟁을 보여줌</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-trend">TREND</span> <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">LLM Wiki — 개인 지식 저장소를 위한 Karpathy의 idea file</a></div>
+    <div class="meta">GeekNews 16pts · Hacker News 101pts · 25 comments</div>
+    <div class="desc">Andrej Karpathy가 제안한 LLM 기반 개인 위키 구조가 GeekNews와 HN에 동시에 올라오며 화제. 단순 노트 정리를 넘어, 생각·메모·링크를 LLM이 재구성 가능한 지식 그래프로 다루는 접근이라 개인 생산성 도구의 다음 형태로 주목받는다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://block.github.io/goose/" target="_blank">goose — 로컬에서 실행되는 자율 AI 개발 에이전트</a></div>
+    <div class="meta">GeekNews 2pts · block.github.io</div>
+    <div class="desc">Block이 공개한 오픈소스 에이전트로, 코드 작성·실행·수정·테스트를 로컬에서 끝까지 수행하는 흐름에 초점. 외부 SaaS 의존 없이 도구 호출과 워크플로 자동화를 로컬 환경에 가져오려는 움직임이 계속 강해지고 있다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-dev">DEV</span> <a href="https://magazine.sebastianraschka.com/p/components-of-a-coding-agent" target="_blank">Components of a Coding Agent — 코딩 에이전트의 핵심 구성요소 정리</a></div>
+    <div class="meta">Hacker News 191pts · 66 comments</div>
+    <div class="desc">Sebastian Raschka가 코딩 에이전트를 모델, 메모리, 툴링, 계획, 실행 루프 관점에서 분해해 설명. 최근 에이전트 도구가 난립하는 가운데, 실제 제품화에 필요한 최소 아키텍처를 구조적으로 정리한 자료로 의미가 크다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-dev">DEV</span> <a href="https://imbue.com/product/mngr_part_2/" target="_blank">100개 넘는 Claude 에이전트를 병렬 투입한 테스트 사례</a></div>
+    <div class="meta">Hacker News 32pts · 17 comments</div>
+    <div class="desc">Imbue가 다수의 Claude 에이전트를 병렬로 돌려 테스트 범위를 넓힌 운영 사례를 공개. 단일 에이전트 품질보다 에이전트 군집의 오케스트레이션과 결과 합성 능력이 실제 개발 생산성의 핵심이라는 점을 보여준다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/research/emotion-concepts-function" target="_blank">Anthropic, LLM 내부의 감정 개념 기능 연구 공개</a></div>
+    <div class="meta">Hacker News 160pts · 166 comments</div>
+    <div class="desc">Anthropic이 모델 내부에서 감정 관련 개념이 어떻게 작동하는지 해석한 연구를 발표. 감정 표현이 단순 스타일이 아니라 추론 경로와 표현 선택에 관여할 수 있음을 보여주며, 모델 해석 가능성과 안전성 연구의 접점을 넓히고 있다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-gemma-4" target="_blank">Gemma 4 비주얼 가이드 — 경량 멀티모달 모델 경쟁 본격화</a></div>
+    <div class="meta">GeekNews 11pts</div>
+    <div class="desc">Gemma 4의 모델 계열, 이미지 입력, 파라미터 구성, 활용 시나리오를 시각적으로 정리한 가이드. 대형 폐쇄형 모델 경쟁과 별개로, 경량 멀티모달 모델을 로컬·온디바이스에 맞게 쓰려는 수요가 계속 커지고 있음을 보여준다.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.01193" target="_blank">Embarrassingly simple self-distillation improves code generation</a></div>
+    <div class="meta">Hacker News 574pts · 169 comments</div>
+    <div class="desc">복잡한 추가 학습 없이 자기 증류(self-distillation)만으로 코드 생성 성능을 높였다는 논문이 HN 상위권을 장식. 대형 모델 경쟁이 계속되는 와중에도, 후처리·추론 전략 최적화만으로 체감 성능을 크게 끌어올릴 수 있다는 점이 인상적이다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <span class="tag tag-ai">AI</span> <a href="https://cyrusradfar.com/thoughts/functional-programming-is-the-only-way-to-scale-with-ai" target="_blank">에이전트 시대에는 함수형 프로그래밍이 더 잘 스케일한다는 주장</a></div>
+    <div class="meta">Hacker News 30pts · 15 comments</div>
+    <div class="desc">상태 변이와 부수효과를 줄이는 함수형 접근이 에이전트 기반 개발에서 디버깅, 병렬화, 검증 가능성 측면에서 유리하다는 분석. AI가 코드를 더 많이 만들수록 인간은 구조적 안정성과 테스트 용이성에 더 민감해진다는 흐름과 맞닿아 있다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <span class="tag tag-ai">AI</span> <a href="https://agentne.ws/" target="_blank">AgentNews — 에이전트를 위한 해커뉴스 실험</a></div>
+    <div class="meta">GeekNews 2pts</div>
+    <div class="desc">사람이 아니라 AI 에이전트가 게시·소비·랭킹하는 뉴스 플랫폼 실험. 아직 초기지만, 앞으로는 정보 플랫폼 자체가 인간 사용자만이 아니라 자동화된 에이전트를 1급 사용자로 설계해야 한다는 문제의식을 드러낸다.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Infrastructure &amp; Security</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <span class="tag tag-ai">AI</span> <a href="https://mtlynch.io/claude-code-found-linux-vulnerability/" target="_blank">Claude Code가 23년간 숨어 있던 Linux 취약점을 발견</a></div>
+    <div class="meta">GeekNews 2pts · mtlynch.io</div>
+    <div class="desc">Claude Code가 Linux NFS 드라이버의 오래된 힙 버퍼 오버플로우 취약점을 찾아냈다는 사례. AI 코딩 에이전트가 단순 생산성 도구를 넘어 실제 취약점 탐지와 보안 연구 보조 수단으로 확장될 수 있음을 보여준다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <span class="tag tag-dev">DEV</span> <a href="https://www.phoronix.com/news/Linux-7.0-AWS-PostgreSQL-Drop" target="_blank">Linux 7.0에서 PostgreSQL 성능이 절반 수준으로 하락 가능</a></div>
+    <div class="meta">Hacker News 164pts · 39 comments</div>
+    <div class="desc">AWS 엔지니어가 Linux 7.0 커널에서 PostgreSQL 처리량이 크게 떨어지는 사례를 보고. 커널 업그레이드가 곧바로 성능 향상을 의미하지 않으며, DB 워크로드는 항상 사전 벤치마크와 롤백 계획을 동반해야 한다는 점을 다시 확인시켰다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <span class="tag tag-trend">TREND</span> <a href="https://twitter.com/VladTheInflator/status/2039577001531768906" target="_blank">AI가 학습에 사용한 음악 파일을 원저작자에게 되레 저작권 클레임</a></div>
+    <div class="meta">Hacker News 18pts · 2 comments</div>
+    <div class="desc">생성형 AI가 복제한 음악 파일을 근거로 원저작자에게 저작권 분쟁이 역으로 발생했다는 사례가 HN에 공유. 데이터 출처 검증, 콘텐츠 식별, AI 학습 산출물의 권리 추적 문제가 앞으로 더 자주 실무 이슈가 될 가능성을 시사한다.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io) · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
