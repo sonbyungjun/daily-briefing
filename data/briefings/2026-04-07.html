@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-07</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-trend { background: rgba(255,212,59,0.15); color: var(--tag-trend); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 7일 화요일</div>
+</header>
+
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>로컬 AI 도구가 음성 입력, 지식 위키, 메모리 모듈까지 확장되며 개인 생산성 스택이 더 독립적으로 변하고 있다</li>
+    <li>코딩 에이전트 경쟁은 모델 자체보다 샌드박스, 컨텍스트 압축, 메모리, 하니스 설계 같은 주변 시스템으로 이동 중이다</li>
+    <li>보안 이슈는 양자 내성 전환 가속과 랜섬웨어 실명 공개처럼 대응의 현실성이 더 커지는 방향으로 흘러간다</li>
+    <li>AI 개발 문화는 무작정 자동화보다 코드 이해, 운영 프레임워크, 코드베이스 건강 관리가 중요하다는 반성으로 수렴하고 있다</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://github.com/matthartman/ghost-pepper" target="_blank">Ghost Pepper — 로컬 홀드투톡 STT for macOS</a></div>
+    <div class="meta">Hacker News 187pts · GitHub</div>
+    <div class="desc">Control 키를 누르고 말한 뒤 떼면 로컬 WhisperKit과 경량 LLM 정제로 바로 텍스트를 붙여넣는 macOS 앱이다. 음성 입력도 클라우드 없이 처리하려는 로컬 우선 생산성 흐름이 뚜렷해졌다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-dev">DEV</span> <a href="https://www.freestyle.sh/" target="_blank">Freestyle — 코딩 에이전트용 VM 샌드박스</a></div>
+    <div class="meta">Hacker News 192pts · freestyle.sh</div>
+    <div class="desc">컨테이너가 아닌 전체 Linux VM, 루트 권한, KVM 중첩 가상화, Git 동기화를 내세운 에이전트 실행 인프라다. 대규모 에이전트 운영 경쟁이 모델보다 실행 환경 설계로 이동하고 있음을 보여준다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">LLM-Wiki — RAG 대신 누적형 개인 위키</a></div>
+    <div class="meta">GeekNews 108pts · Karpathy gist</div>
+    <div class="desc">문서를 질의 때마다 다시 찾는 대신, LLM이 읽고 요약해 지속적으로 갱신되는 마크다운 위키를 쌓자는 제안이다. 개인 지식 저장소가 검색형에서 축적형 메모리 계층으로 진화하는 흐름이다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-tool">TOOL</span> <a href="https://github.com/kitfunso/hippo-memory" target="_blank">Hippo Memory — AI 에이전트용 생물학식 메모리</a></div>
+    <div class="meta">Hacker News 30pts · GitHub</div>
+    <div class="desc">에이전트가 대화를 단기·장기 기억처럼 구조화해 활용하도록 설계한 메모리 시스템이다. 컨텍스트 창 확장보다 기억 구조 설계가 에이전트 품질의 핵심으로 부상하고 있다.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <span class="tag tag-dev">DEV</span> <a href="https://github.com/rtk-ai/rtk" target="_blank">rtk — CLI 출력 60~90% 토큰 절감</a></div>
+    <div class="meta">GeekNews 28pts · GitHub</div>
+    <div class="desc">git diff, test 로그, grep 출력 같은 CLI 결과를 LLM에 전달하기 전 압축·필터링하는 Rust 프록시다. 에이전트 비용 최적화가 모델 교체만큼 중요한 실전 문제로 자리잡았다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <span class="tag tag-ai">AI</span> <a href="https://magazine.sebastianraschka.com/p/components-of-a-coding-agent" target="_blank">코딩 에이전트의 구성 요소</a></div>
+    <div class="meta">GeekNews 22pts · Sebastian Raschka</div>
+    <div class="desc">코딩 에이전트 성능은 모델 alone이 아니라 하니스, 도구 설계, 메모리, 컨텍스트 관리, 장기 세션 연속성의 조합에서 나온다는 정리다. 제품 경쟁 포인트가 어디인지 명확히 보여준다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://piechowski.io/post/codebase-drag-audit/" target="_blank">느린 팀의 원인은 사람보다 코드베이스</a></div>
+    <div class="meta">GeekNews 36pts · piechowski.io</div>
+    <div class="desc">작은 기능도 과도하게 오래 걸리게 만드는 ‘codebase drag’를 진단하는 5개 신호와 점검표를 제시한다. AI 도입과 별개로 레거시 코드 건강이 개발 속도의 상한을 정한다는 지적이다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <span class="tag tag-dev">DEV</span> <a href="https://github.com/anthropics/claude-code/issues/42796" target="_blank">Claude Code 복잡 작업 성능 회귀 논란</a></div>
+    <div class="meta">Hacker News 709pts · GitHub Issue</div>
+    <div class="desc">대규모 세션 로그 분석을 바탕으로 2월 이후 복잡 엔지니어링 작업 품질이 하락했다는 사용자 보고가 큰 반향을 얻었다. 에이전트 시장이 벤치마크보다 장기 실사용 품질 검증 단계로 넘어가고 있다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-trend">TREND</span> <span class="tag tag-ai">AI</span> <a href="https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane" target="_blank">Vibe Coding 반작용 확산</a></div>
+    <div class="meta">Hacker News 445pts · bramcohen.com</div>
+    <div class="desc">AI가 생성한 코드를 사람이 거의 들여다보지 않는 문화가 결국 품질과 구조 악화를 부른다는 비판이다. ‘무작정 맡기기’보다 사람이 프레임워크와 검증을 설계해야 한다는 반성론이 커지고 있다.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security &amp; Risk</h2>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <span class="tag tag-trend">TREND</span> <a href="https://words.filippo.io/crqc-timeline/" target="_blank">양자 내성 암호 전환, 예상보다 급해짐</a></div>
+    <div class="meta">Hacker News 298pts · filippo.io</div>
+    <div class="desc">암호 엔지니어 Filippo Valsorda가 최근 공개된 연구를 근거로 ECC 파괴 비용 추정이 빠르게 낮아지고 있다며 양자 내성 암호 전환의 시급성을 상향 조정했다. WebPKI와 장기 키 보호 전략 재점검 압박이 커질 수 있다.</div>
+  </div>
+
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <span class="tag tag-dev">DEV</span> <a href="https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/" target="_blank">독일, REvil·GandCrab 핵심 인물 공개</a></div>
+    <div class="meta">Hacker News 251pts · Krebs on Security</div>
+    <div class="desc">독일 수사당국이 REvil·GandCrab 운영 핵심으로 지목한 러시아 국적 인물 실명과 얼굴을 공개했다. 랜섬웨어 대응이 단순 IOC 공유를 넘어 실명 특정과 자금 추적으로 더 공격적으로 전개되고 있다.</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io), original posts · Generated by 상혁봇
+</footer>
+
+</div>
+</body>
+</html>
