@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-08</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-trend: #ffd43b; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 8일 수요일</div>
+</header>
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>AI 경쟁이 모델 성능보다 보안·배포·제어 계층으로 빠르게 확장되고 있다</li>
+    <li>코딩 에이전트는 멀티에이전트 환상보다 하니스·컨텍스트·토큰 최적화가 핵심이다</li>
+    <li>보안 업계는 AI 시대 공급망 방어와 포스트퀀텀 전환을 동시에 준비 중이다</li>
+    <li>대형 인프라 기업도 스토리지와 에이전트 실험을 새 제품 축으로 밀고 있다</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>AI &amp; Models</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/arman-bd/guppylm" target="_blank">GuppyLM</a></div>
+    <div class="meta">GeekNews / Small LLM</div>
+    <div class="desc">9M 파라미터로 LLM 구조를 직접 학습.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://z.ai/blog/glm-5.1" target="_blank">GLM-5.1</a></div>
+    <div class="meta">Hacker News / Model</div>
+    <div class="desc">장기 작업 지향 새 모델 공개.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www-cdn.anthropic.com/53566bf5440a10affd749724787c8913a2ae0841.pdf" target="_blank">Claude Mythos system card</a></div>
+    <div class="meta">Hacker News / Safety</div>
+    <div class="desc">신규 모델 안전 카드 공개.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f" target="_blank">LLM-Wiki</a></div>
+    <div class="meta">GeekNews / Personal knowledge</div>
+    <div class="desc">개인 지식 저장소를 LLM 중심으로 재구성.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://magazine.sebastianraschka.com/p/components-of-a-coding-agent" target="_blank">코딩 에이전트의 구성 요소</a></div>
+    <div class="meta">GeekNews / Agent design</div>
+    <div class="desc">툴·메모리·하니스 설계가 성능 좌우.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.infoq.com/news/2026/04/google-agent-testbed-scion/" target="_blank">Google Scion</a></div>
+    <div class="meta">Hacker News / Multi-agent</div>
+    <div class="desc">멀티에이전트 테스트베드 오픈소스화.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/rtk-ai/rtk" target="_blank">rtk</a></div>
+    <div class="meta">GeekNews / CLI proxy</div>
+    <div class="desc">개발 명령 출력 압축으로 토큰 절감.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/anthropics/claude-code/issues/42796" target="_blank">Claude Code 품질 저하 이슈</a></div>
+    <div class="meta">GeekNews / Dev tooling</div>
+    <div class="desc">복잡 작업 신뢰도 하락 불만 확산.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://bramcohen.com/p/the-cult-of-vibe-coding-is-insane" target="_blank">바이브 코딩 숭배는 미쳐있다</a></div>
+    <div class="meta">GeekNews / Engineering</div>
+    <div class="desc">속도보다 품질 검증이 더 중요하다는 비판.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security &amp; Infra</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.anthropic.com/glasswing" target="_blank">Project Glasswing</a></div>
+    <div class="meta">Hacker News / Supply chain security</div>
+    <div class="desc">AI 시대 핵심 소프트웨어 보안 연합 출범.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank">Claude Mythos 보안 평가</a></div>
+    <div class="meta">Hacker News / Cybersecurity</div>
+    <div class="desc">사이버 공격 능력 평가 결과 공개.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.cloudflare.com/post-quantum-roadmap/" target="_blank">Cloudflare post-quantum roadmap</a></div>
+    <div class="meta">Hacker News / Security</div>
+    <div class="desc">2029년 전면 양자내성 전환 목표 제시.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://www.allthingsdistributed.com/2026/04/s3-files-and-the-changing-face-of-s3.html" target="_blank">S3 Files</a></div>
+    <div class="meta">Hacker News / Infra</div>
+    <div class="desc">S3를 대용량 파일 전송 제품으로 확장.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
