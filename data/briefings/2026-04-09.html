@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-09</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 9일 목요일</div>
+</header>
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>코딩 에이전트 담론이 프롬프트보다 하니스와 운영 설계로 이동 중이다</li>
+    <li>대형 플랫폼은 개인 AI, 초대형 학습, IDE 통합을 동시에 확장하고 있다</li>
+    <li>보안 이슈는 커널 버그와 암호화 도구 계정 중단처럼 운영 리스크로 번졌다</li>
+    <li>프론트엔드와 개발 도구는 무거운 기본값 대신 단순화 회귀가 이어지고 있다</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>AI &amp; Models</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/addyosmani/agent-skills" target="_blank">agent-skills</a></div>
+    <div class="meta">GeekNews / Coding agent</div>
+    <div class="desc">스펙·테스트·보안 리뷰용 프로덕션 스킬 묶음.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://bits-bytes-nn.github.io/insights/agentic-ai/2026/04/05/evolution-of-ai-agentic-patterns.html" target="_blank">Evolution of AI Agentic Patterns</a></div>
+    <div class="meta">GeekNews / Agentic AI</div>
+    <div class="desc">프롬프트→컨텍스트→하니스 진화 정리.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://ai.meta.com/blog/introducing-muse-spark-msl/?_fb_noscript=1" target="_blank">Muse Spark</a></div>
+    <div class="meta">Hacker News / Personal AI</div>
+    <div class="desc">Meta, 개인 초지능 로드맵 제품 공개.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.05091" target="_blank">MegaTrain</a></div>
+    <div class="meta">Hacker News / LLM training</div>
+    <div class="desc">단일 GPU에서 100B+ 정밀 학습 제안.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://addyosmani.com/blog/code-agent-orchestra/" target="_blank">Code Agent Orchestra</a></div>
+    <div class="meta">GeekNews / Multi-agent coding</div>
+    <div class="desc">멀티 에이전트 코딩 운영법 정리.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/VoltAgent/awesome-design-md" target="_blank">Awesome Design.MD</a></div>
+    <div class="meta">GeekNews / Design system</div>
+    <div class="desc">AI용 디자인 규칙 저장소 모음.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://swift.org/blog/expanding-swift-ide-support/" target="_blank">Expanding Swift IDE Support</a></div>
+    <div class="meta">Hacker News / Swift tooling</div>
+    <div class="desc">Swift IDE 지원 범위 확대 발표.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.railway.com/p/moving-railways-frontend-off-nextjs" target="_blank">Railway moved off Next.js</a></div>
+    <div class="meta">Hacker News / Frontend</div>
+    <div class="desc">프론트 이전 후 빌드 10분→2분 미만.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://devblogs.microsoft.com/dotnet/csharp-15-union-types/" target="_blank">Union types in C# 15</a></div>
+    <div class="meta">Hacker News / Language</div>
+    <div class="desc">C# 15에 유니온 타입 도입 예고.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/skrun-dev/skrun" target="_blank">Skrun</a></div>
+    <div class="meta">Hacker News / Agent API</div>
+    <div class="desc">에이전트 스킬을 API로 배포하는 도구.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security &amp; Infra</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://photon.codes/blog/we-found-a-ticking-time-bomb-in-macos-tcp-networking" target="_blank">macOS 49-day TCP bug</a></div>
+    <div class="meta">GeekNews / Kernel bug</div>
+    <div class="desc">49일 업타임 뒤 TCP 멈춤 커널 버그.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.404media.co/microsoft-abruptly-terminates-veracrypt-account-halting-windows-updates/" target="_blank">VeraCrypt account terminated</a></div>
+    <div class="meta">Hacker News / Security ops</div>
+    <div class="desc">MS 계정 중단으로 윈도우 배포 차질.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://sourceforge.net/p/veracrypt/discussion/general/thread/9620d7a4b3/" target="_blank">VeraCrypt project update</a></div>
+    <div class="meta">Hacker News / Follow-up</div>
+    <div class="desc">VeraCrypt, 계정 복구 경과 공개.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
