@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-10</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-tool: #748ffc; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, 'Pretendard', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-tool { background: rgba(116,143,252,0.15); color: var(--tag-tool); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  .summary-box { background: linear-gradient(135deg, #1e2230, #1a1d27); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }
+  .summary-box h3 { color: var(--accent); font-size: 1rem; margin-bottom: 0.8rem; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 0.3rem 0; font-size: 0.9rem; color: var(--text); }
+  .summary-box li::before { content: "→ "; color: var(--accent); font-weight: 700; }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 10일 금요일</div>
+</header>
+<div class="summary-box">
+  <h3>Today's Key Takeaways</h3>
+  <ul>
+    <li>에이전트 설계는 단일 모델보다 역할 분리와 사전 조사로 고도화되고 있다</li>
+    <li>개발 도구는 코드 작성보다 탐색, 검증, 플랫폼 연결 자동화로 확장 중이다</li>
+    <li>보안은 공급망과 워터마크 우회처럼 운영 전반 리스크로 번지고 있다</li>
+    <li>개발 워크플로는 Git 이후와 C 빌드 체인까지 재설계 시도가 이어진다</li>
+  </ul>
+</div>
+<div class="section">
+  <h2>AI &amp; Models</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://claude.com/blog/the-advisor-strategy" target="_blank">The advisor strategy</a></div>
+    <div class="meta">GeekNews / Claude Platform</div>
+    <div class="desc">Opus 조언자, Sonnet 비용으로 성능 보강.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.skypilot.co/research-driven-agents/" target="_blank">Research-Driven Agents</a></div>
+    <div class="meta">Hacker News / Agent research</div>
+    <div class="desc">코드 전 논문 조사로 llama.cpp 15% 개선.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://shopify.dev/docs/apps/build/ai-toolkit" target="_blank">Shopify AI Toolkit</a></div>
+    <div class="meta">GeekNews / AI commerce tooling</div>
+    <div class="desc">에이전트가 Shopify 문서·스키마 직접 활용.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/aloshdenny/reverse-SynthID" target="_blank">reverse-SynthID</a></div>
+    <div class="meta">Hacker News / AI watermark</div>
+    <div class="desc">Gemini 이미지 워터마크 탐지·우회 분석.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer &amp; Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://david.coffee/i-still-prefer-mcp-over-skills/" target="_blank">I still prefer MCP over skills</a></div>
+    <div class="meta">Hacker News / Agent tooling</div>
+    <div class="desc">스킬보다 MCP가 이식성과 확장성 우위.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://piechowski.io/post/git-commands-before-reading-code/" target="_blank">Git commands before reading code</a></div>
+    <div class="meta">GeekNews / Codebase analysis</div>
+    <div class="desc">코드 읽기 전 Git 이력으로 위험 구역 파악.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://hegel.dev" target="_blank">Hegel</a></div>
+    <div class="meta">Hacker News / Testing</div>
+    <div class="desc">언어별 속성 기반 테스트 프로토콜 제안.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-tool">TOOL</span> <a href="https://github.com/randerson112/craft" target="_blank">craft</a></div>
+    <div class="meta">Hacker News / Build tool</div>
+    <div class="desc">C/C++용 Cargo 스타일 빌드 도구 공개.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security &amp; Infra</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://astral.sh/blog/open-source-security-at-astral" target="_blank">Open source security at Astral</a></div>
+    <div class="meta">GeekNews / Supply chain</div>
+    <div class="desc">Astral, GitHub Actions 보안 운영 원칙 공개.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://obdev.at/products/littlesnitch-linux/index.html" target="_blank">Little Snitch for Linux</a></div>
+    <div class="meta">Hacker News / Network security</div>
+    <div class="desc">리눅스용 앱별 네트워크 차단 도구 출시.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://bigbrotherwatch.org.uk/blog/apples-new-iphone-update-is-restricting-internet-freedom-in-the-uk/" target="_blank">Apple UK internet restriction update</a></div>
+    <div class="meta">Hacker News / Policy</div>
+    <div class="desc">영국 iPhone 업데이트, 검열 우회 제한 논란.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
