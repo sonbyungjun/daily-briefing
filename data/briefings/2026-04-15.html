@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-15</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 15일 수요일</div>
+</header>
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/news/claude-code-routines" target="_blank">Claude Code Routines</a></div>
+    <div class="meta">Hacker News / Agent workflows</div>
+    <div class="desc">반복 작업을 재사용 가능한 루틴으로 묶어 에이전트 작업 흐름을 고정한다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/trusted-access-for-the-next-era-of-cyber-defense/" target="_blank">Trusted access for the next era of cyber defense</a></div>
+    <div class="meta">Hacker News / AI security</div>
+    <div class="desc">고신뢰 기관과 함께 고위험 사이버 방어 실험 접근을 여는 프로그램이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://introspective-diffusion.github.io/" target="_blank">Introspective Diffusion Language Models</a></div>
+    <div class="meta">Hacker News / Research</div>
+    <div class="desc">생성 중간 단계 점검으로 언어 모델 샘플 품질과 제어성을 높이려는 방식이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.10900" target="_blank">CASK</a></div>
+    <div class="meta">GeekNews / LLM inference</div>
+    <div class="desc">KV 캐시를 역할 기반으로 압축해 메모리 절감과 성능 개선을 함께 노린다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://databasedesignbook.com/posts/5nf-and-database-design" target="_blank">5NF and Database Design</a></div>
+    <div class="meta">Hacker News / Database design</div>
+    <div class="desc">다중 값 종속까지 분해해 조인 이상을 줄이는 고정규화 설계 원칙을 짚는다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/dropseed/plain" target="_blank">Plain</a></div>
+    <div class="meta">Hacker News / Python framework</div>
+    <div class="desc">사람과 에이전트 모두 다루기 쉽게 타입과 규칙을 내장한 파이썬 프레임워크다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://9to5linux.com/linux-kernel-7-0-officially-released-this-is-whats-new" target="_blank">Linux 커널 7.0 공식 릴리스</a></div>
+    <div class="meta">GeekNews / Systems</div>
+    <div class="desc">대형 기능 폭발보다 최신 드라이버와 플랫폼 지원 정리에 초점을 둔 메이저 릴리스다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/replikativ/datahike" target="_blank">datahike</a></div>
+    <div class="meta">GeekNews / Database</div>
+    <div class="desc">불변 스냅샷과 시간여행 쿼리를 제공하는 분산형 Datalog 엔진이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/kargnas/damn-my-slow-kt" target="_blank">damn-my-slow-kt</a></div>
+    <div class="meta">GeekNews / Network tooling</div>
+    <div class="desc">인터넷 속도 미달을 자동 측정하고 SLA 감면 신청까지 이어주는 자동화 도구다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Systems & Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.com/openssl/openssl/releases/tag/openssl-4.0.0" target="_blank">OpenSSL 4.0.0</a></div>
+    <div class="meta">Hacker News / Security release</div>
+    <div class="desc">ECH와 하이브리드 양자내성 그룹을 추가하고 구형 TLS 유산을 더 걷어냈다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://new-blog.ch4n3.kr/django-pre-auth-denial-of-service-kr/" target="_blank">Django pre-auth DoS 취약점</a></div>
+    <div class="meta">GeekNews / Security</div>
+    <div class="desc">20MB 수준 요청만으로 CPU를 소모시켜 서버를 장시간 묶는 취약점이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.com/axios/axios/security/advisories/GHSA-fvcv-3m26-pcqx" target="_blank">Axios 헤더 주입 권한 탈취 취약점</a></div>
+    <div class="meta">GeekNews / Cloud security</div>
+    <div class="desc">CRLF 헤더 주입이 메타데이터 접근으로 이어질 수 있는 체인형 취약점이다.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
