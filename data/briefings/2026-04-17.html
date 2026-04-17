@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-17</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 17일 금요일</div>
+</header>
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank">Claude Opus 4.7</a></div>
+    <div class="meta">Hacker News / Frontier model</div>
+    <div class="desc">장기 코딩과 자기검증을 강화한 최신 플래그십 모델이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/codex-for-almost-everything/" target="_blank">Codex for almost everything</a></div>
+    <div class="meta">Hacker News / Coding agent</div>
+    <div class="desc">코드 작성부터 반복 수정까지 넓은 작업을 맡기는 범용 코딩 에이전트 방향이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://qwen.ai/blog?id=qwen3.6-35b-a3b" target="_blank">Qwen3.6-35B-A3B</a></div>
+    <div class="meta">Hacker News / Open model</div>
+    <div class="desc">에이전트형 코딩 성능을 앞세운 오픈 가중치 모델 공개다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://huggingface.co/Jiunsong/supergemma4-26b-uncensored-mlx-4bit-v2" target="_blank">SuperGemma4</a></div>
+    <div class="meta">GeekNews / Local LLM</div>
+    <div class="desc">Gemma 4 26B를 애플 실리콘용 MLX와 4비트로 다듬은 로컬 모델이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/vercel-labs/open-agents" target="_blank">Open Agents</a></div>
+    <div class="meta">GeekNews / Agent framework</div>
+    <div class="desc">클라우드 코딩 에이전트를 직접 구성하는 오픈소스 레퍼런스 앱이다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html" target="_blank">Android CLI: Build Android apps 3x faster using any agent</a></div>
+    <div class="meta">Hacker News / Android tooling</div>
+    <div class="desc">에이전트와 연결해 안드로이드 앱 작업 속도를 높이는 공식 CLI다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://ropensci.org/blog/2026/04/02/tree-sitter-overview/" target="_blank">A Better R Programming Experience Thanks to Tree-sitter</a></div>
+    <div class="meta">Hacker News / Language tooling</div>
+    <div class="desc">Tree-sitter 기반으로 R 코드 탐색과 편집 경험을 끌어올린다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/anthropics/claude-desktop-buddy" target="_blank">Connect maker devices to Claude Code and Cowork</a></div>
+    <div class="meta">Hacker News / Hardware tooling</div>
+    <div class="desc">블루투스 API로 메이커 디바이스를 Claude Code와 연결하는 예제다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/Wuerfelhusten/commitment" target="_blank">100M commits to GitHub without using Git push</a></div>
+    <div class="meta">Hacker News / Git experiment</div>
+    <div class="desc">푸시 없이 커밋 1억 개 저장소를 만든 극단적 깃 실험이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/davebcn87/pi-autoresearch" target="_blank">pi-autoresearch</a></div>
+    <div class="meta">GeekNews / Experiment loop</div>
+    <div class="desc">시도와 측정과 개선을 계속 반복하는 자율 실험 루프 확장이다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Systems &amp; Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.cloudflare.com/ai-platform/" target="_blank">Cloudflare&#x27;s AI Platform: an inference layer designed for agents</a></div>
+    <div class="meta">Hacker News / AI infrastructure</div>
+    <div class="desc">14개 이상 모델 공급자를 한 추론 계층으로 묶는 에이전트 인프라다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://warped3.substack.com/p/direct-win32-api-weird-shaped-windows" target="_blank">Direct Win32 API, Weird-Shaped Windows, and Why They Mostly Disappeared</a></div>
+    <div class="meta">GeekNews / Windows internals</div>
+    <div class="desc">예전 Win32가 주던 UI 제어력과 현대 앱이 잃은 자유를 짚는다.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
