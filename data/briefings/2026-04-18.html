@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-18</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 18일 토요일</div>
+</header>
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/news/claude-design-anthropic-labs" target="_blank">Claude Design</a></div>
+    <div class="meta">Hacker News / Design AI</div>
+    <div class="desc">대화만으로 슬라이드와 프로토타입까지 만드는 시각 작업 도구다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/afshinm/zerobox" target="_blank">Zerobox</a></div>
+    <div class="meta">GeekNews / Sandbox tooling</div>
+    <div class="desc">Codex 런타임을 떼어내 명령 실행을 격리하는 경량 샌드박스다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.04323" target="_blank">AI 에이전트 스킬, 벤치마크 성능의 절반도 현실에서 안 나온다</a></div>
+    <div class="meta">GeekNews / Agent evaluation</div>
+    <div class="desc">벤치마크 스킬 점수가 실제 작업 전이로는 크게 꺾인다는 분석이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://dev.to/samchon/nestia-well-designed-backend-fully-automated-frontend-development-45d9" target="_blank">Swagger가 있으면 AI가 프론트엔드 전체를 만들어줍니다</a></div>
+    <div class="meta">GeekNews / AI development</div>
+    <div class="desc">Swagger 스키마를 프론트 자동생성의 핵심 컨텍스트로 쓰는 접근이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://gemini.google/mac/" target="_blank">macOS용 Gemini 앱 출시</a></div>
+    <div class="meta">GeekNews / Desktop AI</div>
+    <div class="desc">Option + Space로 현재 창 문맥까지 바로 넘기는 맥 네이티브 앱이다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://ziglang.org/news/0.16.0-released/" target="_blank">Zig 0.16.0 릴리즈</a></div>
+    <div class="meta">GeekNews / Language release</div>
+    <div class="desc">I/O 추상화와 언어·툴체인 개선을 묶은 대형 업데이트다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/smol-machines/smolvm" target="_blank">Show HN: Smol machines – subsecond coldstart, portable virtual machines</a></div>
+    <div class="meta">Hacker News / Virtualization</div>
+    <div class="desc">1파일 패키징과 초고속 부팅을 노린 경량 VM 툴이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.ezyang.com/2026/04/oss-code-review-in-the-era-of-llms/" target="_blank">OSS code review, in the era of LLMs</a></div>
+    <div class="meta">Hacker News / Open source workflow</div>
+    <div class="desc">오픈소스 리뷰는 왕복을 줄이고 기여자에게 더 많은 작업을 넘겨야 한다는 제안이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you" target="_blank">Measuring Claude 4.7's tokenizer costs</a></div>
+    <div class="meta">Hacker News / LLM tooling</div>
+    <div class="desc">새 토크나이저가 기술 문서와 코드 문맥에서 토큰 사용량을 더 키운다는 측정이다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Systems &amp; Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.com/paniclock/paniclock/" target="_blank">Show HN: PanicLock – Close your MacBook lid disable TouchID –&gt; password unlock</a></div>
+    <div class="meta">Hacker News / macOS security</div>
+    <div class="desc">맥 잠금 시 Touch ID를 즉시 끄고 비밀번호만 허용하는 유틸이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://risky.biz/risky-bulletin-nist-gives-up-enriching-most-cves/" target="_blank">NIST gives up enriching most CVEs</a></div>
+    <div class="meta">Hacker News / Vulnerability database</div>
+    <div class="desc">NVD는 앞으로 실제로 중요한 취약점 위주로만 메타데이터를 보강한다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.calif.io/p/mad-bugs-even-cat-readmetxt-is-not" target="_blank">Even "cat readme.txt" is not safe</a></div>
+    <div class="meta">Hacker News / Terminal security</div>
+    <div class="desc">iTerm2의 SSH 통합은 출력만으로도 프로토콜 오인을 일으킬 수 있다는 분석이다.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
