@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-19</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 19일 일요일</div>
+</header>
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://evan-moon.github.io/2026/04/18/developers-who-stopped-growing-in-ai-era/" target="_blank">AI 코딩 시대, 더이상 성장하지 않는 개발자들</a></div>
+    <div class="meta">GeekNews / AI development</div>
+    <div class="desc">AI 의존이 판단력과 장기 학습을 오히려 약화시킨다는 글이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://isitagentready.com/" target="_blank">Is Your Site Agent-Ready?</a></div>
+    <div class="meta">GeekNews / Agent readiness</div>
+    <div class="desc">llms.txt와 MCP와 OAuth까지 에이전트 대응도를 점검하는 검사기다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/kessler/gemma-gem" target="_blank">Gemma Gem</a></div>
+    <div class="meta">GeekNews / Browser AI</div>
+    <div class="desc">브라우저 안에서 Gemma 4를 온디바이스로 돌리는 확장이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://ko.wikipedia.org/wiki/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4_HWP/HWPX_%EC%B2%98%EB%A6%AC_%EB%8F%84%EA%B5%AC_%EB%AA%A9%EB%A1%9D" target="_blank">오픈소스 HWP/HWPX 처리 도구 목록</a></div>
+    <div class="meta">GeekNews / Document tooling</div>
+    <div class="desc">한글 문서를 AI와 자동화 파이프라인에 넣는 오픈소스 지형도다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://tokens.billchambers.me/leaderboard" target="_blank">Anonymous request-token comparisons from Opus 4.6 and Opus 4.7</a></div>
+    <div class="meta">Hacker News / LLM tooling</div>
+    <div class="desc">실사용 프롬프트 기준 4.7의 토큰 비용 차이를 모아 비교한다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/drasimwagan/mdv" target="_blank">Show HN: MDV – a Markdown superset for docs, dashboards, and slides with data</a></div>
+    <div class="meta">Hacker News / Documentation tooling</div>
+    <div class="desc">마크다운만으로 대시보드와 슬라이드까지 렌더링하는 포맷이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/NikolayS/pgque" target="_blank">PgQue: Zero-Bloat Postgres Queue</a></div>
+    <div class="meta">Hacker News / Database tooling</div>
+    <div class="desc">C 확장 없이 순수 SQL로 도는 Postgres 큐다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://byroot.github.io/ruby/performance/2026/04/18/faster-paths.html" target="_blank">Optimizing Ruby Path Methods</a></div>
+    <div class="meta">Hacker News / Ruby performance</div>
+    <div class="desc">대형 CI 병목을 줄이려 경로 처리 속도를 다듬은 최적화 기록이다.</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Systems &amp; Infrastructure</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SYS</span> <a href="https://isayeter.com/posts/digitalocean-to-hetzner-migration/" target="_blank">Migrating from DigitalOcean to Hetzner</a></div>
+    <div class="meta">Hacker News / Infrastructure migration</div>
+    <div class="desc">실서비스를 무중단 이전해 월 비용을 크게 낮춘 사례다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SYS</span> <a href="https://www.fuzix.org/" target="_blank">Fuzix OS</a></div>
+    <div class="meta">Hacker News / Operating systems</div>
+    <div class="desc">소형 CPU용 유닉스 계열 OS 0.4가 네트워킹과 빌드를 개선했다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SYS</span> <a href="https://nand2mario.github.io/posts/2026/80386_memory_pipeline/" target="_blank">80386 Memory Pipeline</a></div>
+    <div class="meta">Hacker News / Computer architecture</div>
+    <div class="desc">80386이 가상 메모리를 1.5클럭급 공통 경로로 겹쳐 처리한 해설이다.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
