@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-21</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 21일 화요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=28727" target="_blank">AI 리뷰를 신뢰할 수 있을까요?</a></div>
+    <div class="meta">GeekNews / AI code review</div>
+    <div class="desc">AI 코드리뷰를 반영률 지표와 A/B 테스트로 검증한 운영기다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=28720" target="_blank">2026년 AI 현황을 설명하는 그래프들</a></div>
+    <div class="meta">GeekNews / AI industry</div>
+    <div class="desc">AI 투자와 컴퓨트와 에이전트 성능 상승을 한 번에 정리한 지표들이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=28716" target="_blank">Why 2026 Seniors are just highly-paid Code Editors, on Addy Osmani</a></div>
+    <div class="meta">GeekNews / AI engineering</div>
+    <div class="desc">시니어 개발자의 무게중심이 작성보다 판단과 편집으로 옮겨간다는 진단이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://morgin.ai/articles/even-uncensored-models-cant-say-what-they-want.html" target="_blank">Even 'uncensored' models can't say what they want</a></div>
+    <div class="meta">Hacker News / Model behavior</div>
+    <div class="desc">무검열 모델도 사전학습 편향 때문에 특정 단어를 스스로 회피한다는 분석이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.kimi.com/blog/kimi-vendor-verifier" target="_blank">Kimi vendor verifier – verify accuracy of inference providers</a></div>
+    <div class="meta">Hacker News / Open model infra</div>
+    <div class="desc">추론 사업자 구현이 모델 성능을 깎는지 검증하는 오픈 도구다.</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=28726" target="_blank">Show GN: VS Code/Cursor에서 개발과 인프라 반복 작업을 통합하는 익스텐션: alogin-skills</a></div>
+    <div class="meta">GeekNews / IDE tooling</div>
+    <div class="desc">IDE 안에서 서버 접속과 반복 인프라 작업을 한 번에 묶는 확장이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=28717" target="_blank">Show GN: [macOS] FnLamp - fn 키 모드를 쉽게 변경하고 표시해주는 메뉴바앱</a></div>
+    <div class="meta">GeekNews / macOS tooling</div>
+    <div class="desc">fn 키 모드를 메뉴바와 단축키로 즉시 전환해주는 macOS 유틸이다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://isaaccorbrey.com/notes/jujutsu-megamerges-for-fun-and-profit" target="_blank">Jujutsu megamerges for fun and profit</a></div>
+    <div class="meta">Hacker News / Version control</div>
+    <div class="desc">여러 작업 브랜치를 옥토퍼스 머지로 묶어 동시에 다루는 JJ 워크플로다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/" target="_blank">ggsql: A Grammar of Graphics for SQL</a></div>
+    <div class="meta">Hacker News / Data tooling</div>
+    <div class="desc">SQL 문법만으로 그래픽 문법 기반 시각화를 조합하는 새 도구다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html" target="_blank">Zero-Copy Pages in Rust: Or How I Learned to Stop Worrying and Love Lifetimes</a></div>
+    <div class="meta">Hacker News / Systems engineering</div>
+    <div class="desc">Rust 수명 관리로 데이터베이스 페이지 복사를 줄이는 구현 이야기다.</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/zeroecco/holos" target="_blank">Show HN: Holos – QEMU/KVM with a compose-style YAML, GPUs and health checks</a></div>
+    <div class="meta">Hacker News / Virtualization</div>
+    <div class="desc">도커 컴포즈처럼 YAML로 KVM 가상머신 스택을 올리는 도구다.</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
