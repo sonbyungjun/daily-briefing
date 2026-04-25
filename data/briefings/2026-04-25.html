@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-25</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 25일 토요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://api-docs.deepseek.com/" target="_blank">DeepSeek v4</a></div>
+    <div class="meta">Hacker News / AI model</div>
+    <div class="desc">장문맥모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/api/docs/changelog" target="_blank">OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API</a></div>
+    <div class="meta">Hacker News / AI API</div>
+    <div class="desc">신모델API</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic" target="_blank">Google plans to invest up to $40B in Anthropic</a></div>
+    <div class="meta">Hacker News / AI funding</div>
+    <div class="desc">구글투자</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.21691" target="_blank">There Will Be a Scientific Theory of Deep Learning</a></div>
+    <div class="meta">Hacker News / AI research</div>
+    <div class="desc">이론정식화</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.20817" target="_blank">Different Language Models Learn Similar Number Representations</a></div>
+    <div class="meta">Hacker News / AI research</div>
+    <div class="desc">수표현공유</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.kdnuggets.com/7-specific-unconventional-things-to-do-with-language-models" target="_blank">LLM으로 할 수 있는 비전형적인 일 7가지</a></div>
+    <div class="meta">GeekNews / LLM workflows</div>
+    <div class="desc">활용7선</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/matz/spinel" target="_blank">Spinel: Ruby AOT Native Compiler</a></div>
+    <div class="meta">Hacker News / Compilers</div>
+    <div class="desc">루비AOT</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/browser-use/browser-harness" target="_blank">Show HN: Browser Harness – Gives LLM freedom to complete any browser task</a></div>
+    <div class="meta">Hacker News / Agent tools</div>
+    <div class="desc">브라우저제어</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=28857" target="_blank">Tolaria - Markdown 지식 베이스를 관리하는 오픈소스 macOS 앱</a></div>
+    <div class="meta">GeekNews / Knowledge base</div>
+    <div class="desc">지식베이스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=28855" target="_blank">Honker - SQLite에 Postgres NOTIFY/LISTEN을 구현하는 확장</a></div>
+    <div class="meta">GeekNews / SQLite</div>
+    <div class="desc">이벤트확장</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://hhh.hn/rodecaster-duo-fw/" target="_blank">My audio interface has SSH enabled by default</a></div>
+    <div class="meta">Hacker News / Device security</div>
+    <div class="desc">기본SSH</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://news.hada.io/topic?id=28847" target="_blank">AI 크롤러 시대, 로그 파일 분석으로 검색 가시성의 사각지대를 읽는 법</a></div>
+    <div class="meta">GeekNews / AI visibility</div>
+    <div class="desc">로그가시성</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
