@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-27</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 27일 월요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://rubric.im/curriculum/design-md" target="_blank">DESIGN.md — AI 코딩 도구를 위한 디자인 시스템 단일 파일 포맷 (한국어 정리)</a></div>
+    <div class="meta">GeekNews / AI spec</div>
+    <div class="desc">스펙정리</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.21691" target="_blank">딥러닝에 대한 과학적 이론이 나올 것이다.</a></div>
+    <div class="meta">GeekNews / AI research</div>
+    <div class="desc">이론정립</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/SWE-agent/mini-swe-agent" target="_blank">mini-swe-agent - 100줄짜리 AI 에이전트로 GitHub 이슈 해결 및 커맨드라인 지원</a></div>
+    <div class="meta">GeekNews / Coding agent</div>
+    <div class="desc">이슈해결봇</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/changelog/gpt-5-5-api" target="_blank">OpenAI, API에 GPT-5.5와 GPT-5.5 Pro 출시</a></div>
+    <div class="meta">GeekNews / API release</div>
+    <div class="desc">API출시</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/" target="_blank">SWE-bench Verified no longer measures frontier coding capabilities</a></div>
+    <div class="meta">Hacker News / Benchmark</div>
+    <div class="desc">벤치재정의</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/sachitrafa/YourMemory" target="_blank">Show HN: AI memory with biological decay (52% recall)</a></div>
+    <div class="meta">Hacker News / AI memory</div>
+    <div class="desc">감쇠메모리</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/tech-engine/goscrapy" target="_blank">GoScrapy - Go기반 초고속 웹 스크래핑 프레임워크</a></div>
+    <div class="meta">GeekNews / Web scraping</div>
+    <div class="desc">고속스크래핑</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://martinfowler.com/articles/intent-cognitive-technical-debt.html" target="_blank">기술 부채, 인지 부채, 의도 부채</a></div>
+    <div class="meta">GeekNews / Engineering</div>
+    <div class="desc">부채삼중주</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.lawsofsoftwareengineering.com/" target="_blank">소프트웨어 공학의 법칙들</a></div>
+    <div class="meta">GeekNews / Engineering</div>
+    <div class="desc">공학법칙집</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/refactoringhq/tolaria" target="_blank">Tolaria - Markdown 지식 베이스를 관리하는 오픈소스 macOS 앱</a></div>
+    <div class="meta">GeekNews / Knowledge base</div>
+    <div class="desc">지식베이스앱</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://dystroy.org/blog/box-to-save-memory/" target="_blank">Box to Save Memory in Rust</a></div>
+    <div class="meta">Hacker News / Rust memory</div>
+    <div class="desc">Rust메모리</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://statecharts.dev/" target="_blank">Statecharts: hierarchical state machines</a></div>
+    <div class="meta">Hacker News / Architecture</div>
+    <div class="desc">상태머신계층</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews, original posts · Generated by 상혁봇
+</footer>
+</div>
+</body>
+</html>
