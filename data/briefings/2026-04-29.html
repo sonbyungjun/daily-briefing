@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-04-29</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 4월 29일 수요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://addyosmani.com/blog/agent-harness-engineering/" target="_blank">하네스 엔지니어링: 모델보다 중요한 작업 환경 설계의 시대</a></div>
+    <div class="meta">GeekNews / Agent workflow</div>
+    <div class="desc">에이전트환경</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/microsoft/VibeVoice" target="_blank">VibeVoice - 오픈소스 프론티어 음성 AI 모델</a></div>
+    <div class="meta">GeekNews / Voice AI</div>
+    <div class="desc">음성모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/heygen-com/hyperframes" target="_blank">HyperFrames - HTML로 비디오를 만드는 AI 에이전트 전용 오픈소스 프레임워크</a></div>
+    <div class="meta">GeekNews / Video tooling</div>
+    <div class="desc">HTML영상</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://stratechery.com/2026/an-interview-with-openai-ceo-sam-altman-and-aws-ceo-matt-garman-about-bedrock-managed-agents/" target="_blank">OpenAI models coming to Amazon Bedrock: Interview with OpenAI and AWS CEOs</a></div>
+    <div class="meta">Hacker News / AI platform</div>
+    <div class="desc">베드록연동</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://legallayer.substack.com/p/who-owns-the-claude-code-wrote" target="_blank">Who owns the code Claude Code wrote?</a></div>
+    <div class="meta">Hacker News / AI legal</div>
+    <div class="desc">코드저작권</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/remotion-dev/remotion" target="_blank">Remotion - React로 영상을 만드는 오픈소스 프레임워크</a></div>
+    <div class="meta">GeekNews / Video framework</div>
+    <div class="desc">리액트영상</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/warpdotdev/warp" target="_blank">Warp, 터미널 기반 Agentic Development Environment를 오픈소스로 공개</a></div>
+    <div class="meta">GeekNews / Terminal tooling</div>
+    <div class="desc">터미널오픈</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://mitchellh.com/writing/ghostty-leaving-github" target="_blank">Ghostty is leaving GitHub</a></div>
+    <div class="meta">Hacker News / Project hosting</div>
+    <div class="desc">깃허브이탈</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://lucumr.pocoo.org/2026/4/28/before-github/" target="_blank">Before GitHub</a></div>
+    <div class="meta">Hacker News / Dev history</div>
+    <div class="desc">깃허브회고</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://dyne.org/cjit/" target="_blank">CJIT: C, Just in Time</a></div>
+    <div class="meta">Hacker News / Compiler tooling</div>
+    <div class="desc">C즉시컴파일</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/trycua/cua" target="_blank">Show HN: Drive any macOS app in the background without stealing the cursor</a></div>
+    <div class="meta">Hacker News / macOS automation</div>
+    <div class="desc">백그라운드제어</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854" target="_blank">GitHub RCE Vulnerability: CVE-2026-3854 Breakdown</a></div>
+    <div class="meta">Hacker News / Security</div>
+    <div class="desc">RCE분석</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
