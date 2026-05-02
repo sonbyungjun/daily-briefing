@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-02</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 2일 토요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/Q00/ouroboros" target="_blank">한국 개발자의 오픈소스 Ouroboros, Claude Plan Mode를 제치고 모델링·시뮬레이션 벤치마크 1위 기록</a></div>
+    <div class="meta">GeekNews / Simulation</div>
+    <div class="desc">시뮬벤치</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/HKUDS/Vibe-Trading" target="_blank">Vibe-Trading - 자연어 기반 트레이딩 전략 생성·백테스트·실행 AI 도구</a></div>
+    <div class="meta">GeekNews / Trading agent</div>
+    <div class="desc">트레이딩AI</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/kirinonakar/AItranslator" target="_blank">Show GN: AI Universal Translator — 로컬 LLM/Gemini 지원 데스크톱 번역·요약 앱</a></div>
+    <div class="meta">GeekNews / Translation</div>
+    <div class="desc">로컬번역</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/microsoft/VibeVoice" target="_blank">VibeVoice - 오픈소스 프론티어 음성 AI 모델</a></div>
+    <div class="meta">GeekNews / Voice AI</div>
+    <div class="desc">음성모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/dev-minsoo/lens-flow" target="_blank">Show GN: LensFlow - Kubernetes 리소스 관계를 그래프로 보여주는 Lens 익스텐션</a></div>
+    <div class="meta">GeekNews / Kubernetes</div>
+    <div class="desc">쿠버흐름</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/jeonbyeongmin/kbo-cli" target="_blank">Show GN: kbo-cli - 터미널에서 KBO 야구 라이브 스코어보드 보기</a></div>
+    <div class="meta">GeekNews / CLI</div>
+    <div class="desc">터미널중계</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/microsoft/lib0xc" target="_blank">Lib0xc: A set of C standard library-adjacent APIs for safer systems programming</a></div>
+    <div class="meta">Hacker News / Systems programming</div>
+    <div class="desc">안전CAPI</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/whohas/whohas" target="_blank">Whohas – Command-line utility for cross-distro, cross-repository package search</a></div>
+    <div class="meta">Hacker News / Package search</div>
+    <div class="desc">패키지검색</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/darrylmorley/whatcable" target="_blank">Show HN: WhatCable, a tiny menu bar app for inspecting USB-C cables</a></div>
+    <div class="meta">Hacker News / Hardware utility</div>
+    <div class="desc">USB-C검사</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.pagetable.com/?p=1854" target="_blank">Running Adobe's 1991 PostScript Interpreter in the Browser</a></div>
+    <div class="meta">Hacker News / Browser emulator</div>
+    <div class="desc">PS브라우저</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://metin.nextc.org/posts/Credit_Cards_Are_Vulnerable_To_Brute_Force_Kind_Attacks.html" target="_blank">Credit cards are vulnerable to brute force kind attacks</a></div>
+    <div class="meta">Hacker News / Security</div>
+    <div class="desc">카드무차별</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/" target="_blank">Ubuntu servers taken offline by "sustained, cross-border attack"</a></div>
+    <div class="meta">Hacker News / Infrastructure security</div>
+    <div class="desc">우분투공격</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
