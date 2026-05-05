@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-05</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 5일 화요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://addyo.substack.com/p/long-running-agents" target="_blank">장기 실행 에이전트 - 에이전트가 며칠 동안 실행되면 무엇이 달라지는가</a></div>
+    <div class="meta">GeekNews / Agents</div>
+    <div class="desc">장기자율</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://lasans.blog/articles/misc/email-addresses-deep-dive/" target="_blank">이메일 주소 심층 분석</a></div>
+    <div class="meta">GeekNews / RFC</div>
+    <div class="desc">주소규격</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://x.com/fcoury/status/2049917871799636201" target="_blank">Codex CLI 에 /goal 기능 추가</a></div>
+    <div class="meta">GeekNews / Codex CLI</div>
+    <div class="desc">목표루프</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/" target="_blank">How OpenAI delivers low-latency voice AI at scale</a></div>
+    <div class="meta">Hacker News / Voice AI</div>
+    <div class="desc">음성지연</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/" target="_blank">Kimi K2.6가 코딩 챌린지에서 Claude, GPT-5.5, Gemini를 이김</a></div>
+    <div class="meta">GeekNews / Model benchmark</div>
+    <div class="desc">코딩우승</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://addyosmani.com/blog/agent-skills/" target="_blank">Agent Skills</a></div>
+    <div class="meta">Hacker News / Agent design</div>
+    <div class="desc">스킬체계</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://read.thecoder.cafe/p/linux-broke-postgresql" target="_blank">Linux 7.0이 PostgreSQL을 망가뜨린 방법</a></div>
+    <div class="meta">GeekNews / Linux</div>
+    <div class="desc">커널회귀</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/EnterpriseDB/barman" target="_blank">Barman - PostgreSQL용 백업 및 복구 관리자</a></div>
+    <div class="meta">GeekNews / PostgreSQL</div>
+    <div class="desc">PG백업</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://matduggan.com/if-i-could-make-my-own-github/" target="_blank">나만의 GitHub를 만든다면</a></div>
+    <div class="meta">GeekNews / Forge</div>
+    <div class="desc">포지설계</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/ymw0407/cargo-chronoscope" target="_blank">Show GN: cargo-chronoscope - Cargo 빌드 성능 옵저버 (TUI + GitHub Action)</a></div>
+    <div class="meta">GeekNews / Rust</div>
+    <div class="desc">빌드추적</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security &amp; Engineering</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.strix.ai/blog/how-strix-found-zero-auth-vulnerability-dod-backed-startup" target="_blank">Securing a DoD contractor: Finding a multi-tenant authorization vulnerability</a></div>
+    <div class="meta">Hacker News / Security</div>
+    <div class="desc">권한취약점</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story" target="_blank">Formatting a 25M-line codebase overnight</a></div>
+    <div class="meta">Hacker News / Tooling</div>
+    <div class="desc">대규모포맷</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
