@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-07</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 7일 목요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.reddit.com/r/vibecoding/comments/1srfqm0/uncle_bob_its_over/" target="_blank">엉클 밥: "코드를 직접 짜던 시대는 끝났다"</a></div>
+    <div class="meta">GeekNews / AI coding</div>
+    <div class="desc">역할전환</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/" target="_blank">모두가 AI를 가져도 회사는 여전히 아무것도 배우지 못할 때</a></div>
+    <div class="meta">GeekNews / Organizational AI</div>
+    <div class="desc">조직학습</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=29215" target="_blank">Show GN: oh-my-free-models - 무료 LLM 중 지금 가장 빠른 모델로 코딩 에이전트를 라우팅하는 로컬 프록시</a></div>
+    <div class="meta">GeekNews / LLM proxy</div>
+    <div class="desc">무료라우팅</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/" target="_blank">OpenAI가 대규모 저지연 음성 AI를 제공하는 방법</a></div>
+    <div class="meta">GeekNews / Voice AI</div>
+    <div class="desc">음성인프라</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://addyo.substack.com/p/long-running-agents" target="_blank">장기 실행 에이전트 - 에이전트가 며칠 동안 실행되면 무엇이 달라지는가</a></div>
+    <div class="meta">GeekNews / Long-running agents</div>
+    <div class="desc">장기실행</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank">Higher usage limits for Claude and a compute deal with SpaceX</a></div>
+    <div class="meta">Hacker News / Claude</div>
+    <div class="desc">한도확대</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://idiallo.com/blog/ai-didnt-delete-your-database-you-did" target="_blank">AI가 당신의 데이터베이스를 삭제한 게 아니라, 당신이 삭제한 것이다</a></div>
+    <div class="meta">GeekNews / Database ops</div>
+    <div class="desc">권한설계</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/oven-sh/bun/blob/claude/phase-a-port/docs/PORTING.md" target="_blank">Bun(JS 런타임)이 Zig에서 Rust로 바이브 포팅되고 있음</a></div>
+    <div class="meta">GeekNews / Runtime</div>
+    <div class="desc">Rust포팅</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.val.town/better-auth" target="_blank">From Supabase to Clerk to Better Auth</a></div>
+    <div class="meta">Hacker News / Auth</div>
+    <div class="desc">인증이전</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://tilde.run/" target="_blank">Show HN: Tilde.run – Agent sandbox with a transactional, versioned filesystem</a></div>
+    <div class="meta">Hacker News / Sandbox</div>
+    <div class="desc">샌드박스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/olivier-ls/php-fts" target="_blank">Show HN: PHP-fts – Full-text search engine in pure PHP, no extensions</a></div>
+    <div class="meta">Hacker News / Search</div>
+    <div class="desc">PHP검색</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://cloud.google.com/blog/products/identity-security/introducing-google-cloud-fraud-defense-the-next-evolution-of-recaptcha/" target="_blank">Google Cloud fraud defense, the next evolution of reCAPTCHA</a></div>
+    <div class="meta">Hacker News / Security</div>
+    <div class="desc">사기방어</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
