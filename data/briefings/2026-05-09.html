@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-09</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 9일 토요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/" target="_blank">OpenAI, GPT-5급 추론 능력을 가진 GPT-Realtime-2 시리즈 공개</a></div>
+    <div class="meta">GeekNews / Voice AI</div>
+    <div class="desc">음성추론</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://lucumr.pocoo.org/2026/5/8/local-models/" target="_blank">Pushing Local Models with Focus and Polish</a></div>
+    <div class="meta">Hacker News / Local models</div>
+    <div class="desc">로컬최적</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/research/teaching-claude-why" target="_blank">Teaching Claude Why</a></div>
+    <div class="meta">Hacker News / Anthropic</div>
+    <div class="desc">추론설명</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/" target="_blank">Claude Mythos Preview로 Firefox를 강화한 비하인드 스토리</a></div>
+    <div class="meta">GeekNews / AI security</div>
+    <div class="desc">파폭강화</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/obst2580/obsidian-powershell" target="_blank">Show GN: Obsidian 우측 사이드바에서 Claude Code,Codex를 실행하는 Vault Terminal 플러그인을 만들었습니다</a></div>
+    <div class="meta">GeekNews / Obsidian plugin</div>
+    <div class="desc">볼트터미널</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/modem-dev/hunk" target="_blank">Hunk - AI 에이전트 코드 리뷰를 위한 터미널 Diff 뷰어</a></div>
+    <div class="meta">GeekNews / Code review</div>
+    <div class="desc">리뷰디프</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://mojolang.org/" target="_blank">Mojo 1.0 Beta</a></div>
+    <div class="meta">Hacker News / Language runtime</div>
+    <div class="desc">언어베타</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://sqlite.org/locrsf.html" target="_blank">SQLite는 미국 의회도서관 권장 저장 형식임</a></div>
+    <div class="meta">GeekNews / Data format</div>
+    <div class="desc">보존포맷</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://developers.cloudflare.com/changelog/post/2026-05-06-react-nextjs-vulnerabilities/" target="_blank">React 및 Next.js에서 다수의 보안 취약점 공개, 즉시 패치 권고</a></div>
+    <div class="meta">GeekNews / Web security</div>
+    <div class="desc">즉시패치</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://ze3tar.github.io/post-zcrx.html" target="_blank">You gave me a u32. I gave you root. (io_uring ZCRX freelist LPE)</a></div>
+    <div class="meta">Hacker News / Kernel exploit</div>
+    <div class="desc">커널상승</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://flox.dev/blog/achieving-rapid-cve-remediation-in-an-era-of-escalating-vulnerabilities/" target="_blank">Non-determinism is an issue with patching CVEs</a></div>
+    <div class="meta">Hacker News / CVE patching</div>
+    <div class="desc">패치불안</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://reclaimthenet.org/google-broke-recaptcha-for-de-googled-android-users" target="_blank">Google broke reCAPTCHA for de-googled Android users</a></div>
+    <div class="meta">Hacker News / Android auth</div>
+    <div class="desc">리캡차오류</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
