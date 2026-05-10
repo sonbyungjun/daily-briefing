@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-10</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 10일 일요일</div>
+</header>
+
+<div class="section">
+  <h2>AI &amp; Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://arxiv.org/abs/2604.15597" target="_blank">LLMs corrupt your documents when you delegate</a></div>
+    <div class="meta">Hacker News / LLM workflow</div>
+    <div class="desc">문서오염</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/" target="_blank">A recent experience with ChatGPT 5.5 Pro</a></div>
+    <div class="meta">Hacker News / Model eval</div>
+    <div class="desc">실사용기</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/jo-inc/camofox-browser" target="_blank">Camofox Browser - AI 에이전트를 위한 스텔스 헤드리스 브라우저</a></div>
+    <div class="meta">GeekNews / Agent browser</div>
+    <div class="desc">스텔스봇</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://jefftk.com/p/ai-is-breaking-two-vulnerability" target="_blank">AI가 두 취약점 문화를 깨뜨리고 있다</a></div>
+    <div class="meta">GeekNews / AI security</div>
+    <div class="desc">취약점문화</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://twitter.com/jarredsumner/status/2053047748191232310" target="_blank">Bun's experimental Rust rewrite hits 99.8% test compatibility on Linux x64 glibc</a></div>
+    <div class="meta">Hacker News / JavaScript runtime</div>
+    <div class="desc">러스트전환</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/nooga/let-go" target="_blank">Show HN: I made a Clojure-like language in Go, boots in 7ms</a></div>
+    <div class="meta">Hacker News / Programming language</div>
+    <div class="desc">고부트언어</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://zed.dev/theme-builder" target="_blank">Zed Editor Theme-Builder</a></div>
+    <div class="meta">Hacker News / Editor tooling</div>
+    <div class="desc">테마빌더</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://chrismorgan.info/no-query-strings" target="_blank">I’ve banned query strings</a></div>
+    <div class="meta">Hacker News / Web architecture</div>
+    <div class="desc">쿼리금지</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://lisyarus.github.io/blog/posts/making-your-own-programming-language.html" target="_blank">Making your own programming language is easier than you think (but also harder)</a></div>
+    <div class="meta">Hacker News / Language design</div>
+    <div class="desc">언어구현</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/Sianmin/ccinv" target="_blank">Show GN: ccinv - Claude Code에 뭐가 깔려있는지 한눈에 보는 CLI</a></div>
+    <div class="meta">GeekNews / Claude Code CLI</div>
+    <div class="desc">설치가시화</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.copahost.com/blog/cpanels-black-week-three-new-vulnerabilities-patched-after-ransomware-attack-on-44000-servers/" target="_blank">CPanel's Black Week: 3 New Vulnerabilities Patched After Attack on 44k Servers</a></div>
+    <div class="meta">Hacker News / Server security</div>
+    <div class="desc">서버취약점</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://reclaimthenet.org/france-moves-to-break-encrypted-messaging" target="_blank">France Moves to Break Encrypted Messaging</a></div>
+    <div class="meta">Hacker News / Encryption policy</div>
+    <div class="desc">암호화압박</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
