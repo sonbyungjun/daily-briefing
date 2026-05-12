@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-12</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 12일 화요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/anthropics/financial-services" target="_blank">Anthropic, 금융 서비스에 특화된 AI 에이전트/스킬/커넥터 오픈소스 공개</a></div>
+    <div class="meta">GeekNews / Financial agents</div>
+    <div class="desc">금융에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/maximhq/bifrost" target="_blank">Bifrost - 초고속 엔터프라이즈 AI 게이트웨이</a></div>
+    <div class="meta">GeekNews / AI gateway</div>
+    <div class="desc">AI게이트웨이</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://interfaze.ai/blog/interfaze-a-new-model-architecture-built-for-high-accuracy-at-scale" target="_blank">Interfaze: A new model architecture built for high accuracy at scale</a></div>
+    <div class="meta">Hacker News / Model architecture</div>
+    <div class="desc">모델정확도</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://cloud.google.com/resources/content/dora-roi-of-ai-assisted-software-development" target="_blank">DORA: AI 보조 소프트웨어 개발의 ROI*</a></div>
+    <div class="meta">GeekNews / Engineering report</div>
+    <div class="desc">도입효율</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/nexu-io/open-design" target="_blank">Open Design - Claude Design의 로컬 퍼스트 오픈소스 대체제</a></div>
+    <div class="meta">GeekNews / Design tooling</div>
+    <div class="desc">로컬디자인</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://ratty-term.org/" target="_blank">Ratty – A terminal emulator with inline 3D graphics</a></div>
+    <div class="meta">Hacker News / Terminal</div>
+    <div class="desc">삼디터미널</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/mamba-studio/TypedMemory" target="_blank">Library for fast mapping of Java records to native memory</a></div>
+    <div class="meta">Hacker News / Java systems</div>
+    <div class="desc">네이티브매핑</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html" target="_blank">Training an LLM in Swift, Part 1: Taking matrix mult from Gflop/s to Tflop/s</a></div>
+    <div class="meta">Hacker News / LLM engineering</div>
+    <div class="desc">스위프트학습</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://nvlabs.github.io/cuda-oxide/index.html" target="_blank">CUDA-oxide: Nvidia's official Rust to CUDA compiler</a></div>
+    <div class="meta">Hacker News / Compiler</div>
+    <div class="desc">러스트CUDA</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.com/TanStack/router/issues/7383" target="_blank">TanStack NPM Packages Compromised</a></div>
+    <div class="meta">Hacker News / Supply chain</div>
+    <div class="desc">NPM오염사고</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html" target="_blank">Google says criminal hackers used AI to find a major software flaw</a></div>
+    <div class="meta">Hacker News / AI security</div>
+    <div class="desc">AI취약점탐지</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://dev.to/taekim34/delete-the-vercel-claude-code-plugin-heres-why-i-did-39hl" target="_blank">Claude Code Vercel 플러그인이 유저를 유니크 ID로 동의 없이 추적하고 있다.</a></div>
+    <div class="meta">GeekNews / Privacy</div>
+    <div class="desc">추적논란</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
