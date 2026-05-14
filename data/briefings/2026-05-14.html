@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-14</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 14일 목요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank">상호작용 모델 - 인간-AI 협업을 위한 확장 가능한 접근법</a></div>
+    <div class="meta">GeekNews / Multimodal collaboration</div>
+    <div class="desc">협업입출력</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/research/teaching-claude-why" target="_blank">Anthropic, Claude에게 "왜"를 가르치다 - 정렬 훈련(Alignment Training) 개선 사례</a></div>
+    <div class="meta">GeekNews / Alignment training</div>
+    <div class="desc">정렬훈련</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/anthropics/financial-services" target="_blank">Anthropic, 금융 서비스에 특화된 AI 에이전트/스킬/커넥터 오픈소스 공개</a></div>
+    <div class="meta">GeekNews / Finance agents</div>
+    <div class="desc">금융에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/nexu-io/open-design" target="_blank">Open Design - Claude Design의 로컬 퍼스트 오픈소스 대체제</a></div>
+    <div class="meta">GeekNews / Design tooling</div>
+    <div class="desc">로컬대체제</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://unix.foo/posts/local-ai-needs-to-be-norm/" target="_blank">로컬 AI가 표준이 되어야 함</a></div>
+    <div class="meta">GeekNews / Local inference</div>
+    <div class="desc">로컬표준</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/patrickhener/goshs" target="_blank">goshs - 개발자를 위한 다기능 단일 바이너리 파일 서버</a></div>
+    <div class="meta">GeekNews / File serving</div>
+    <div class="desc">파일서버</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://charlesleifer.com/blog/redis-and-the-cost-of-ambition/" target="_blank">Redis와 야망의 대가</a></div>
+    <div class="meta">GeekNews / Database strategy</div>
+    <div class="desc">Redis확장</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://andrew-quinn.me/fzf/" target="_blank">fzf를 설치했습니다. 이제 뭘 해야 할까요? (2023)</a></div>
+    <div class="meta">GeekNews / CLI workflow</div>
+    <div class="desc">fzf활용</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://dbushell.com/2026/04/29/github-is-sinking/" target="_blank">GitHub이 침몰하고 있다</a></div>
+    <div class="meta">GeekNews / Platform reliability</div>
+    <div class="desc">GitHub장애</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.tryardent.com/" target="_blank">Launch HN: Ardent (YC P26) – Postgres sandboxes in seconds with zero migration</a></div>
+    <div class="meta">Hacker News / Database sandbox</div>
+    <div class="desc">PG샌드박스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://jorijn.com/en/blog/leaving-github-for-forgejo/" target="_blank">Leaving GitHub for Forgejo</a></div>
+    <div class="meta">Hacker News / Git hosting</div>
+    <div class="desc">Forgejo이주</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://www.kmjournal.net/news/articleView.html?idxno=11241" target="_blank">"클로드 90% 할인"의 정체, 알고 보니 AI 학습 데이터 탈취 통로였습니다</a></div>
+    <div class="meta">GeekNews / Data exfiltration</div>
+    <div class="desc">데이터탈취</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
