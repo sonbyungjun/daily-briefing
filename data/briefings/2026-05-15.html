@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-15</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 15일 금요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs" target="_blank">중국 AI 연구소 내부에서 얻은 교훈</a></div>
+    <div class="meta">GeekNews / China AI labs</div>
+    <div class="desc">중국AI</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://claude.com/code-with-claude/san-francisco" target="_blank">Code w/ Claude에서 발표한 모든 것들</a></div>
+    <div class="meta">GeekNews / Claude event</div>
+    <div class="desc">행사요약</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/work-with-codex-from-anywhere/" target="_blank">Codex is now in the ChatGPT mobile app</a></div>
+    <div class="meta">Hacker News / Mobile coding</div>
+    <div class="desc">모바일코덱스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/raullenchai/Rapid-MLX" target="_blank">Rapid-MLX - Apple Silicon 전용 초고속 로컬 AI 엔진</a></div>
+    <div class="meta">GeekNews / Local inference</div>
+    <div class="desc">맥로컬엔진</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://nobodywho.ooo/posts/whats-in-a-gguf/" target="_blank">What's in a GGUF, besides the weights – and what's still missing?</a></div>
+    <div class="meta">Hacker News / Model format</div>
+    <div class="desc">GGUF구조</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://matklad.github.io/2026/05/12/software-architecture.html" target="_blank">소프트웨어 아키텍처 배우기</a></div>
+    <div class="meta">GeekNews / Software architecture</div>
+    <div class="desc">설계학습</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/vercel-labs/zero-native" target="_blank">zero-native - Zig와 웹 UI로 데스크톱 + 모바일 앱 빌드</a></div>
+    <div class="meta">GeekNews / Native app shell</div>
+    <div class="desc">Zig앱셸</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://code.claude.com/docs/en/agent-view" target="_blank">Claude Code, 여러 에이전트를 한 화면에서 관리하는 'Agent View' 공개</a></div>
+    <div class="meta">GeekNews / Agent tooling</div>
+    <div class="desc">에이전트뷰</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://antirez.com/news/165" target="_blank">A few words on DS4</a></div>
+    <div class="meta">Hacker News / Data structure store</div>
+    <div class="desc">Redis후속</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/oven-sh/bun/pull/30412" target="_blank">Rewrite Bun in Rust has been merged</a></div>
+    <div class="meta">Hacker News / Runtime internals</div>
+    <div class="desc">Bun러스트화</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://blog.calif.io/p/first-public-kernel-memory-corruption" target="_blank">First public macOS kernel memory corruption exploit on Apple M5</a></div>
+    <div class="meta">Hacker News / macOS exploit</div>
+    <div class="desc">M5커널익스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://github.com/DepthFirstDisclosures/Nginx-Rift" target="_blank">New Nginx Exploit</a></div>
+    <div class="meta">Hacker News / Nginx vulnerability</div>
+    <div class="desc">Nginx취약점</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
