@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-16</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 16일 토요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/bytedance/deer-flow" target="_blank">DeerFlow 2.0 — ByteDance의 장기 실행 SuperAgent 하네스</a></div>
+    <div class="meta">GeekNews / Agent harness</div>
+    <div class="desc">장기하네스</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/DrCatHicks/learning-opportunities" target="_blank">Learning Opportunities - Claude Code와 Codex에서 의도적 기술 개발을 돕는 스킬</a></div>
+    <div class="meta">GeekNews / Coding skill</div>
+    <div class="desc">학습코딩</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/neilsonnn/image-blaster" target="_blank">Image-blaster: Creates 3D environments, SFX, and meshes from a single image</a></div>
+    <div class="meta">Hacker News / Image-to-world</div>
+    <div class="desc">단일이미지</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://helloai.com/articles/deepseek-v4-open-source-frontier-parity" target="_blank">DeepSeek V4: The Open-Source Model Frontier Labs Feared</a></div>
+    <div class="meta">Hacker News / Open model</div>
+    <div class="desc">오픈프론티어</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://denodell.com/blog/browsers-treat-big-sites-differently" target="_blank">브라우저는 대형 사이트를 다르게 취급한다</a></div>
+    <div class="meta">GeekNews / Browser quirks</div>
+    <div class="desc">도메인예외</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/rustfs/rustfs" target="_blank">RustFS - Rust로 만든 S3 호환 분산 객체 스토리지</a></div>
+    <div class="meta">GeekNews / Object storage</div>
+    <div class="desc">S3스토리지</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://velog.io/@skynet/%EB%AC%B4%EC%9E%91%EC%9C%84-%EC%A0%91%EA%B7%BCRandom-access-%EC%9B%8C%ED%81%AC%EB%A1%9C%EB%93%9C%EC%97%90-%EC%A0%81%ED%95%A9%ED%95%9C-ZFS-%ED%8A%9C%EB%8B%9D-%EB%B0%A9%EB%B2%95" target="_blank">무작위 접근(Random access) 워크로드에 적합한 ZFS 튜닝 방법</a></div>
+    <div class="meta">GeekNews / Storage tuning</div>
+    <div class="desc">랜덤튜닝</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.vldb.org/pvldb/vol19/p1469-lee.pdf" target="_blank">How to Write to SSDs [pdf]</a></div>
+    <div class="meta">Hacker News / SSD writes</div>
+    <div class="desc">SSD기록</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://gazagnaire.org/blog/2026-05-14-borealis.html" target="_blank">O(x)Caml in Space</a></div>
+    <div class="meta">Hacker News / Space software</div>
+    <div class="desc">우주OCaml</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://radicle.dev/" target="_blank">Radicle: Sovereign {code forge} built on Git</a></div>
+    <div class="meta">Hacker News / P2P forge</div>
+    <div class="desc">분산코드포지</div>
+  </div>
+</div>
+<div class="section">
+  <h2>Security</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://projectzero.google/2026/05/pixel-10-exploit.html" target="_blank">A 0-click exploit chain for the Pixel 10</a></div>
+    <div class="meta">Hacker News / Android exploit</div>
+    <div class="desc">픽셀제로클릭</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-sec">SEC</span> <a href="https://lock.cmpxchg8b.com/umatrix.html" target="_blank">Building a UMatrix Replacement</a></div>
+    <div class="meta">Hacker News / Browser policy</div>
+    <div class="desc">uMatrix대체</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
