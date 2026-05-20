@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-20</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 20일 수요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank">Gemini 3.5 Flash</a></div>
+    <div class="meta">Hacker News / AI model</div>
+    <div class="desc">경량모델출시</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/advancing-content-provenance/" target="_blank">OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool</a></div>
+    <div class="meta">Hacker News / AI provenance</div>
+    <div class="desc">이미지워터마크</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai" target="_blank">Mistral AI Acquires Emmi AI to Create the Leading AI Stack</a></div>
+    <div class="meta">Hacker News / AI stack</div>
+    <div class="desc">AI스택인수</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/antoinezambelli/forge" target="_blank">Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks</a></div>
+    <div class="meta">Hacker News / Agent guardrails</div>
+    <div class="desc">가드레일향상</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://deepmind.google/models/gemini-omni/" target="_blank">Gemini Omni</a></div>
+    <div class="meta">Hacker News / Multimodal AI</div>
+    <div class="desc">멀티모달확장</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://developers.openai.com/cookbook/examples/codex/using_goals_in_codex" target="_blank">Codex의 Goals를 활용하는 법</a></div>
+    <div class="meta">GeekNews / Codex workflow</div>
+    <div class="desc">목표지속작업</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/franktisellano/datatype" target="_blank">Datatype - 텍스트를 차트로 변환하는 가변 폰트</a></div>
+    <div class="meta">GeekNews / Data viz</div>
+    <div class="desc">텍스트차트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.changs.co.uk/benchmarking-free-threading-performance-with-tachyon.html" target="_blank">Python 3.15 신규 샘플링 프로파일러 Tachyon 소개</a></div>
+    <div class="meta">GeekNews / Python profiling</div>
+    <div class="desc">샘플프로파일</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/MinishLab/semble" target="_blank">Semble - grep보다 토큰을 98% 적게 쓰는 에이전트용 코드 검색</a></div>
+    <div class="meta">GeekNews / Code search</div>
+    <div class="desc">토큰절약검색</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=29667" target="_blank">Show GN: Gitwink - 트레이에 상주하는 읽기 전용 git 뷰어 (AI 에이전트 시대용)</a></div>
+    <div class="meta">GeekNews / Git viewer</div>
+    <div class="desc">트레이깃뷰어</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/" target="_blank">Intro to TLA+ for the LLM Era: Prompt Your Way to Victory</a></div>
+    <div class="meta">Hacker News / Formal specs</div>
+    <div class="desc">명세프롬프트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://superlog.sh/" target="_blank">Show HN: Superlog (YC P26) – Observability that installs itself and fixes bugs</a></div>
+    <div class="meta">Hacker News / Observability</div>
+    <div class="desc">자동관측수정</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
