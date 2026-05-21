@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-05-21</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 5월 21일 목요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/" target="_blank">An OpenAI model has disproved a central conjecture in discrete geometry</a></div>
+    <div class="meta">Hacker News / AI research</div>
+    <div class="desc">기하추측반례</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://qwen.ai/blog?id=qwen3.7" target="_blank">Qwen3.7-Max: The Agent Frontier</a></div>
+    <div class="meta">Hacker News / AI model</div>
+    <div class="desc">에이전트모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://eugeneyan.com/writing/working-with-ai/" target="_blank">AI와 함께 일하며 복리처럼 쌓아 성장하는 법</a></div>
+    <div class="meta">GeekNews / AI workflow</div>
+    <div class="desc">AI협업성장</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/strukto-ai/mirage" target="_blank">Mirage - AI 에이전트를 위한 통합 가상 파일시스템</a></div>
+    <div class="meta">GeekNews / Agent filesystem</div>
+    <div class="desc">통합가상FS</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/Andyyyy64/whichllm" target="_blank">whichllm - 내 하드웨어에서 실제로 돌아가고 최고 성능을 내는 로컬 LLM 찾기</a></div>
+    <div class="meta">GeekNews / Local LLM</div>
+    <div class="desc">로컬LLM추천</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://simonwillison.net/2026/May/19/5-minute-llms/" target="_blank">LLM의 지난 6개월을 5분 만에 보기</a></div>
+    <div class="meta">GeekNews / LLM trends</div>
+    <div class="desc">반년변화요약</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.bleepingcomputer.com/news/security/github-confirms-breach-of-3-800-repos-via-malicious-vscode-extension/" target="_blank">GitHub confirms breach of 3,800 repos via malicious VSCode extension</a></div>
+    <div class="meta">Hacker News / Supply-chain security</div>
+    <div class="desc">VSCode침해</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://mikeveerman.github.io/tokenspeed/" target="_blank">How fast is N tokens per second really?</a></div>
+    <div class="meta">Hacker News / LLM benchmarking</div>
+    <div class="desc">토큰속도체감</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/" target="_blank">Formal Verification Gates for AI Coding Loops</a></div>
+    <div class="meta">Hacker News / AI coding reliability</div>
+    <div class="desc">코딩검증게이트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://spidermonkey.dev/blog/2026/05/20/saying-goodbye-to-asmjs.html" target="_blank">Saying goodbye to asm.js</a></div>
+    <div class="meta">Hacker News / JavaScript runtime</div>
+    <div class="desc">asm종료</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://nodejs.org/en/blog/release/v26.0.0" target="_blank">Node.js 26.0.0 (Now with Temporal)</a></div>
+    <div class="meta">Hacker News / JavaScript release</div>
+    <div class="desc">Temporal추가</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.lucavall.in/blog/platform-engineering-end-to-end" target="_blank">플랫폼 엔지니어링의 모든 것: 왜 필요하고, 어떻게 구축하며, 성공은 어떤 모습인가</a></div>
+    <div class="meta">GeekNews / Platform engineering</div>
+    <div class="desc">플랫폼가이드</div>
+  </div>
+</div>
+
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
