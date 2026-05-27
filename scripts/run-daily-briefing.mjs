@@ -26,6 +26,11 @@ const sources = [];
 function stripTags(s) { return s.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&#039;/g, "'").trim(); }
 function esc(s) { return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'); }
 function absHN(url) { return url?.startsWith('item?') ? `https://news.ycombinator.com/${url}` : url; }
+function attrClass(name) { return `(?:class=(?:['\"][^'\"]*\\b${name}\\b[^'\"]*['\"]|[^\\s>]*\\b${name}\\b[^\\s>]*))`; }
+function safeHost(url, fallback = 'news.hada.io') {
+  try { return new URL(url, 'https://news.hada.io').hostname; }
+  catch { return fallback; }
+}
 async function fetchText(url) {
   const res = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 daily-briefing-bot' } });
   if (!res.ok) throw new Error(`${url} ${res.status}`);
@@ -37,16 +42,16 @@ async function fetchGeekNews() {
 
   // Current GeekNews HTML: each entry is a .topic_row with topictitle/topicdesc blocks.
   // Keep this parser tolerant because class quoting and nested attributes change occasionally.
-  const rowRe = /<div class=['"]topic_row['"][\s\S]*?(?=<div class=['"]topic_row['"]|<\/div>\s*<\/div>\s*<\/main>|<button[^>]*>토픽 더 불러오기|$)/g;
+  const rowRe = new RegExp(`<div ${attrClass('topic_row')}[\\s\\S]*?(?=<div ${attrClass('topic_row')}|<button[^>]*>토픽 더 불러오기|</main>|$)`, 'g');
   let row;
   while ((row = rowRe.exec(html)) && items.length < 30) {
     const block = row[0];
-    const linkMatch = block.match(/<div class=topictitle>[\s\S]*?<a href=['"]([^'"]+)['"][^>]*>[\s\S]*?<h2[^>]*>([\s\S]*?)<\/h2>/);
+    const linkMatch = block.match(new RegExp(`<div ${attrClass('topictitle')}[\\s\\S]*?<a href=['\"]([^'\"]+)['\"][^>]*>[\\s\\S]*?<h2[^>]*>([\\s\\S]*?)</h2>`));
     if (!linkMatch) continue;
     const title = stripTags(linkMatch[2]);
-    const link = linkMatch[1].startsWith('/') ? `https://news.hada.io${linkMatch[1]}` : linkMatch[1];
-    const host = stripTags(block.match(/<span class=topicurl>\(([^)]*)\)<\/span>/)?.[1] || new URL(link).hostname);
-    const desc = stripTags(block.match(/<div class=['"]topicdesc['"]>[\s\S]*?<a[^>]*>([\s\S]*?)<\/a>/)?.[1] || '');
+    const link = new URL(linkMatch[1], 'https://news.hada.io').href;
+    const host = stripTags(block.match(new RegExp(`<span ${attrClass('topicurl')}>\\(([^)]*)\\)</span>`))?.[1] || safeHost(link));
+    const desc = stripTags(block.match(new RegExp(`<div ${attrClass('topicdesc')}[\\s\\S]*?<a[^>]*>([\\s\\S]*?)</a>`))?.[1] || '');
     items.push({ title, link, source: 'GeekNews', meta: host, body: desc });
   }
 
@@ -70,7 +75,9 @@ async function fetchHN() {
 
   const items = [];
   for (const day of days) {
-    const html = await fetchText(`https://news.ycombinator.com/front?day=${day}`);
+    let html;
+    try { html = await fetchText(`https://news.ycombinator.com/front?day=${day}`); }
+    catch (e) { console.error(`HN ${day} fetch failed:`, e.message); continue; }
     const re = /<span class="titleline"><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
     let m;
     while ((m = re.exec(html)) && items.length < 30) {
@@ -82,7 +89,7 @@ async function fetchHN() {
 }
 function loadPreviousTitles() {
   const titles = new Set();
-  for (const file of fs.readdirSync(outDir).filter(f => f.endsWith('.html')).sort().slice(-10)) {
+  for (const file of fs.readdirSync(outDir).filter(f => f.endsWith('.html') && f !== `${date}.html`).sort().slice(-10)) {
     const html = fs.readFileSync(path.join(outDir, file), 'utf8');
     for (const m of html.matchAll(/<div class="title">[\s\S]*?<a [^>]*>([\s\S]*?)<\/a>/g)) titles.add(stripTags(m[1]).toLowerCase());
   }
@@ -128,15 +135,20 @@ function sh(cmd, args, opts={}) { return execFileSync(cmd, args, { cwd: root, st
 
 const prev = loadPreviousTitles();
 const raw = [...await fetchGeekNews().catch(e => (console.error('GeekNews fetch failed:', e.message), [])), ...await fetchHN().catch(e => (console.error('HN fetch failed:', e.message), []))];
-const seen = new Set();
-const picked = raw
-  .filter(i => i.title && i.link)
-  .filter(i => !prev.has(i.title.toLowerCase()))
-  .filter(i => { const k = i.title.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; })
-  .map(i => ({...i, _score: score(i)}))
-  .filter(i => i._score > 0)
-  .sort((a,b) => b._score - a._score)
-  .slice(0, 12);
+function rankCandidates(items, { skipPrevious = true } = {}) {
+  const seen = new Set();
+  return items
+    .filter(i => i.title && i.link)
+    .filter(i => !skipPrevious || !prev.has(i.title.toLowerCase()))
+    .filter(i => { const k = i.title.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; })
+    .map(i => ({...i, _score: score(i)}))
+    .sort((a,b) => b._score - a._score);
+}
+const scored = rankCandidates(raw);
+let pool = scored.filter(i => i._score > 0);
+if (pool.length < 7) pool = scored.filter(i => i._score > -4);
+if (pool.length < 7) pool = rankCandidates(raw, { skipPrevious: false }).filter(i => i._score > -4);
+const picked = pool.slice(0, 12);
 if (picked.length < 7) throw new Error(`not enough items: ${picked.length}`);
 const html = render(picked);
 const out = path.join(outDir, `${date}.html`);
