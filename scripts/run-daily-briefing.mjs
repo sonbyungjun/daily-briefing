@@ -23,7 +23,7 @@ const weekday = weekdaysKo[new Intl.DateTimeFormat('en-US', { timeZone: TZ, week
 const displayDate = `${Number(yy)}년 ${Number(mm)}월 ${Number(dd)}일 ${weekday}`;
 
 const sources = [];
-function stripTags(s) { return s.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim(); }
+function stripTags(s) { return s.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&#039;/g, "'").trim(); }
 function esc(s) { return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'); }
 function absHN(url) { return url?.startsWith('item?') ? `https://news.ycombinator.com/${url}` : url; }
 async function fetchText(url) {
@@ -33,8 +33,27 @@ async function fetchText(url) {
 }
 async function fetchGeekNews() {
   const html = await fetchText('https://news.hada.io/');
-  const re = /\n\d+\n▲\n([^\n]+) \(([^)]+)\)\n([\s\S]*?)(?=\n\d+\n▲\n|\n토픽 더 불러오기)/g;
   const items = [];
+
+  // Current GeekNews HTML: each entry is a .topic_row with topictitle/topicdesc blocks.
+  // Keep this parser tolerant because class quoting and nested attributes change occasionally.
+  const rowRe = /<div class=['"]topic_row['"][\s\S]*?(?=<div class=['"]topic_row['"]|<\/div>\s*<\/div>\s*<\/main>|<button[^>]*>토픽 더 불러오기|$)/g;
+  let row;
+  while ((row = rowRe.exec(html)) && items.length < 30) {
+    const block = row[0];
+    const linkMatch = block.match(/<div class=topictitle>[\s\S]*?<a href=['"]([^'"]+)['"][^>]*>[\s\S]*?<h2[^>]*>([\s\S]*?)<\/h2>/);
+    if (!linkMatch) continue;
+    const title = stripTags(linkMatch[2]);
+    const link = linkMatch[1].startsWith('/') ? `https://news.hada.io${linkMatch[1]}` : linkMatch[1];
+    const host = stripTags(block.match(/<span class=topicurl>\(([^)]*)\)<\/span>/)?.[1] || new URL(link).hostname);
+    const desc = stripTags(block.match(/<div class=['"]topicdesc['"]>[\s\S]*?<a[^>]*>([\s\S]*?)<\/a>/)?.[1] || '');
+    items.push({ title, link, source: 'GeekNews', meta: host, body: desc });
+  }
+
+  if (items.length) return items;
+
+  // Legacy text-rendered fallback.
+  const re = /\n\d+\n▲\n([^\n]+) \(([^)]+)\)\n([\s\S]*?)(?=\n\d+\n▲\n|\n토픽 더 불러오기)/g;
   let m;
   while ((m = re.exec(html)) && items.length < 30) {
     const title = stripTags(m[1]);
@@ -45,12 +64,19 @@ async function fetchGeekNews() {
   return items;
 }
 async function fetchHN() {
-  const html = await fetchText(`https://news.ycombinator.com/front?day=${date}`);
+  const [y, m, d] = date.split('-').map(Number);
+  const prevLocalNoon = new Date(Date.UTC(y, m - 1, d - 1, 12));
+  const days = [date, prevLocalNoon.toISOString().slice(0, 10)];
+
   const items = [];
-  const re = /<span class="titleline"><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
-  let m;
-  while ((m = re.exec(html)) && items.length < 30) {
-    items.push({ title: stripTags(m[2]), link: absHN(m[1]), source: 'Hacker News', meta: 'HN front', body: '' });
+  for (const day of days) {
+    const html = await fetchText(`https://news.ycombinator.com/front?day=${day}`);
+    const re = /<span class="titleline"><a href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g;
+    let m;
+    while ((m = re.exec(html)) && items.length < 30) {
+      items.push({ title: stripTags(m[2]), link: absHN(m[1]), source: 'Hacker News', meta: `HN front ${day}`, body: '' });
+    }
+    if (items.length) break;
   }
   return items;
 }
