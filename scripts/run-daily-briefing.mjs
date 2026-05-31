@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
+import { verifyUrlWithRetry } from './verify-url.mjs';
 
 const TZ = 'Asia/Seoul';
 const root = process.cwd();
@@ -168,6 +169,5 @@ if (!noDeploy) {
     sh('git', ['push']);
   }
   const url = `https://daily-briefing-five.vercel.app/${dateParam}`;
-  const res = await fetch(url, { cache: 'no-store' });
-  if (!res.ok) throw new Error(`HTTP verify failed: ${url} ${res.status}`);
+  await verifyUrlWithRetry(url, { log: message => console.error(message) });
 }

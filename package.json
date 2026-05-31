@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "briefing:daily": "node scripts/run-daily-briefing.mjs"
+    "briefing:daily": "node scripts/run-daily-briefing.mjs",
+    "test:verify-url": "node scripts/verify-url.test.mjs"
   },
   "dependencies": {
     "next": "16.1.6",
