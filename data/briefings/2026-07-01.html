@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-07-01</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 7월 1일 수요일</div>
+</header>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/nicobailon/pi-subagents" target="_blank">pi-subagents - Pi를 위한 서브에이전트</a></div>
+    <div class="meta">GeekNews / github.com/nicobailon</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://quesma.com/blog/qwen-36-is-awesome/" target="_blank">Qwen 3.6 27B는 로컬 개발의 최적 지점</a></div>
+    <div class="meta">GeekNews / quesma.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://go-micro.dev/" target="_blank">Go Micro - Go를 위한 에이전트 하네스</a></div>
+    <div class="meta">GeekNews / go-micro.dev</div>
+    <div class="desc">Go도구</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.atlassian.com/blog/ai-at-work/atlassians-design-md-is-here-what-we-learned-testing-portable-design-context-in-practice" target="_blank">Atlassian의 DESIGN.md 공개 - 이식 가능한 디자인 컨텍스트를 실전 테스트하며 얻은 교훈</a></div>
+    <div class="meta">GeekNews / atlassian.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/microsoft/Memora" target="_blank">Memora: 장기 작업을 위한 확장형 메모리 시스템</a></div>
+    <div class="meta">GeekNews / github.com/microsoft</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.thesaascfo.com/how-to-calculate-compute-adjusted-ltv/" target="_blank">Compute-adjusted LTV(연산 비용 반영 LTV) 계산하는 방법</a></div>
+    <div class="meta">GeekNews / thesaascfo.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://danunparsed.com/p/hackerrank-open-source-ats" target="_blank">HackerRank 오픈소스 ATS, 같은 이력서 점수가 90점·74점·88점으로 흔들림</a></div>
+    <div class="meta">GeekNews / danunparsed.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://engineering.ab180.co/stories/standardizing-alert-system-with-iac" target="_blank">Alert 시스템을 표준화하고 IaC로 운영하기</a></div>
+    <div class="meta">GeekNews / engineering.ab180.co</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=30987" target="_blank">Show GN: 켜두면 '무엇이 바뀌었는지'를 알려주는 웹 수집기 web_harvester (Chrome 확장 + 파이썬 CLI)</a></div>
+    <div class="meta">GeekNews / chromewebstore.google.com</div>
+    <div class="desc">CLI도구</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://feld.com/archives/2026/06/does-the-rule-of-40-work-for-hardware" target="_blank">Rule of 40은 하드웨어에도 적용될까?</a></div>
+    <div class="meta">GeekNews / feld.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/" target="_blank">CUDA 커널을 실행하면 내부에서 벌어지는 일</a></div>
+    <div class="meta">GeekNews / fergusfinn.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.revenuecat.com/blog/growth/monthly-subscriptions-when-to-offer/" target="_blank">월간 요금제가 최선의 선택일 수 있음</a></div>
+    <div class="meta">GeekNews / revenuecat.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
