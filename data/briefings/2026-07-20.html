@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-07-20</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 7월 20일 월요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://dalejule.com/episodes/20/" target="_blank">[팟캐스트] State of AI 2026 설문 결과 리뷰</a></div>
+    <div class="meta">GeekNews / dalejule.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust/" target="_blank">Claude Code uses Bun written in Rust now</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/openai/codex/pull/33972/files" target="_blank">OpenAI reduces Codex Model Context Size from 372k to 272k</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://velvetshark.com/ai-company-logos-that-look-like-buttholes" target="_blank">AI 기업 로고는 왜 항문처럼 보일까? (2025)</a></div>
+    <div class="meta">GeekNews / velvetshark.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://petapixel.com/2026/07/16/mayor-mamdani-says-landlords-cant-secretly-use-ai-images-to-advertise-properties/" target="_blank">NYC may require landlords and realtors to disclose the use of AI in listings</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/#fnref:3" target="_blank">AI Mania Is Eviscerating Global Decision-Making</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://twitter.com/kimi_moonshot/status/2078855608565207130" target="_blank">Moonshot AI suspends new subscriptions due to Kimi K3 demand</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">AI모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/cosmtrek/mindwalk" target="_blank">Mindwalk - 코딩 에이전트 세션을 코드베이스의 3D 지도 위에서 재생하는 시각화 도구</a></div>
+    <div class="meta">GeekNews / github.com/cosmtrek</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://pydantic.dev/articles/the-human-in-the-loop-is-tired" target="_blank">루프 안의 인간은 지쳤다</a></div>
+    <div class="meta">GeekNews / pydantic.dev</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://davidpoblador.com/deep-dives/what-happened-to-the-frontend/" target="_blank">당신이 안 보는 사이 프론트엔드에 무슨 일이 있었나</a></div>
+    <div class="meta">GeekNews / davidpoblador.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=31583" target="_blank">Show GN: 밈캐치 - 한국 밈 사전, '지금 써도 되는 밈인지'까지 알려줍니다</a></div>
+    <div class="meta">GeekNews / catchmeme.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://en.andros.dev/blog/0b8e451e/i-joined-the-indieweb-heres-what-i-learned/" target="_blank">I joined the IndieWeb, here&amp;#x27;s what I learned</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-19</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
