@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-07-21</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 7월 21일 화요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/openai/codex/issues/34061" target="_blank">Codex CLI의 Subagent 세션 로그가 수백 GB까지 증가해 디스크를 소진하는 문제</a></div>
+    <div class="meta">GeekNews / github.com/openai</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://chessire.tistory.com/entry/opensource-llm-vs-bigtech-api-cost-risk" target="_blank">오픈소스 LLM vs 빅테크 LLM API: AI 사업의 비용과 리스크 정리</a></div>
+    <div class="meta">GeekNews / chessire.tistory.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=31622" target="_blank">Show GN: newsline – Claude Code 기다리는 동안 상태줄에서 읽는 한 줄 뉴스</a></div>
+    <div class="meta">GeekNews / github.com/itdar</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://huggingface.co/spaces/webml-community/bonsai-webgpu" target="_blank">1-Bit LLM in the Browser</a></div>
+    <div class="meta">Hacker News / HN front 2026-07-20</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=31626" target="_blank">Show GN: 수집부터 검수까지 파이프라인으로 만드는 AI 뉴스레터 tailf AI</a></div>
+    <div class="meta">GeekNews / ai.tailf.media</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.nfx.com/post/ai-wrapper-dead-verticalization-startups" target="_blank">AI 래퍼는 끝났다: 초기 스타트업을 위한 수직화 전략</a></div>
+    <div class="meta">GeekNews / nfx.com/post</div>
+    <div class="desc">AI모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/langchain-ai/openwiki" target="_blank">OpenWiki - 코드베이스를 위한 에이전트용 문서를 작성하고 관리하는 CLI</a></div>
+    <div class="meta">GeekNews / github.com/langchain-ai</div>
+    <div class="desc">CLI도구</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://supabase.com/state-of-startups" target="_blank">Supabase가 조사한 2026년 스타트업 현황</a></div>
+    <div class="meta">GeekNews / supabase.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.bain.com/insights/synthetic-customers-earn-their-stripes/n" target="_blank">합성 소비자, 실전 활용 가능성을 입증하다</a></div>
+    <div class="meta">GeekNews / bain.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://frontierai.substack.com/p/data-is-your-only-moat-884" target="_blank">데이터가 유일한 해자다</a></div>
+    <div class="meta">GeekNews / substack.com/frontierai</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://twitter.com/Alibaba_Qwen/status/2078759124914098291" target="_blank">Qwen 3.8 출시</a></div>
+    <div class="meta">GeekNews / twitter.com/Alibaba_Qwen</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://x.com/EverettRandle/status/2074527860510085498" target="_blank">태스크 이코노미 - 데이터가 만드는 다음 1조 달러 시장</a></div>
+    <div class="meta">GeekNews / x.com/EverettRandle</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
