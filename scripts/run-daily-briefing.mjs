@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { verifyUrlWithRetry } from './verify-url.mjs';
+import { fetchTextWithRetry } from './http-retry.mjs';
 
 const TZ = 'Asia/Seoul';
 const root = process.cwd();
@@ -33,9 +34,7 @@ function safeHost(url, fallback = 'news.hada.io') {
   catch { return fallback; }
 }
 async function fetchText(url) {
-  const res = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 daily-briefing-bot' } });
-  if (!res.ok) throw new Error(`${url} ${res.status}`);
-  return await res.text();
+  return await fetchTextWithRetry(url, { log: message => console.error(message) });
 }
 async function fetchGeekNews() {
   const html = await fetchText('https://news.hada.io/');
