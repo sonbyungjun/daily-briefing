@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-08-31</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 8월 31일 월요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=33046" target="_blank">Show GN: Xazz - Rust 기반 AI 파이프라인 DSL (Polars+Burn 통합)</a></div>
+    <div class="meta">GeekNews / github.com/x1zzdev</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=33035" target="_blank">Show GN: Astera – Claude Code와 Codex의 장시간 작업을 운영하는 데스크톱 워크벤치</a></div>
+    <div class="meta">GeekNews / github.com/parsingk</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://askmike.org/articles/ai-coding-lessons-in-the-90s-from-my-dad/" target="_blank">What my dad taught me about AI coding in the 90s</a></div>
+    <div class="meta">Hacker News / HN front 2026-08-30</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://pwning.systems/posts/llm-memory-program-analysis/" target="_blank">LLM 메모리를 만들다 우연히 프로그램 분석 엔진이 된 이야기</a></div>
+    <div class="meta">GeekNews / pwning.systems</div>
+    <div class="desc">AI모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://people.kernel.org/monsieuricon/creepy-crawlies" target="_blank">소름 끼치는 크롤러들</a></div>
+    <div class="meta">GeekNews / people.kernel.org</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://artificialanalysis.ai/hardware-inference-stack/mobile-phones" target="_blank">Benchmarking Pocket-Scale Inference</a></div>
+    <div class="meta">Hacker News / HN front 2026-08-30</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://lim.sh/vps-mmo-1000" target="_blank">월 $6 VPS 한 대로 MMORPG 동접 1,000명에 도전해봤습니다</a></div>
+    <div class="meta">GeekNews / lim.sh</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=33040" target="_blank">Show GN: typeboard — 팀 내에서 필요한 터미널을 직접 만들기</a></div>
+    <div class="meta">GeekNews / github.com/GloryKim</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://github.com/opengeos/GeoLibre" target="_blank">GeoLibre - Tauri 기반의 경량 클라우드 네이티브 데스크톱 GIS</a></div>
+    <div class="meta">GeekNews / github.com/opengeos</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=33029" target="_blank">Show GN: StarSign16  툴킷 – 로그인/서버 전송 없는 브라우저 기반 초경량 유틸리티 16종 모음</a></div>
+    <div class="meta">GeekNews / tool.starsign16.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.python.org/2026/08/riscv-now-officially-supported/" target="_blank">RISC-V is now officially supported by CPython</a></div>
+    <div class="meta">Hacker News / HN front 2026-08-30</div>
+    <div class="desc">파이썬</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt" target="_blank">California lawmakers unanimously pass Linux exemption from age-verification law</a></div>
+    <div class="meta">Hacker News / HN front 2026-08-30</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
