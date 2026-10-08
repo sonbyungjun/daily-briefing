@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-10-08</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 10월 8일 목요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://medium.com/@afaics/jev%EA%B0%80-%EC%97%AC%EB%8A%94-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-ai-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%EC%97%90%EC%84%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C-6ec58ea5d338" target="_blank">jev가 여는 비즈니스 AI: 에이전트에서 컴포넌트로</a></div>
+    <div class="meta">GeekNews / medium.com/@afaics</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank">OpenAI, AI가 도출한 수학 연구 원고 722편과 증명 자료 공개</a></div>
+    <div class="meta">GeekNews / openai.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/FeSens/openTPU" target="_blank">openTPU - AI가 설계하고 실제 FPGA에서 모델을 실행하는 오픈소스 AI 가속기</a></div>
+    <div class="meta">GeekNews / github.com/FeSens</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://penguin-mail.com/" target="_blank">Penguin Mail – open-source Rust email client for Linux with AI</a></div>
+    <div class="meta">Hacker News / HN front 2026-10-07</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://github.com/TencentCloud/Octop" target="_blank">Octop - 가족과 소규모 팀이 함께 쓰는 셀프 호스팅 AI 비서</a></div>
+    <div class="meta">GeekNews / github.com/TencentCloud</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://candost.blog/surfacing-org-knowledge-with-ai-agents/" target="_blank">여러 팀의 시스템을 이해하기 위한 AI 집단 지성 구축하기</a></div>
+    <div class="meta">GeekNews / candost.blog</div>
+    <div class="desc">AI모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=34970" target="_blank">Show GN: Gooo - 작은 모델로 코드를 조립하고 이어 만드는 언어</a></div>
+    <div class="meta">GeekNews / github.com/kimjooyoon</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/" target="_blank">EmbeddingGemma 2 - 개방형 경량 멀티모달 임베딩 모델</a></div>
+    <div class="meta">GeekNews / blog.google</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.vivienhenz.com/common-lisp" target="_blank">Common Lisp이 이제 최고의 프로그래밍 언어인 이유</a></div>
+    <div class="meta">GeekNews / vivienhenz.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://jross.me/open-source-as-we-know-it-is-dead/" target="_blank">우리가 알던 오픈소스는 죽었다</a></div>
+    <div class="meta">GeekNews / jross.me</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://qlabs.sh/research/dust" target="_blank">Dust - 역전파 없이 트랜스포머 사전학습하기</a></div>
+    <div class="meta">GeekNews / qlabs.sh</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://lethain.com/software-factory-experiment/" target="_blank">소프트웨어 팩토리 패턴 시도하기</a></div>
+    <div class="meta">GeekNews / lethain.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
