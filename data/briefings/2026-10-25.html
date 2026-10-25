@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Briefing — 2026-10-25</title>
+<style>
+  :root { --bg: #0f1117; --card: #1a1d27; --accent: #6c8aff; --text: #e1e4eb; --muted: #8b8fa3; --border: #2a2d3a; --tag-ai: #ff6b6b; --tag-dev: #51cf66; --tag-sec: #da77f2; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "Pretendard", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  header h1 { font-size: 1.6rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  header .date { color: var(--muted); font-size: 0.9rem; margin-top: 0.3rem; }
+  .section { margin-bottom: 2rem; }
+  .section h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.8rem; }
+  .card .title { font-weight: 600; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .card .title a { color: #fff; text-decoration: none; }
+  .card .title a:hover { color: var(--accent); }
+  .card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .card .desc { font-size: 0.88rem; color: var(--text); opacity: 0.85; }
+  .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
+  .tag-ai { background: rgba(255,107,107,0.15); color: var(--tag-ai); }
+  .tag-dev { background: rgba(81,207,102,0.15); color: var(--tag-dev); }
+  .tag-sec { background: rgba(218,119,242,0.15); color: var(--tag-sec); }
+  footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <h1>Daily Tech Briefing</h1>
+  <div class="date">2026년 10월 25일 일요일</div>
+</header>
+
+<div class="section">
+  <h2>AI & Agents</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.hada.io/topic?id=35913" target="_blank">Show GN: stop-slop-ko - 한국어 문서에서 AI가 쓴 티를 걷어내는 Claude Code 플러그인</a></div>
+    <div class="meta">GeekNews / github.com/leeandev</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive?hl=en" target="_blank">구글이 AI 에이전트마다 '컴퓨터 한 대'를 제공하려는 이유</a></div>
+    <div class="meta">GeekNews / cloud.google.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.anthropic.com/research/formal-verification" target="_blank">LLM이 훨씬 더 큰 규모의 소프트웨어 정형 검증을 가능하게 하고 있음</a></div>
+    <div class="meta">GeekNews / anthropic.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://block.xyz/dessa" target="_blank">Dessa - 텍스트 없이 사람의 대화만 듣고 배운 실시간 음성 AI</a></div>
+    <div class="meta">GeekNews / block.xyz</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://news.ycombinator.com/item?id=50200997" target="_blank">Ask HN: 모델이 그렇게 뛰어나다면, OpenAI는 왜 직접 회사 100개를 세우지 않을까?</a></div>
+    <div class="meta">GeekNews / news.ycombinator.com</div>
+    <div class="desc">AI모델</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://danielball.com/notes/ai_image_generation.html" target="_blank">A practical guide to AI image generation, from diffusion to agents</a></div>
+    <div class="meta">Hacker News / HN front 2026-10-24</div>
+    <div class="desc">에이전트</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-ai">AI</span> <a href="https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" target="_blank">No signs of AI payoff outside the tech sector</a></div>
+    <div class="meta">Hacker News / HN front 2026-10-24</div>
+    <div class="desc">AI모델</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Developer Tools</h2>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.seangoedecke.com/software-is-slow-because-of-bad-design-not-slow-languages/" target="_blank">소프트웨어가 느린 이유는 느린 언어가 아니라 나쁜 설계 때문이다</a></div>
+    <div class="meta">GeekNews / seangoedecke.com</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://news.hada.io/topic?id=35940" target="_blank">Show GN: 비개발자용 클로드 코드 업무 비서 뼈대</a></div>
+    <div class="meta">GeekNews / github.com/taragood43-byte</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">Kimi K3.1 Pro 공개 - 코딩과 3D 제작을 강화한 100만 토큰 컨텍스트의 3T급 모델</a></div>
+    <div class="meta">GeekNews / kimi.ai</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://codeandcake.dev/posts/2026-10-22-docker-is-weird" target="_blank">Docker는 이상하다</a></div>
+    <div class="meta">GeekNews / codeandcake.dev</div>
+    <div class="desc">개발소식</div>
+  </div>
+  <div class="card">
+    <div class="title"><span class="tag tag-dev">DEV</span> <a href="https://keepandroidopen.org/?" target="_blank">휴대전화가 더 이상 당신 것이 아니게 될 날이 다가온다: 봉쇄까지 70일</a></div>
+    <div class="meta">GeekNews / keepandroidopen.org</div>
+    <div class="desc">개발소식</div>
+  </div>
+</div>
+<footer>
+  Sources: Hacker News, GeekNews (news.hada.io)
+</footer>
+</div>
+</body>
+</html>
